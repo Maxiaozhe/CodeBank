@@ -1,0 +1,14 @@
+digitalclock.NamedColor$4
+digitalclock.NamedColor$5
+digitalclock.NamedColor$2
+digitalclock.NamedColor$3
+digitalclock.NamedColor$8
+digitalclock.NamedColor$9
+digitalclock.NamedColor$6
+digitalclock.NamedColor$7
+digitalclock.NamedColor$13
+digitalclock.NamedColor$11
+digitalclock.NamedColor
+digitalclock.NamedColor$1
+digitalclock.NamedColor$12
+digitalclock.NamedColor$10
