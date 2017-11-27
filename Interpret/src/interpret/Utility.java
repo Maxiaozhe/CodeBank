@@ -12,8 +12,8 @@ import javax.swing.JOptionPane;
 import javax.swing.UIManager.LookAndFeelInfo;
 
 /**
- *
- * @author xma
+ * Common utility functions
+ * @author ma
  */
 public final class Utility {
 
