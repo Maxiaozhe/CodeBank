@@ -1,0 +1,2 @@
+interpret.TypeCellRender
+interpret.TypeCellEditor
