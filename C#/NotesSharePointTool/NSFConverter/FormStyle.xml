@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<styles>
+  <style name="MenuForm">
+    <normal>
+      <width>860</width>
+      <height>620</height>
+    </normal>
+  </style>
+  <style name="Form">
+    <normal>
+      <width>860</width>
+      <height>620</height>
+    </normal>
+  </style>
+  <!--タイトル-->
+  <style name="Title">
+    <normal>
+      <font-size>12</font-size>
+      <forecolor>white</forecolor>
+      <backcolor>#00579C</backcolor>
+      <font-style>Bold</font-style>
+      <width>238</width>
+      <height>38</height>
+      <textalign>MiddleCenter</textalign>
+    </normal>
+  </style>
+  <!--メニューコンテンツ-->
+  <style name="Menu">
+    <normal>
+      <backcolor>white</backcolor>
+      <width>238</width>
+      <height>412</height>
+    </normal>
+  </style>
+  <!--メニュー項目-->
+  <style name="MenuItem">
+    <normal>
+      <font-size>11.25</font-size>
+      <forecolor>white</forecolor>
+      <backcolor>#0072c6</backcolor>
+      <font-style>Bold</font-style>
+      <width>238</width>
+      <height>30</height>
+      <textalign>MiddleCenter</textalign>
+      <image>blue_ball</image>
+     <imagealign>MiddleLeft</imagealign>
+    </normal>
+    <hover>
+      <forecolor>#fffe33</forecolor>
+      <backcolor>#2a8dd4</backcolor>
+      <image>red_ball</image>
+      <imagealign>MiddleLeft</imagealign>
+    </hover>
+  </style>
+  <!--キャプション-->
+  <style name="Caption">
+    <normal>
+      <font-size>10</font-size>
+      <forecolor>white</forecolor>
+      <backcolor>#0072c6</backcolor>
+      <font-style>Bold</font-style>
+      <height>22</height>
+      <textalign>MiddleCenter</textalign>
+    </normal>
+  </style>
+   <style name="SubCaption">
+    <normal>
+      <font-size>10</font-size>
+      <forecolor>#000000</forecolor>
+      <font-style>Bold</font-style>
+      <width>148</width>
+      <height>22</height>
+      <textalign>MiddleLeft</textalign>
+    </normal>
+  </style>
+  <!--フォームボタン-->
+  <style name="FormButton">
+    <normal>
+      <font-size>10</font-size>
+      <forecolor>white</forecolor>
+      <backcolor>#0072c6</backcolor>
+      <font-style>Bold</font-style>
+      <height>26</height>
+      <textalign>MiddleCenter</textalign>
+    </normal>
+    <hover>
+      <forecolor>#fffe33</forecolor>
+      <backcolor>#2a8dd4</backcolor>
+    </hover>
+  </style>
+  <!--アクションボタン-->
+  <style name="ActionButton">
+    <normal>
+      <font-size>9</font-size>
+      <height>24</height>
+      <textalign>MiddleCenter</textalign>
+    </normal>
+    <hover>
+      <forecolor>#0072c6</forecolor>
+      <backcolor>#cde6f7</backcolor>
+    </hover>
+  </style>
+  <!--テキスト入力-->
+  <style name="TextInput">
+    <normal>
+      <font-size>10</font-size>
+    </normal>
+    <focus>
+      <backcolor>#fffebb</backcolor>
+    </focus>
+  </style>
+  <style name="TextDisplay">
+    <normal>
+      <font-size>10</font-size>
+    </normal>
+  </style>
+  <style name="HelpCaption">
+    <normal>
+      <font-size>10</font-size>
+      <font-style>Bold</font-style>
+    </normal>
+  </style>
+  <style name="HelpContext">
+    <normal>
+      <font-size>10</font-size>
+      <forecolor>Blue</forecolor>    
+    </normal>
+  </style>
+
+</styles>

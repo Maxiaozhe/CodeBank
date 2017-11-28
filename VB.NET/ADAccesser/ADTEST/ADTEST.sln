@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ADTEST", "ADTEST.vbproj", "{015CFD46-4D61-414E-AD8D-98318E0AF927}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ADAccess", "..\ADAccess\ADAccess.vbproj", "{1D953A36-9A80-474D-8339-665CB802908F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AceAPI", "..\AceAPI\AceAPI.csproj", "{1701A468-BAF3-4241-BF11-285862167A8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{015CFD46-4D61-414E-AD8D-98318E0AF927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{015CFD46-4D61-414E-AD8D-98318E0AF927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{015CFD46-4D61-414E-AD8D-98318E0AF927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{015CFD46-4D61-414E-AD8D-98318E0AF927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D953A36-9A80-474D-8339-665CB802908F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D953A36-9A80-474D-8339-665CB802908F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D953A36-9A80-474D-8339-665CB802908F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D953A36-9A80-474D-8339-665CB802908F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1701A468-BAF3-4241-BF11-285862167A8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1701A468-BAF3-4241-BF11-285862167A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1701A468-BAF3-4241-BF11-285862167A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1701A468-BAF3-4241-BF11-285862167A8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

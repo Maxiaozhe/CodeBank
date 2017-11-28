@@ -1,0 +1,585 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AclTreeNotCreatedException" xml:space="preserve">
+    <value>ＡＣＬ図の作成に失敗しました。</value>
+    <comment>AclTreeNotCreatedException</comment>
+  </data>
+  <data name="AffBreakInfoException" xml:space="preserve">
+    <value>所属データ取得時の変換処理に失敗しました。</value>
+    <comment>AffBreakInfoException</comment>
+  </data>
+  <data name="AffiliationCheckedExistenceExcepton" xml:space="preserve">
+    <value>所属データ存在チェックに失敗しました。</value>
+    <comment>AffiliationCheckedExistenceExcepton</comment>
+  </data>
+  <data name="AffiliationDeleteException" xml:space="preserve">
+    <value>所属データ削除に失敗しました。</value>
+    <comment>AffiliationDeleteException</comment>
+  </data>
+  <data name="AffiliationInsertException" xml:space="preserve">
+    <value>所属データ新規登録に失敗しました。</value>
+    <comment>AffiliationInsertException</comment>
+  </data>
+  <data name="AffiliationUpdateException" xml:space="preserve">
+    <value>所属データ更新に失敗しました。</value>
+    <comment>AffiliationUpdateException</comment>
+  </data>
+  <data name="AffStorageFailedException" xml:space="preserve">
+    <value>所属データ格納に失敗しました。</value>
+    <comment>AffStorageFailedException</comment>
+  </data>
+  <data name="AllMemberOfGroupException" xml:space="preserve">
+    <value>該当グループから下の個人情報取得に失敗しました。</value>
+    <comment>AllMemberOfGroupException</comment>
+  </data>
+  <data name="CheckLevelDataException" xml:space="preserve">
+    <value>同一階層情報[ルート]取得に失敗しました。</value>
+    <comment>CheckLevelDataException</comment>
+  </data>
+  <data name="ChildNodeNotCreatedException" xml:space="preserve">
+    <value>子ノード作成に失敗しました。</value>
+    <comment>ChildNodeNotCreatedException</comment>
+  </data>
+  <data name="ChildPositionNodeMakeFailedException" xml:space="preserve">
+    <value>子ノード作成に失敗しました。</value>
+    <comment>ChildPositionNodeMakeFailedException</comment>
+  </data>
+  <data name="ConvertFlowItemException" xml:space="preserve">
+    <value>Ｗｅｂ用クラスへの変換に失敗しました。</value>
+    <comment>ConvertFlowItemException</comment>
+  </data>
+  <data name="ConvertGroupException" xml:space="preserve">
+    <value>グループクラスへの変換に失敗しました。</value>
+    <comment>ConvertGroupException</comment>
+  </data>
+  <data name="DeleteGroupDatasetNotCreatedException" xml:space="preserve">
+    <value>削除一括一覧用バッファテーブル作成に失敗しました。</value>
+    <comment>DeleteGroupDatasetNotCreatedException</comment>
+  </data>
+  <data name="DeputyAddedNodeException" xml:space="preserve">
+    <value>代理者データのツリーノード登録に失敗しました。</value>
+    <comment>DeputyAddedNodeException</comment>
+  </data>
+  <data name="DeputyDeleteException" xml:space="preserve">
+    <value>代理者データ削除に失敗しました。</value>
+    <comment>DeputyDeleteException</comment>
+  </data>
+  <data name="DeputyInsertException" xml:space="preserve">
+    <value>代理者データ新規登録に失敗しました。</value>
+    <comment>DeputyInsertException</comment>
+  </data>
+  <data name="DeputyRemovedNodeException" xml:space="preserve">
+    <value>代理者データのツリーノード削除に失敗しました。</value>
+    <comment>DeputyRemovedNodeException</comment>
+  </data>
+  <data name="DeputySelectedNodeException" xml:space="preserve">
+    <value>ツリーノードから代理者データの取得に失敗しました。</value>
+    <comment>DeputySelectedNodeException</comment>
+  </data>
+  <data name="DeputyUpdateException" xml:space="preserve">
+    <value>代理者データ更新に失敗しました。</value>
+    <comment>DeputyUpdateException</comment>
+  </data>
+  <data name="DirectoryNotFoundException" xml:space="preserve">
+    <value>変換対象ディレクトリが見つかりません。</value>
+    <comment>DirectoryNotFoundException</comment>
+  </data>
+  <data name="DocumentCheckedExistenceExcepton" xml:space="preserve">
+    <value>文書の存在チェックに失敗しました。</value>
+    <comment>DocumentCheckedExistenceExcepton</comment>
+  </data>
+  <data name="EditingOrganizationNowException" xml:space="preserve">
+    <value>只今、組織改編中です。</value>
+    <comment>EditingOrganizationNowException</comment>
+  </data>
+  <data name="EnglishNameFullException" xml:space="preserve">
+    <value>英字フルパスの作成に失敗しました。</value>
+    <comment>EnglishNameFullException</comment>
+  </data>
+  <data name="ErrorCannotLoginAdministratorException" xml:space="preserve">
+    <value>R@bitFlow クライアントでは『WFAdmin』でのログインはできません。</value>
+    <comment>ErrorCannotLoginAdministratorException</comment>
+  </data>
+  <data name="ErrorCertifyActiveDirectryException" xml:space="preserve">
+    <value>ＡＤ認証に失敗しました。</value>
+    <comment>ErrorCertifyActiveDirectryException</comment>
+  </data>
+  <data name="ErrorDateInReorganizationException" xml:space="preserve">
+    <value>組織改編処理が完了しない状態で改編日を迎えているため、ログインできません。</value>
+    <comment>ErrorDateInReorganizationException</comment>
+  </data>
+  <data name="ErrorLoginOnlyAdministratorException" xml:space="preserve">
+    <value>ローカルログインできるのは管理者だけです。</value>
+    <comment>ErrorLoginOnlyAdministratorException</comment>
+  </data>
+  <data name="ErrorManyMainException" xml:space="preserve">
+    <value>本務が複数があります。</value>
+    <comment>ErrorManyMainException</comment>
+  </data>
+  <data name="ErrorNoAuthorityException" xml:space="preserve">
+    <value>権限がありません。</value>
+    <comment>ErrorNoAuthorityException</comment>
+  </data>
+  <data name="ErrorNoDataException" xml:space="preserve">
+    <value>該当データが見つかりません。</value>
+    <comment>ErrorNoDataException</comment>
+  </data>
+  <data name="ErrorNotBelongException" xml:space="preserve">
+    <value>所属がありません。</value>
+    <comment>ErrorNotBelongException</comment>
+  </data>
+  <data name="ErrorNotExistGroupException" xml:space="preserve">
+    <value>グループが存在しません。</value>
+    <comment>ErrorNotExistGroupException</comment>
+  </data>
+  <data name="ErrorNotMainException" xml:space="preserve">
+    <value>本務がありません。</value>
+    <comment>ErrorNotMainException</comment>
+  </data>
+  <data name="ErrorUnlikePasswordException" xml:space="preserve">
+    <value>パスワードが正しくありません。</value>
+    <comment>ErrorUnlikePasswordException</comment>
+  </data>
+  <data name="FailedCheckLoginUserException" xml:space="preserve">
+    <value>ログインチェックに失敗しました。</value>
+    <comment>FailedCheckLoginUserException</comment>
+  </data>
+  <data name="FailedGetAllMemberInfoFromGroupException" xml:space="preserve">
+    <value>該当グループから下の個人情報取得に失敗しました。</value>
+    <comment>FailedGetAllMemberInfoFromGroupException</comment>
+  </data>
+  <data name="FailedGetCategoryListException" xml:space="preserve">
+    <value>カテゴリ一覧取得に失敗しました。</value>
+    <comment>FailedGetCategoryListException</comment>
+  </data>
+  <data name="FailedGetCategoryNFLOWGroupListException" xml:space="preserve">
+    <value>カテゴリＩＤからのグループ一覧取得に失敗しました。</value>
+    <comment>FailedGetCategoryNFLOWGroupListException</comment>
+  </data>
+  <data name="FailedGetMyDeputyException" xml:space="preserve">
+    <value>所属の代理者一覧取得に失敗しました。</value>
+    <comment>FailedGetMyDeputyException</comment>
+  </data>
+  <data name="FailedGetMyPositionException" xml:space="preserve">
+    <value>個人の所属一覧取得に失敗しました。</value>
+    <comment>FailedGetMyPositionException</comment>
+  </data>
+  <data name="FailedGetNFLOWGroupFromPositionException" xml:space="preserve">
+    <value>グループＩＤと役職ＩＤからの組織情報取得に失敗しました。</value>
+    <comment>FailedGetNFLOWGroupFromPositionException</comment>
+  </data>
+  <data name="FailedGetNFLOWGroupListException" xml:space="preserve">
+    <value>下位層グループ一覧取得に失敗しました。</value>
+    <comment>FailedGetNFLOWGroupListException</comment>
+  </data>
+  <data name="FailedGetNFLOWUserByPersonException" xml:space="preserve">
+    <value>ユーザーＩＤからの個人データ取得に失敗しました。</value>
+    <comment>FailedGetNFLOWUserByPersonException</comment>
+  </data>
+  <data name="FailedGetNFLOWUserException" xml:space="preserve">
+    <value>所属ＩＤからの個人データ取得に失敗しました。</value>
+    <comment>FailedGetNFLOWUserException</comment>
+  </data>
+  <data name="FailedGetNFLOWUserListByGPException" xml:space="preserve">
+    <value>グループＩＤと役職ＩＤからの所属情報取得に失敗しました。</value>
+    <comment>FailedGetNFLOWUserListByGPException</comment>
+  </data>
+  <data name="FailedGetParentNFLOWGroupListException" xml:space="preserve">
+    <value>上位グループ一覧取得に失敗しました。</value>
+    <comment>FailedGetParentNFLOWGroupListException</comment>
+  </data>
+  <data name="FailedGetUsefulGroupException" xml:space="preserve">
+    <value>利用可能グループ取得に失敗しました。</value>
+    <comment>FailedGetUsefulGroupException</comment>
+  </data>
+  <data name="FailedInnovationDateException" xml:space="preserve">
+    <value>改編履歴データ取得に失敗しました。</value>
+    <comment>FailedInnovationDateException</comment>
+  </data>
+  <data name="FailedLoginException" xml:space="preserve">
+    <value>ログインに失敗しました。</value>
+    <comment>FailedLoginException</comment>
+  </data>
+  <data name="FailedSetUserPasswordException" xml:space="preserve">
+    <value>パスワード更新に失敗しました。</value>
+    <comment>FailedSetUserPasswordException</comment>
+  </data>
+  <data name="FileFormatUncorrectException" xml:space="preserve">
+    <value>ファイルフォーマットが不正です。</value>
+    <comment>FileFormatUncorrectException</comment>
+  </data>
+  <data name="FileNotFoundException" xml:space="preserve">
+    <value>変換対象ファイルが見つかりません。</value>
+    <comment>FileNotFoundException</comment>
+  </data>
+  <data name="FileUsedException" xml:space="preserve">
+    <value>ファイルが現在使用中です。</value>
+    <comment>FileUsedException</comment>
+  </data>
+  <data name="FinishMemberConnectedException" xml:space="preserve">
+    <value>個人関連終了処理に失敗しました。</value>
+    <comment>FinishMemberConnectedException</comment>
+  </data>
+  <data name="GetAffiliationException" xml:space="preserve">
+    <value>関連する所属データの取得に失敗しました。</value>
+    <comment>GetAffiliationException</comment>
+  </data>
+  <data name="GetAffiliationListException" xml:space="preserve">
+    <value>所属一覧のデータ取得に失敗しました。</value>
+    <comment>GetAffiliationListException</comment>
+  </data>
+  <data name="GetDataFailedException" xml:space="preserve">
+    <value>リストからのデータ取得に失敗しました。</value>
+    <comment>GetDataFailedException</comment>
+  </data>
+  <data name="GetDeputyListException" xml:space="preserve">
+    <value>代理者一覧のデータ取得に失敗しました。</value>
+    <comment>GetDeputyListException</comment>
+  </data>
+  <data name="GetGroupListException" xml:space="preserve">
+    <value>組織一覧のデータ取得に失敗しました。</value>
+    <comment>GetGroupListException</comment>
+  </data>
+  <data name="GetInnovationListException" xml:space="preserve">
+    <value>履歴一覧のデータ取得に失敗しました。</value>
+    <comment>GetInnovationListException</comment>
+  </data>
+  <data name="GetPositionListException" xml:space="preserve">
+    <value>役職一覧のデータ取得に失敗しました。</value>
+    <comment>GetPositionListException</comment>
+  </data>
+  <data name="GetReorganizationException" xml:space="preserve">
+    <value>履歴データの取得に失敗しました。</value>
+    <comment>GetReorganizationException</comment>
+  </data>
+  <data name="GetSeedFailedException" xml:space="preserve">
+    <value>キー情報取得に失敗しました。</value>
+    <comment>GetSeedFailedException</comment>
+  </data>
+  <data name="GetSystemUserException" xml:space="preserve">
+    <value>所属データの取得に失敗しました。</value>
+    <comment>GetSystemUserException</comment>
+  </data>
+  <data name="GetSystemUserItemFromNodeException" xml:space="preserve">
+    <value>ツリーノードから所属データの取得に失敗しました。</value>
+    <comment>GetSystemUserItemFromNodeException</comment>
+  </data>
+  <data name="GetUserListException" xml:space="preserve">
+    <value>個人一覧のデータ取得に失敗しました。</value>
+    <comment>GetUserListException</comment>
+  </data>
+  <data name="GroupCodeNotObtainedException" xml:space="preserve">
+    <value>組織コード取得に失敗しました。</value>
+    <comment>GroupCodeNotObtainedException</comment>
+  </data>
+  <data name="GroupDeleteException" xml:space="preserve">
+    <value>組織データ削除に失敗しました。</value>
+    <comment>GroupDeleteException</comment>
+  </data>
+  <data name="GroupIdNotObtainedException" xml:space="preserve">
+    <value>グループＩＤの取得に失敗しました。</value>
+    <comment>GroupIdNotObtainedException</comment>
+  </data>
+  <data name="GroupInsertException" xml:space="preserve">
+    <value>組織データ新規登録に失敗しました。</value>
+    <comment>GroupInsertException</comment>
+  </data>
+  <data name="GroupNodeNotConnectedException" xml:space="preserve">
+    <value>組織データと所属データの関連付けに失敗しました。</value>
+    <comment>GroupNodeNotConnectedException</comment>
+  </data>
+  <data name="GroupTruncateException" xml:space="preserve">
+    <value>組織一括削除に失敗しました。</value>
+    <comment>GroupTruncateException</comment>
+  </data>
+  <data name="GroupUpdateException" xml:space="preserve">
+    <value>組織データ更新に失敗しました。</value>
+    <comment>GroupUpdateException</comment>
+  </data>
+  <data name="GrpAndPosNotObtainedException" xml:space="preserve">
+    <value>所属データからのグループと役職情報取得に失敗しました。</value>
+    <comment>GrpAndPosNotObtainedException</comment>
+  </data>
+  <data name="GrpTreeNotCreatedException" xml:space="preserve">
+    <value>グループ図の作成に失敗しました。</value>
+    <comment>GrpTreeNotCreatedException</comment>
+  </data>
+  <data name="InitPropertyException" xml:space="preserve">
+    <value>Listプロパティデータの初期化に失敗しました。</value>
+    <comment>InitPropertyException</comment>
+  </data>
+  <data name="InnovationDeleteException" xml:space="preserve">
+    <value>履歴データ削除に失敗しました。</value>
+    <comment>InnovationDeleteException</comment>
+  </data>
+  <data name="InnovationInsertException" xml:space="preserve">
+    <value>履歴データ新規登録に失敗しました。</value>
+    <comment>InnovationInsertException</comment>
+  </data>
+  <data name="InnovationUpdateException" xml:space="preserve">
+    <value>履歴データ更新に失敗しました。</value>
+    <comment>InnovationUpdateException</comment>
+  </data>
+  <data name="InstanceFailedException" xml:space="preserve">
+    <value>新規インスタンスを作成に失敗しました。</value>
+    <comment>InstanceFailedException</comment>
+  </data>
+  <data name="LinkedAffiliationException" xml:space="preserve">
+    <value>所属データの関連付けに失敗しました。</value>
+    <comment>LinkedAffiliationException</comment>
+  </data>
+  <data name="LoginIdException" xml:space="preserve">
+    <value>ログインＩＤのチェックに失敗しました。</value>
+    <comment>LoginIdException</comment>
+  </data>
+  <data name="MailDatasetNotCreatedException" xml:space="preserve">
+    <value>アドレス一覧用バッファテーブル作成に失敗しました。</value>
+    <comment>MailDatasetNotCreatedException</comment>
+  </data>
+  <data name="OrganizationConvertFailedException" xml:space="preserve">
+    <value>組織関連コンバート処理に失敗しました。</value>
+    <comment>OrganizationConvertFailedException</comment>
+  </data>
+  <data name="OrgTreeNotCreatedException" xml:space="preserve">
+    <value>組織図の作成に失敗しました。</value>
+    <comment>OrgTreeNotCreatedException</comment>
+  </data>
+  <data name="OverRangeBelongException" xml:space="preserve">
+    <value>代理者の有効期間が代理者当人の所属期間を越えています。</value>
+    <comment>OverRangeBelongException</comment>
+  </data>
+  <data name="PositionCodeNotObtainedException" xml:space="preserve">
+    <value>役職コード取得に失敗しました。</value>
+    <comment>PositionCodeNotObtainedException</comment>
+  </data>
+  <data name="PositionDeleteException" xml:space="preserve">
+    <value>役職データ削除に失敗しました。</value>
+    <comment>PositionDeleteException</comment>
+  </data>
+  <data name="PositionInsertException" xml:space="preserve">
+    <value>役職データ新規登録に失敗しました。</value>
+    <comment>PositionInsertException</comment>
+  </data>
+  <data name="PositionTreeNotCreatedException" xml:space="preserve">
+    <value>役職図の作成に失敗しました。</value>
+    <comment>PositionTreeNotCreatedException</comment>
+  </data>
+  <data name="PositionUpdateException" xml:space="preserve">
+    <value>役職データ更新に失敗しました。</value>
+    <comment>PositionUpdateException</comment>
+  </data>
+  <data name="ReorganizationPropertyException" xml:space="preserve">
+    <value>履歴データのプロパティセットに失敗しました。</value>
+    <comment>ReorganizationPropertyException</comment>
+  </data>
+  <data name="ReorganizationRouteConnectedException" xml:space="preserve">
+    <value>ルート関連終了処理に失敗しました。</value>
+    <comment>ReorganizationRouteConnectedException</comment>
+  </data>
+  <data name="ReorganizationUpdateException" xml:space="preserve">
+    <value>履歴データの更新に失敗しました。</value>
+    <comment>ReorganizationUpdateException</comment>
+  </data>
+  <data name="ReviveFailedException" xml:space="preserve">
+    <value>インスタンスの再生に失敗しました。</value>
+    <comment>ReviveFailedException</comment>
+  </data>
+  <data name="RouteCheckedExistenceExceptin" xml:space="preserve">
+    <value>ルート存在チェックに失敗しました。</value>
+    <comment>RouteCheckedExistenceExceptin</comment>
+  </data>
+  <data name="RouteConvertFailedException" xml:space="preserve">
+    <value>ルートコンバート処理に失敗しました。</value>
+    <comment>RouteConvertFailedException</comment>
+  </data>
+  <data name="SameLevelSearchException" xml:space="preserve">
+    <value>同一階層検索に失敗しました。</value>
+    <comment>SameLevelSearchException</comment>
+  </data>
+  <data name="SetDataFailedException" xml:space="preserve">
+    <value>リストからのデータ格納に失敗しました。</value>
+    <comment>SetDataFailedException</comment>
+  </data>
+  <data name="ShortNameFullException" xml:space="preserve">
+    <value>略称フルパスの作成に失敗しました。</value>
+    <comment>ShortNameFullException</comment>
+  </data>
+  <data name="SqlSyntaxException" xml:space="preserve">
+    <value>ＳＱＬ構文の作成に失敗しました。</value>
+    <comment>SqlSyntaxException</comment>
+  </data>
+  <data name="StartMemberConnectedException" xml:space="preserve">
+    <value>個人関連開始処理に失敗しました。</value>
+    <comment>StartMemberConnectedException</comment>
+  </data>
+  <data name="StartOrganizationConnectedException" xml:space="preserve">
+    <value>組織関連開始処理に失敗しました。</value>
+    <comment>StartOrganizationConnectedException</comment>
+  </data>
+  <data name="StartRouteConnecedException" xml:space="preserve">
+    <value>ルート関連開始処理に失敗しました。</value>
+    <comment>StartRouteConnecedException</comment>
+  </data>
+  <data name="SweepTrashFailedException" xml:space="preserve">
+    <value>不整合データ削除処理に失敗しました。</value>
+    <comment>SweepTrashFailedException</comment>
+  </data>
+  <data name="SystemUserAddedNodeException" xml:space="preserve">
+    <value>所属データのツリーノード更新に失敗しました。</value>
+    <comment>SystemUserAddedNodeException</comment>
+  </data>
+  <data name="SystemUserRemoveedNodeException" xml:space="preserve">
+    <value>所属データのツリーノード削除に失敗しました。</value>
+    <comment>SystemUserRemoveedNodeException</comment>
+  </data>
+  <data name="SystemUserSelectedNodeException" xml:space="preserve">
+    <value>所属データのツリーノード登録に失敗しました。</value>
+    <comment>SystemUserSelectedNodeException</comment>
+  </data>
+  <data name="UseGroupDatasetNotCreatedException" xml:space="preserve">
+    <value>利用可能グループ一覧用バッファテーブル作成に失敗しました。</value>
+    <comment>UseGroupDatasetNotCreatedException</comment>
+  </data>
+  <data name="UserDeleteException" xml:space="preserve">
+    <value>個人データ削除に失敗しました。</value>
+    <comment>UserDeleteException</comment>
+  </data>
+  <data name="UserInsertException" xml:space="preserve">
+    <value>個人データ新規登録に失敗しました。</value>
+    <comment>UserInsertException</comment>
+  </data>
+  <data name="UserNodeNotConnectedException" xml:space="preserve">
+    <value>個人データと所属データの関連付けに失敗しました。</value>
+    <comment>UserNodeNotConnectedException</comment>
+  </data>
+  <data name="UserUpdateException" xml:space="preserve">
+    <value>個人データ更新に失敗しました。</value>
+    <comment>UserUpdateException</comment>
+  </data>
+  <data name="ViolatedUniqueConstraintException" xml:space="preserve">
+    <value>一意制約違反です。
+{0}には重複した値を挿入することはできません。</value>
+    <comment>ViolatedUniqueConstraintException</comment>
+  </data>
+  <data name="WrongUserException" xml:space="preserve">
+    <value>個人関連不正一覧取得処理に失敗しました。</value>
+    <comment>WrongUserException</comment>
+  </data>
+</root>

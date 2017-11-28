@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46AEDFD3-C2C4-4D1F-9B7D-6AB6CE8134CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RJ.Tools.NotesTransfer.Engines</RootNamespace>
+    <AssemblyName>ConvertCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Config.cs" />
+    <Compile Include="Common\Log.cs" />
+    <Compile Include="Common\ProgressReporter.cs" />
+    <Compile Include="Common\Utility.cs" />
+    <Compile Include="Common\Encryptor.cs" />
+    <Compile Include="Common\ListItem.cs" />
+    <Compile Include="Common\MessageResourceManager.cs" />
+    <Compile Include="Common\ResManager.cs" />
+    <Compile Include="Common\ResourceManager.cs" />
+    <Compile Include="Common\RJException.cs" />
+    <Compile Include="Design\CurrencyIdUIEditor.cs" />
+    <Compile Include="Design\EnumUIEditor.cs" />
+    <Compile Include="Design\FieldDescriptionProvider.cs" />
+    <Compile Include="Entity\ConditionItem.cs" />
+    <Compile Include="Entity\LogicItem.cs" />
+    <Compile Include="Enums\AuthenticateMode.cs" />
+    <Compile Include="Enums\CodeType.cs" />
+    <Compile Include="Enums\LogType.cs" />
+    <Compile Include="Enums\OperatorType.cs" />
+    <Compile Include="Enums\ResourceType.cs" />
+    <Compile Include="Enums\SPFormType.cs" />
+    <Compile Include="Enums\TaskState.cs" />
+    <Compile Include="Interfaces\IConditionItem.cs" />
+    <Compile Include="Interfaces\IDxlReader.cs" />
+    <Compile Include="Interfaces\IDatabase.cs" />
+    <Compile Include="Enums\NotesDbType.cs" />
+    <Compile Include="Interfaces\IField.cs" />
+    <Compile Include="Enums\NotesFieldType.cs" />
+    <Compile Include="Interfaces\IFieldRef.cs" />
+    <Compile Include="Interfaces\IForm.cs" />
+    <Compile Include="Interfaces\ILogWriter.cs" />
+    <Compile Include="Interfaces\IMigrateTask.cs" />
+    <Compile Include="Interfaces\IView.cs" />
+    <Compile Include="Interfaces\IViewColumn.cs" />
+    <Compile Include="Interfaces\IUser.cs" />
+    <Compile Include="MappingInfo.cs" />
+    <Compile Include="Mappings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Mappings.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\NotesViewType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Enums\SPFieldType.cs" />
+    <Compile Include="Enums\SPListType.cs" />
+    <Compile Include="Enums\SPViewType.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Exceptions.cs" />
+    <Compile Include="Resources\Exclamations.cs" />
+    <Compile Include="Resources\FieldNames.cs" />
+    <Compile Include="Resources\Informations.cs" />
+    <Compile Include="Resources\Questions.cs" />
+    <Compile Include="Resources\StringTable.cs" />
+    <Compile Include="Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Schema\FilterCondition.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Mappings.xsc">
+      <DependentUpon>Mappings.xsd</DependentUpon>
+    </None>
+    <None Include="Mappings.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Mappings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Mappings.xss">
+      <DependentUpon>Mappings.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Schema\DispFieldTemplate.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schema\DispFormTemplate.aspx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schema\EditFieldTemplate.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schema\EditFormTemplate.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schema\Mappings.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Schema\NewFieldTemplate.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schema\NewFormTemplate.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Exceptions.resx">
+      <DependentUpon>Exceptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Exclamations.resx">
+      <DependentUpon>Exclamations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FieldNames.resx">
+      <DependentUpon>FieldNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Informations.resx">
+      <DependentUpon>Informations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Questions.resx">
+      <DependentUpon>Questions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\StringTable.resx">
+      <DependentUpon>StringTable.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

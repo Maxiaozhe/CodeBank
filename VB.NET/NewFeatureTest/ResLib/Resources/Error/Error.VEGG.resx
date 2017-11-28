@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CategoryCanNotRead" xml:space="preserve">
+    <value>カテゴリを読み込むことができません。</value>
+    <comment>CategoryCanNotRead </comment>
+  </data>
+  <data name="DocPropEntryDataFailed" xml:space="preserve">
+    <value>文書プロパティ情報登録用データ作成に失敗しました。</value>
+    <comment>DocPropEntryDataFailed </comment>
+  </data>
+  <data name="DocPropEntryFailed" xml:space="preserve">
+    <value>文書プロパティ情報登録に失敗しました。</value>
+    <comment>DocPropEntryFailed </comment>
+  </data>
+  <data name="DocumentCanNotRead" xml:space="preserve">
+    <value>文書を読み込むことができません。</value>
+    <comment>DocumentCanNotRead </comment>
+  </data>
+  <data name="DocumentDeleteFailed" xml:space="preserve">
+    <value>文書の削除に失敗しました。</value>
+    <comment>DocumentDeleteFailed </comment>
+  </data>
+  <data name="DocumentModifyFailed" xml:space="preserve">
+    <value>文書の更新に失敗しました。</value>
+    <comment>DocumentModifyFailed </comment>
+  </data>
+  <data name="FailedAdd" xml:space="preserve">
+    <value>データ登録に失敗しました。</value>
+    <comment>FailedAdd </comment>
+  </data>
+  <data name="FailedCopy" xml:space="preserve">
+    <value>データコピーに失敗しました。</value>
+    <comment>FailedCopy </comment>
+  </data>
+  <data name="FailedDelete" xml:space="preserve">
+    <value>データ削除に失敗しました。</value>
+    <comment>FailedDelete </comment>
+  </data>
+  <data name="FailedGetInnavationDate" xml:space="preserve">
+    <value>組織改編履歴の取得に失敗しました。</value>
+    <comment>FailedGetInnavationDate </comment>
+  </data>
+  <data name="FailedNotDelete" xml:space="preserve">
+    <value>フォームを公開中の為、削除できませんでした。</value>
+    <comment>FailedNotDelete </comment>
+  </data>
+  <data name="FeiledAddFormDetaile" xml:space="preserve">
+    <value>運用設定データの作成に失敗しました。</value>
+    <comment>FeiledAddFormDetaile </comment>
+  </data>
+  <data name="FeiledAddJoinData" xml:space="preserve">
+    <value>使用ルート・フォームの割当データ登録に失敗しました。</value>
+    <comment>FeiledAddJoinData </comment>
+  </data>
+  <data name="FeiledDeleteJoinData" xml:space="preserve">
+    <value>使用ルート・フォームの割当データ削除に失敗しました。</value>
+    <comment>FeiledDeleteJoinData </comment>
+  </data>
+  <data name="FeiledGetCategory" xml:space="preserve">
+    <value>カテゴリデータの取得に失敗しました。</value>
+    <comment>FeiledGetCategory </comment>
+  </data>
+  <data name="FeiledGetDocumentNumber" xml:space="preserve">
+    <value>採番項目データの取得に失敗しました。</value>
+    <comment>FeiledGetDocumentNumber </comment>
+  </data>
+  <data name="FeiledGetFormDetaile" xml:space="preserve">
+    <value>運用設定データの取得に失敗しました。</value>
+    <comment>FeiledGetFormDetaile </comment>
+  </data>
+  <data name="FeiledGetFormHeader" xml:space="preserve">
+    <value>フォームの詳細データの取得に失敗しました。</value>
+    <comment>FeiledGetFormHeader </comment>
+  </data>
+  <data name="FeiledGetJoinForm" xml:space="preserve">
+    <value>使用フォームの割当データ取得に失敗しました。</value>
+    <comment>FeiledGetJoinForm </comment>
+  </data>
+  <data name="FeiledGetJoinRoute" xml:space="preserve">
+    <value>使用ルートの割当データ取得に失敗しました。</value>
+    <comment>FeiledGetJoinRoute </comment>
+  </data>
+  <data name="FeiledGetRouteHeader" xml:space="preserve">
+    <value>ルートの詳細データの取得に失敗しました。</value>
+    <comment>FeiledGetRouteHeader</comment>
+  </data>
+  <data name="FeiledGetView" xml:space="preserve">
+    <value>ビュー情報データの取得に失敗しました。</value>
+    <comment>FeiledGetView </comment>
+  </data>
+  <data name="FeiledUpdateJoinForm" xml:space="preserve">
+    <value>使用フォームのデータ割当に失敗しました。</value>
+    <comment>FeiledUpdateJoinForm </comment>
+  </data>
+  <data name="FeiledUpdateJoinRoute" xml:space="preserve">
+    <value>使用ルートのデータ割当に失敗しました。</value>
+    <comment>FeiledUpdateJoinRoute </comment>
+  </data>
+  <data name="FormCanNotRead" xml:space="preserve">
+    <value>フォームを読み込むことができません。</value>
+    <comment>FormCanNotRead </comment>
+  </data>
+  <data name="FormConvertFailed" xml:space="preserve">
+    <value>ファイルの取り込み中に異常が発生しました。</value>
+    <comment>FormConvertFailed</comment>
+  </data>
+  <data name="GetCabListFailed" xml:space="preserve">
+    <value>キャビネット一覧情報取得に失敗しました。</value>
+    <comment>GetCabListFailed </comment>
+  </data>
+  <data name="GetDataFailed" xml:space="preserve">
+    <value>文書プロパティ連携情報取得に失敗しました。</value>
+    <comment>GetDataFailed </comment>
+  </data>
+  <data name="GetDocPropListFailed" xml:space="preserve">
+    <value>文書タイプ一覧取得に失敗しました。</value>
+    <comment>GetDocPropListFailed </comment>
+  </data>
+  <data name="GetFormDataFailed" xml:space="preserve">
+    <value>フォームデータ報取得に失敗しました。</value>
+    <comment>GetFormDataFailed </comment>
+  </data>
+  <data name="ReportEditorAbonMessage" xml:space="preserve">
+    <value>レポートエディタの起動に失敗しました。</value>
+    <comment>ReportEditorAbonMessage </comment>
+  </data>
+  <data name="ReportToolAbonMessage" xml:space="preserve">
+    <value>管理帳票の起動に失敗しました。</value>
+    <comment>ReportToolAbonMessage </comment>
+  </data>
+  <data name="RidocFailed" xml:space="preserve">
+    <value>Ridocの復旧に失敗しました。</value>
+    <comment>RidocFailed</comment>
+  </data>
+  <data name="routeC017" xml:space="preserve">
+    <value>表示名が入力されていません。</value>
+    <comment>routeC017</comment>
+  </data>
+  <data name="routeC018" xml:space="preserve">
+    <value>選択された表示名は既に存在します。</value>
+    <comment>routeC018</comment>
+  </data>
+  <data name="routeC030" xml:space="preserve">
+    <value>結合項目に対象以外のフォームの項目が選択されています。[FORM={0}][VIEW={1}][FIELD={2}]</value>
+    <comment>routeC030</comment>
+  </data>
+  <data name="SelectErrorCondition" xml:space="preserve">
+    <value>条件項目に対象以外のフォームの項目が選択されています。[FORM={0}][VIEW={1}][FIELD={2}]</value>
+    <comment>SelectErrorCondition</comment>
+  </data>
+  <data name="SelectErrorGroup" xml:space="preserve">
+    <value>グループ項目に対象以外のフォームの項目が選択されています。[FORM={0}][VIEW={1}][FIELD={2}]</value>
+    <comment>SelectErrorGroup</comment>
+  </data>
+  <data name="SelectErrorView" xml:space="preserve">
+    <value>表示項目に対象以外のフォームの項目が選択されています。[FORM={0}][VIEW={1}][FIELD={2}]</value>
+    <comment>SelectErrorView</comment>
+  </data>
+  <data name="SystemError" xml:space="preserve">
+    <value>システムエラーです。管理者に問い合わせて下さい。</value>
+    <comment>SystemError </comment>
+  </data>
+  <data name="SystemUnKnownError" xml:space="preserve">
+    <value>システムエラーです。予期せぬエラーが発生しました。</value>
+    <comment>SystemUnKnownError </comment>
+  </data>
+  <data name="ViewCanNotRead" xml:space="preserve">
+    <value>ビューを読み込むことができません。</value>
+    <comment>ViewCanNotRead </comment>
+  </data>
+</root>

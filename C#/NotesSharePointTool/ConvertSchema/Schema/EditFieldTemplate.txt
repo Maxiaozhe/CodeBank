@@ -1,0 +1,2 @@
+﻿<SharePoint:FormField runat="server" id="ff{0}{{$Pos}}" ControlMode="Edit" FieldName="{1}" __designer:bind="{{ddwrt:DataBind('u',concat('ff{0}',$Pos),'Value','ValueChanged','ID',ddwrt:EscapeDelims(string(@ID)),'@{1}')}}"/>
+<SharePoint:FieldDescription runat="server" id="ff{0}description{{$Pos}}" FieldName="{1}" ControlMode="Edit"/>

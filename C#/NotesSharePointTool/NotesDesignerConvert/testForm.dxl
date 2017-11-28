@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE form SYSTEM 'C:\Program Files (x86)\lotus\notes\xmlschemas/domino_7_0_2.dtd'>
+<form name='テストフォーム' xmlns='http://www.lotus.com/dxl' version='7.0' maintenanceversion='2.0'
+ replicaid='49257E5F002EFFDF' noreplace='true' publicaccess='false' designerversion='7'
+ renderpassthrough='true'>
+<noteinfo noteid='28a' unid='5EB1C1249DF1C69649257E65002D4DA5' sequence='1'>
+<created><datetime>20150615T171449,97+09</datetime></created>
+<modified><datetime>20150615T172552,47+09</datetime></modified>
+<revised><datetime>20150615T172552,42+09</datetime></revised>
+<lastaccessed><datetime>20150615T172552,47+09</datetime></lastaccessed>
+<addedtofile><datetime>20150615T172552,47+09</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Xiaozhe Ma/OU=S/O=RJPN</name></updatedby>
+<wassignedby><name>CN=Xiaozhe Ma/OU=S/O=RJPN</name></wassignedby>
+<background><imageref database='mailfile' name='bg_0'/></background>
+<body>
+  <richtext>
+<pardef id='1'/>
+<par def='1'/>
+<table widthtype='fixedleft' refwidth='11.2583in'><tablecolumn width='5.6292in'/><tablecolumn
+ width='5.6292in'/>
+<tablerow>
+<tablecell>
+<pardef id='2' keepwithnext='true' keeptogether='true'/>
+<par def='2'><field type='text' kind='editable' name='タイトル'/></par></tablecell>
+<tablecell>
+<pardef id='3' keepwithnext='true' keeptogether='true'/>
+<par def='3'><field type='datetime' kind='editable' name='無題'><datetimeformat
+ show='date' date='yearmonthday' fourdigityearfor21stcentury='true' zone='never'
+ dateformat='yearmonthdayweekday' dayformat='twodigitday' monthformat='twodigitmonth'
+ yearformat='fourdigityear' weekdayformat='shortname' timeformat24='true'/></field></par></tablecell></tablerow>
+<tablerow>
+<tablecell>
+<par def='2'><field borderstyle='inset' type='keyword' allowmultivalues='true'
+ kind='editable' name='無題2' listinputseparators='comma' listdisplayseparator='comma'><keywords
+ helperbutton='false' columns='1' ui='checkbox'><textlist><text>A</text><text
+>B</text><text>C</text><text>D</text></textlist></keywords></field></par></tablecell>
+<tablecell>
+<par def='3'><field usenotesstyle='false' height='0.2028in' width='1in' multiline='true'
+ borderstyle='inset' type='keyword' kind='editable' name='無題3'><keywords helperbutton='false'
+ columns='1' ui='combobox'/></field></par></tablecell></tablerow></table>
+<par def='1'/></richtext>
+
+</body>
+<item name='$$ScriptName' summary='false' sign='true'><textlist><text>テストフォーム</text></textlist></item></form>

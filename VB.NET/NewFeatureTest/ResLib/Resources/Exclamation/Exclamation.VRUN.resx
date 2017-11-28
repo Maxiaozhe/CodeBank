@@ -1,0 +1,604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddFormUnSelected" xml:space="preserve">
+    <value>追加するフォームを選択して下さい。</value>
+    <comment>AddFormUnSelected</comment>
+  </data>
+  <data name="AddRouteUnSelected" xml:space="preserve">
+    <value>追加するルートを選択して下さい。</value>
+    <comment>AddRouteUnSelected</comment>
+  </data>
+  <data name="CabinetNotSelected" xml:space="preserve">
+    <value>保存先を指定して下さい。</value>
+    <comment>CabinetNotSelected</comment>
+  </data>
+  <data name="CabPassNotRegistration" xml:space="preserve">
+    <value>選択されたキャビネットのパスワードを設定画面で登録して下さい。</value>
+    <comment>CabPassNotRegistration</comment>
+  </data>
+  <data name="CategoryUnSelcted" xml:space="preserve">
+    <value>カテゴリを選択して下さい。</value>
+    <comment>CategoryUnSelcted</comment>
+  </data>
+  <data name="DocColStructCounterNotDelete" xml:space="preserve">
+    <value>採番項目の削除はできません。</value>
+    <comment>DocColStructCounterNotDelete</comment>
+  </data>
+  <data name="DocColStructNoCounter" xml:space="preserve">
+    <value>採番項目に連番を登録して下さい。</value>
+    <comment>DocColStructNoCounter</comment>
+  </data>
+  <data name="DocColStructOver20" xml:space="preserve">
+    <value>採番項目に指定可能な項目は20項目までです。</value>
+    <comment>DocColStructOver20</comment>
+  </data>
+  <data name="DocNamePropNonSet" xml:space="preserve">
+    <value>Ridocプロパティ「文書名」への「書込み設定」は必須です。{0}フォームに貼付してある項目を、Ridocプロパティ「文書名」に「書込み設定」して下さい。</value>
+    <comment>DocNamePropNonSet</comment>
+  </data>
+  <data name="DocNotAddPropatyChk" xml:space="preserve">
+    <value>Ridoc連携で文書プロパティ設定の登録を行って下さい。</value>
+    <comment>DocNotAddPropatyChk</comment>
+  </data>
+  <data name="DocPropDuplication" xml:space="preserve">
+    <value>書込み対象プロパティが重複しています。</value>
+    <comment>DocPropDuplication</comment>
+  </data>
+  <data name="DocPropNonSet" xml:space="preserve">
+    <value>選択された文書プロパティは予約プロパティが設定されていません。</value>
+    <comment>DocPropNonSet</comment>
+  </data>
+  <data name="DocPropNotSelected" xml:space="preserve">
+    <value>連携するプロパティを選択して下さい。</value>
+    <comment>DocPropNotSelected</comment>
+  </data>
+  <data name="DocTypeNonSet" xml:space="preserve">
+    <value>文書管理ツールにて文書タイプの登録を行って下さい。</value>
+    <comment>DocTypeNonSet</comment>
+  </data>
+  <data name="FailedNotDelete" xml:space="preserve">
+    <value>フォームを公開中の為、削除できませんでした。</value>
+    <comment>FailedNotDelete</comment>
+  </data>
+  <data name="FormExecutingNotDelte" xml:space="preserve">
+    <value>現在このフォームは使用中です。削除できません。</value>
+    <comment>FormExecutingNotDelte</comment>
+  </data>
+  <data name="MustNotCategorySelected" xml:space="preserve">
+    <value>カテゴリは選択できません。</value>
+    <comment>MustNotCategorySelected</comment>
+  </data>
+  <data name="OverRange" xml:space="preserve">
+    <value>入力可能な範囲を超えています。</value>
+    <comment>OverRange</comment>
+  </data>
+  <data name="OverRengeVlttl" xml:space="preserve">
+    <value>滞留期間の入力は１営業日以上を指定して下さい。</value>
+    <comment>OverRengeVlttl</comment>
+  </data>
+  <data name="PrintDataDuplication" xml:space="preserve">
+    <value>印刷設定位置が重複しています。</value>
+    <comment>PrintDataDuplication</comment>
+  </data>
+  <data name="RemoveFormUnSelected" xml:space="preserve">
+    <value>削除するフォームを選択して下さい。</value>
+    <comment>RemoveFormUnSelected</comment>
+  </data>
+  <data name="RemoveRouteUnSelected" xml:space="preserve">
+    <value>削除するルートを選択して下さい。</value>
+    <comment>RemoveRouteUnSelected</comment>
+  </data>
+  <data name="RemoveRuteHasBranch" xml:space="preserve">
+    <value>選択されたルートは条件分岐にこのフォームの項目が指定されています。{0}削除することはできません。{0}削除する場合はメイン画面の『ルート修正』ボタンをクリックし、{0}このルートを条件分岐の無い状態にして下さい。</value>
+    <comment>RemoveRuteHasBranch</comment>
+  </data>
+  <data name="Reorganization" xml:space="preserve">
+    <value>只今、組織改編中です。しばらく経った後、再度実行して下さい。</value>
+    <comment>Reorganization</comment>
+  </data>
+  <data name="ReplyLimit" xml:space="preserve">
+    <value>回答期限を入力して下さい。</value>
+    <comment>ReplyLimit</comment>
+  </data>
+  <data name="ReplyLimitOutOfRange" xml:space="preserve">
+    <value>回答期限の入力は1営業日以上を指定して下さい。</value>
+    <comment>ReplyLimitOutOfRange</comment>
+  </data>
+  <data name="routeE001" xml:space="preserve">
+    <value>デフォルトルートは削除できません。</value>
+    <comment>routeE001</comment>
+  </data>
+  <data name="routeE002" xml:space="preserve">
+    <value>入力された値が正しくありません。</value>
+    <comment>routeE002</comment>
+  </data>
+  <data name="routeE003" xml:space="preserve">
+    <value>起案ルートが存在しません。</value>
+    <comment>routeE003</comment>
+  </data>
+  <data name="routeE004" xml:space="preserve">
+    <value>条件分岐で終わるルートは作成できません。</value>
+    <comment>routeE004</comment>
+  </data>
+  <data name="routeE005" xml:space="preserve">
+    <value>申請できるのは、起案ルートならびに階層ルートの人だけです。</value>
+    <comment>routeE005</comment>
+  </data>
+  <data name="routeE006" xml:space="preserve">
+    <value>起案ルートに関連付けはできません。</value>
+    <comment>routeE006</comment>
+  </data>
+  <data name="routeE007" xml:space="preserve">
+    <value>起案ルートが既に存在します。</value>
+    <comment>routeE007</comment>
+  </data>
+  <data name="routeE008" xml:space="preserve">
+    <value>役職上、承認権限なしの場合は起案ルートのみ設定できます。</value>
+    <comment>routeE008</comment>
+  </data>
+  <data name="routeE009" xml:space="preserve">
+    <value>既に関連付けされています。</value>
+    <comment>routeE009</comment>
+  </data>
+  <data name="routeE010" xml:space="preserve">
+    <value>条件分岐に関連付けられているため、ルート単体には関連付けできません。</value>
+    <comment>routeE010</comment>
+  </data>
+  <data name="routeE011" xml:space="preserve">
+    <value>グループを含めた並行承認はできません。</value>
+    <comment>routeE011</comment>
+  </data>
+  <data name="routeE012" xml:space="preserve">
+    <value>既に関連付けされています。</value>
+    <comment>routeE012</comment>
+  </data>
+  <data name="routeE013" xml:space="preserve">
+    <value>親ルートが既に他の承認順に割り当てられているため、関連付けできません。</value>
+    <comment>routeE013</comment>
+  </data>
+  <data name="routeE014" xml:space="preserve">
+    <value>親ルートに条件分岐が割り当てられているため、ルート単体を関連付けできません。</value>
+    <comment>routeE014</comment>
+  </data>
+  <data name="routeE015" xml:space="preserve">
+    <value>起案ルートに関連付けはできません。</value>
+    <comment>routeE015</comment>
+  </data>
+  <data name="routeE016" xml:space="preserve">
+    <value>起案ルートが既に存在します。</value>
+    <comment>routeE016</comment>
+  </data>
+  <data name="routeE017" xml:space="preserve">
+    <value>役職上、承認権限なしの場合は起案ルートのみ設定できます。</value>
+    <comment>routeE017</comment>
+  </data>
+  <data name="routeE018" xml:space="preserve">
+    <value>グループを含めた並行承認はできません。</value>
+    <comment>routeE018</comment>
+  </data>
+  <data name="routeE019" xml:space="preserve">
+    <value>既に関連付けされています。</value>
+    <comment>routeE019</comment>
+  </data>
+  <data name="routeE020" xml:space="preserve">
+    <value>条件分岐に関連付けられているため、ルート単体には関連付けできません。</value>
+    <comment>routeE020</comment>
+  </data>
+  <data name="routeE021" xml:space="preserve">
+    <value>グループを含めた並行承認はできません。</value>
+    <comment>routeE021</comment>
+  </data>
+  <data name="routeE022" xml:space="preserve">
+    <value>既に関連付けされています。</value>
+    <comment>routeE022</comment>
+  </data>
+  <data name="routeE023" xml:space="preserve">
+    <value>親ルートが既に他の承認順に割り当てられているため、関連付けできません。</value>
+    <comment>routeE023</comment>
+  </data>
+  <data name="routeE024" xml:space="preserve">
+    <value>親ルートに条件分岐が割り当てられているため、ルート単体を関連付けできません。</value>
+    <comment>routeE024</comment>
+  </data>
+  <data name="routeE025" xml:space="preserve">
+    <value>起案ルートが既に存在します。</value>
+    <comment>routeE025</comment>
+  </data>
+  <data name="routeE026" xml:space="preserve">
+    <value>既に関連付けされています。</value>
+    <comment>routeE026</comment>
+  </data>
+  <data name="routeE027" xml:space="preserve">
+    <value>条件分岐に関連付けられているため、ルート単体には関連付けできません。</value>
+    <comment>routeE027</comment>
+  </data>
+  <data name="routeE028" xml:space="preserve">
+    <value>条件分岐の並行承認はできません。</value>
+    <comment>routeE028</comment>
+  </data>
+  <data name="routeE029" xml:space="preserve">
+    <value>既に関連付けされています。</value>
+    <comment>routeE029</comment>
+  </data>
+  <data name="routeE030" xml:space="preserve">
+    <value>親ルートが既に他の承認順に割り当てられているため、関連付けできません。</value>
+    <comment>routeE030</comment>
+  </data>
+  <data name="routeE031" xml:space="preserve">
+    <value>起案ルートに関連付けはできません。</value>
+    <comment>routeE031</comment>
+  </data>
+  <data name="routeE032" xml:space="preserve">
+    <value>役職上、承認権限なしの場合は起案ルートのみ設定できます。</value>
+    <comment>routeE032</comment>
+  </data>
+  <data name="routeE033" xml:space="preserve">
+    <value>条件分岐からグループへの設定はできません。</value>
+    <comment>routeE033</comment>
+  </data>
+  <data name="routeE034" xml:space="preserve">
+    <value>条件分岐（真）の子ルートは既に設定されています。</value>
+    <comment>routeE034</comment>
+  </data>
+  <data name="routeE035" xml:space="preserve">
+    <value>条件分岐（偽）の子ルートは既に設定されています。</value>
+    <comment>routeE035</comment>
+  </data>
+  <data name="routeE036" xml:space="preserve">
+    <value>既に関連付けされています。</value>
+    <comment>routeE036</comment>
+  </data>
+  <data name="routeE037" xml:space="preserve">
+    <value>条件分岐（真）の子ルートは既に設定されています。</value>
+    <comment>routeE037</comment>
+  </data>
+  <data name="routeE038" xml:space="preserve">
+    <value>条件分岐（偽）の子ルートは既に設定されています。</value>
+    <comment>routeE038</comment>
+  </data>
+  <data name="routeE039" xml:space="preserve">
+    <value>既に関連付けされています。</value>
+    <comment>routeE039</comment>
+  </data>
+  <data name="routeE040" xml:space="preserve">
+    <value>結合ルートの起案ルートは変更できません。</value>
+    <comment>routeE040</comment>
+  </data>
+  <data name="routeE041" xml:space="preserve">
+    <value>結合ルートの起案ルートは変更できません。</value>
+    <comment>routeE041</comment>
+  </data>
+  <data name="routeE042" xml:space="preserve">
+    <value>選択された組織に組織情報が存在しません。プログラムを再起動して下さい。</value>
+    <comment>routeE042</comment>
+  </data>
+  <data name="routeE043" xml:space="preserve">
+    <value>ルート共有するグループをリストから選択して下さい。</value>
+    <comment>routeE043</comment>
+  </data>
+  <data name="routeE044" xml:space="preserve">
+    <value>利用グループを選択して下さい。</value>
+    <comment>routeE044</comment>
+  </data>
+  <data name="routeE045" xml:space="preserve">
+    <value>カテゴリが選択されています。フォームを選択して下さい。</value>
+    <comment>routeE045</comment>
+  </data>
+  <data name="routeE046" xml:space="preserve">
+    <value>同一フォームは選択できません。</value>
+    <comment>routeE046</comment>
+  </data>
+  <data name="routeE047" xml:space="preserve">
+    <value>削除するフォームを選択して下さい。</value>
+    <comment>routeE047</comment>
+  </data>
+  <data name="routeE048" xml:space="preserve">
+    <value>ルート名を入力して下さい。</value>
+    <comment>routeE048</comment>
+  </data>
+  <data name="routeE049" xml:space="preserve">
+    <value>ルート開始日付がルート終了日付より未来に設定されています。</value>
+    <comment>routeE049</comment>
+  </data>
+  <data name="routeE050" xml:space="preserve">
+    <value>既に登録済みです。別の項目を登録して下さい。</value>
+    <comment>routeE050</comment>
+  </data>
+  <data name="routeE051" xml:space="preserve">
+    <value>最後の承認者は、申請権限を付与できません。</value>
+    <comment>routeE051</comment>
+  </data>
+  <data name="routeE052" xml:space="preserve">
+    <value>最後の承認者は、飛越し権限を付与できません。</value>
+    <comment>routeE052</comment>
+  </data>
+  <data name="routeE053" xml:space="preserve">
+    <value>条件分岐が設定されている場合は、飛越し権限を付与できません。</value>
+    <comment>routeE053</comment>
+  </data>
+  <data name="routeE054" xml:space="preserve">
+    <value>並行承認が設定されている場合は、飛越し権限を付与できません。</value>
+    <comment>routeE054</comment>
+  </data>
+  <data name="routeE055" xml:space="preserve">
+    <value>条件分岐に条件が設定されていません。</value>
+    <comment>routeE055</comment>
+  </data>
+  <data name="routeE056" xml:space="preserve">
+    <value>桁数がオーバーしています。</value>
+    <comment>routeE056</comment>
+  </data>
+  <data name="routeE057" xml:space="preserve">
+    <value>数値を入力して下さい。</value>
+    <comment>routeE057</comment>
+  </data>
+  <data name="routeE058" xml:space="preserve">
+    <value>yyyy/mm/dd形式で日付を入力して下さい。</value>
+    <comment>routeE058</comment>
+  </data>
+  <data name="routeE059" xml:space="preserve">
+    <value>必須項目です。</value>
+    <comment>routeE059</comment>
+  </data>
+  <data name="routeE060" xml:space="preserve">
+    <value>最終承認での並行承認はできません。</value>
+    <comment>routeE060</comment>
+  </data>
+  <data name="routeE061" xml:space="preserve">
+    <value>並行承認での同一役職を割り当てることはできません。</value>
+    <comment>routeE061</comment>
+  </data>
+  <data name="routeE062" xml:space="preserve">
+    <value>関連付いていないルートが存在します。</value>
+    <comment>routeE062</comment>
+  </data>
+  <data name="routeE063" xml:space="preserve">
+    <value>実数の範囲をオーバーしてます。{0}922,337,203,685,477.5807 ～ -922,337,203,685,477.5808の範囲で入力して下さい。</value>
+    <comment>routeE063</comment>
+  </data>
+  <data name="routeE064" xml:space="preserve">
+    <value>整数の範囲をオーバーしてます。{0}2,147,483,647 ～ -2,147,483,648の範囲で入力して下さい。</value>
+    <comment>routeE064</comment>
+  </data>
+  <data name="routeE065" xml:space="preserve">
+    <value>小数の入力はできません。</value>
+    <comment>routeE065</comment>
+  </data>
+  <data name="routeE066" xml:space="preserve">
+    <value>組織と役職が起案者と同じルートは指定できません。</value>
+    <comment>routeE066</comment>
+  </data>
+  <data name="routeE067" xml:space="preserve">
+    <value>本人は起案ルートに指定できません。</value>
+    <comment>routeE067</comment>
+  </data>
+  <data name="routeE068" xml:space="preserve">
+    <value>結合ルートでは作成者ルート以外起案ルートに指定できません。</value>
+    <comment>routeE068</comment>
+  </data>
+  <data name="routeE069" xml:space="preserve">
+    <value>本人を含めた並行承認はできません。</value>
+    <comment>routeE069</comment>
+  </data>
+  <data name="routeE070" xml:space="preserve">
+    <value>同一人物の並行承認はできません。</value>
+    <comment>routeE070</comment>
+  </data>
+  <data name="routeE071" xml:space="preserve">
+    <value>条件分岐もしくは複数承認後の申請区分は設定できません。</value>
+    <comment>routeE071</comment>
+  </data>
+  <data name="routeE072" xml:space="preserve">
+    <value>関連付いていない条件分岐が存在します。</value>
+    <comment>routeE072</comment>
+  </data>
+  <data name="routeE073" xml:space="preserve">
+    <value>２バイト文字が含まれています。２バイト文字は入力できません。</value>
+    <comment>routeE073</comment>
+  </data>
+  <data name="routeE074" xml:space="preserve">
+    <value>桁数が超えています。有効桁数は11桁までです。</value>
+    <comment>routeE074</comment>
+  </data>
+  <data name="routeE075" xml:space="preserve">
+    <value>カンマの入力はできません。</value>
+    <comment>routeE075</comment>
+  </data>
+  <data name="routeE076" xml:space="preserve">
+    <value>入力形式に誤りがあります。{0}-9999999999の形式で入力して下さい。</value>
+    <comment>routeE076</comment>
+  </data>
+  <data name="RUN_E001" xml:space="preserve">
+    <value>終端は起案ルートに指定できません。</value>
+    <comment>RUN_E001</comment>
+  </data>
+  <data name="RUN_E010" xml:space="preserve">
+    <value>終端から次のルート指定する事は出来ません</value>
+    <comment>RUN_E010</comment>
+  </data>
+  <data name="RUN_E011" xml:space="preserve">
+    <value>条件分岐以外から終端を次のルートに指定する事は出来ません</value>
+    <comment>RUN_E011</comment>
+  </data>
+  <data name="RUN_E020" xml:space="preserve">
+    <value>既に関連付けされています。</value>
+    <comment>RUN_E020</comment>
+  </data>
+  <data name="RUN_E110" xml:space="preserve">
+    <value>無効な条件が設定されています。</value>
+    <comment>RUN_E110</comment>
+  </data>
+  <data name="RuteHasBranch" xml:space="preserve">
+    <value>このルートは条件分岐を保持します。{0}他のフォームと併用したり、使用フォームを変更することは出来ません。{0}使用フォームの変更をする場合は『ルート修正』ボタンをクリックし、{0}このルートを条件分岐の無い状態にして下さい。</value>
+    <comment>RuteHasBranch</comment>
+  </data>
+  <data name="SameFormExist" xml:space="preserve">
+    <value>すでに同じフォームが選択されています。</value>
+    <comment>SameFormExist</comment>
+  </data>
+  <data name="SameRouteExist" xml:space="preserve">
+    <value>すでに同じルートが選択されています。</value>
+    <comment>SameRouteExist</comment>
+  </data>
+  <data name="SelectedRuteHasBranch" xml:space="preserve">
+    <value> 選択されたルートは条件分岐に他のフォームの項目が指定されています。{0}このフォームで使用することはできません。</value>
+    <comment>SelectedRuteHasBranch</comment>
+  </data>
+  <data name="SetFullPassLblNmNyDoc" xml:space="preserve">
+    <value>否認時保存先は必須入力です。{0}保存先を指定して下さい。</value>
+    <comment>SetFullPassLblNmNyDoc</comment>
+  </data>
+  <data name="SetFullPassLblNmPubDoc" xml:space="preserve">
+    <value>承認時保存先は必須入力です。{0}保存先を指定して下さい。</value>
+    <comment>SetFullPassLblNmPubDoc</comment>
+  </data>
+  <data name="SetNoViewColumn" xml:space="preserve">
+    <value>出力する項目を指定して下さい。</value>
+    <comment>SetNoViewColumn</comment>
+  </data>
+  <data name="SetNoViewName" xml:space="preserve">
+    <value>ビューの名を指定して下さい。</value>
+    <comment>SetNoViewName</comment>
+  </data>
+  <data name="UnInputCategoryDispNo" xml:space="preserve">
+    <value>表示順序を入力して下さい。</value>
+    <comment>UnInputCategoryDispNo</comment>
+  </data>
+  <data name="UnInputCategoryName" xml:space="preserve">
+    <value>カテゴリ名を入力して下さい。</value>
+    <comment>UnInputCategoryName</comment>
+  </data>
+  <data name="UnInputFormName" xml:space="preserve">
+    <value>フォームの名を入力して下さい。</value>
+    <comment>UnInputFormName</comment>
+  </data>
+  <data name="UnjustTxtFree" xml:space="preserve">
+    <value>任意文字列は半角英数で入力して下さい。</value>
+    <comment>UnjustTxtFree</comment>
+  </data>
+  <data name="UnNumeric" xml:space="preserve">
+    <value>数値を入力して下さい。</value>
+    <comment>UnNumeric</comment>
+  </data>
+  <data name="VlDocNoFigOver10" xml:space="preserve">
+    <value>採番を行う際の有効桁数は1～10桁です。</value>
+    <comment>VlDocNoFigOver10</comment>
+  </data>
+</root>

@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Empty" xml:space="preserve">
+    <value>{0}</value>
+    <comment>Empty</comment>
+  </data>
+  <data name="FailedGetFormListException" xml:space="preserve">
+    <value>ルートの一覧の取得に失敗しました。</value>
+    <comment>FailedGetFormListException</comment>
+  </data>
+  <data name="FailedGetRouteListException" xml:space="preserve">
+    <value>ルートの一覧の取得に失敗しました。</value>
+    <comment>FailedGetRouteListException</comment>
+  </data>
+  <data name="FeiledAddFormDetaileException" xml:space="preserve">
+    <value>運用設定データの取得に失敗しました。</value>
+    <comment>FeiledAddFormDetaileException</comment>
+  </data>
+  <data name="FeiledAddJoinDataException" xml:space="preserve">
+    <value>使用ルート・フォームの割当データ削除に失敗しました。</value>
+    <comment>FeiledAddJoinDataException</comment>
+  </data>
+  <data name="FeiledCreateTreeNodeException" xml:space="preserve">
+    <value>ツリーの作成に失敗しました。</value>
+    <comment>FeiledCreateTreeNodeException</comment>
+  </data>
+  <data name="FeiledDeleteJoinDataException" xml:space="preserve">
+    <value>使用ルート・フォームの割当データ削除に失敗しました。</value>
+    <comment>FeiledDeleteJoinDataException</comment>
+  </data>
+  <data name="FeiledGetFormDetaileException" xml:space="preserve">
+    <value>運用設定データの取得に失敗しました。</value>
+    <comment>FeiledGetFormDetaileException</comment>
+  </data>
+  <data name="FeiledGetFormeHeaderException" xml:space="preserve">
+    <value>フォームの詳細データの取得に失敗しました。</value>
+    <comment>FeiledGetFormeHeaderException</comment>
+  </data>
+  <data name="FeiledGetJoinFormException" xml:space="preserve">
+    <value>使用フォームの割当データ取得に失敗しました。</value>
+    <comment>FeiledGetJoinFormException</comment>
+  </data>
+  <data name="FeiledGetJoinRouteException" xml:space="preserve">
+    <value>使用ルートの割当データ取得に失敗しました。</value>
+    <comment>FeiledGetJoinRouteException</comment>
+  </data>
+  <data name="FeiledGetRouteHeaderException" xml:space="preserve">
+    <value>ルートの詳細データの取得に失敗しました。</value>
+    <comment>FeiledGetRouteHeaderException</comment>
+  </data>
+  <data name="routeC001" xml:space="preserve">
+    <value>結合リセット対象のビュー項目情報が存在しません。[{0}][{1}][{2}]</value>
+    <comment>routeC001</comment>
+  </data>
+  <data name="routeC002" xml:space="preserve">
+    <value>結合リセット対象のビューグループ項目情報が存在しません。[{0}][{1}][{2}]</value>
+    <comment>routeC002</comment>
+  </data>
+  <data name="routeC003" xml:space="preserve">
+    <value>選択されたGUIの詳細情報が取得できませんでした。[{0}][{1}]</value>
+    <comment>routeC003</comment>
+  </data>
+  <data name="routeC004" xml:space="preserve">
+    <value>デフォルトビューのＳＱＬ文生成に失敗しました。</value>
+    <comment>routeC004</comment>
+  </data>
+  <data name="routeC005" xml:space="preserve">
+    <value>デフォルトビューの設定に失敗しました。</value>
+    <comment>routeC005</comment>
+  </data>
+  <data name="routeC006" xml:space="preserve">
+    <value>{0}：パラメータ異常[{1}]</value>
+    <comment>routeC006</comment>
+  </data>
+  <data name="routeC007" xml:space="preserve">
+    <value>選択された項目が異常です。[{0}][{1}]</value>
+    <comment>routeC007</comment>
+  </data>
+  <data name="routeC008" xml:space="preserve">
+    <value>選択されたGUIの詳細情報が取得できませんでした。[{0}][{1}]</value>
+    <comment>routeC008</comment>
+  </data>
+  <data name="routeC009" xml:space="preserve">
+    <value>結合対象のビュー項目情報が存在しません。[{0}][{1}]</value>
+    <comment>routeC009</comment>
+  </data>
+  <data name="routeC010" xml:space="preserve">
+    <value>連結タイプが選択されていません。</value>
+    <comment>routeC010</comment>
+  </data>
+  <data name="routeC011" xml:space="preserve">
+    <value>選択されたGUIの詳細情報が取得できませんでした。[{0}][{1}]</value>
+    <comment>routeC011</comment>
+  </data>
+  <data name="routeC012" xml:space="preserve">
+    <value>選択された結合ビュー項目に設定されている値が異常です！[{0}]</value>
+    <comment>routeC012</comment>
+  </data>
+  <data name="routeC013" xml:space="preserve">
+    <value>選択された結合ビュー項目（グループ化）に設定されている値が異常です！[{0}]</value>
+    <comment>routeC013</comment>
+  </data>
+  <data name="routeC014" xml:space="preserve">
+    <value>結合ビュー項目選択異常！[{0}]</value>
+    <comment>routeC014</comment>
+  </data>
+  <data name="routeC015" xml:space="preserve">
+    <value>結合対象ビュー制御エラー[{0}]</value>
+    <comment>routeC015</comment>
+  </data>
+  <data name="routeC016" xml:space="preserve">
+    <value>結合対象ビューの値が不正です。</value>
+    <comment>routeC016</comment>
+  </data>
+  <data name="routeC017" xml:space="preserve">
+    <value>表示名が入力されていません。</value>
+    <comment>routeC017</comment>
+  </data>
+  <data name="routeC018" xml:space="preserve">
+    <value>選択された表示名は既に存在します。</value>
+    <comment>routeC018</comment>
+  </data>
+  <data name="routeC019" xml:space="preserve">
+    <value>ビューサブアプリマスター情報が存在しません。</value>
+    <comment>routeC019</comment>
+  </data>
+  <data name="routeC020" xml:space="preserve">
+    <value>対象のRES情報が異常です。[{0}]</value>
+    <comment>routeC020</comment>
+  </data>
+  <data name="routeC021" xml:space="preserve">
+    <value>削除対象の項目一括更新項目が存在しません。</value>
+    <comment>routeC021</comment>
+  </data>
+  <data name="routeC022" xml:space="preserve">
+    <value>下位層に条件やブロックが存在しているものは削除することができません。</value>
+    <comment>routeC022</comment>
+  </data>
+  <data name="routeC023" xml:space="preserve">
+    <value>移動先が指定されませんでした。</value>
+    <comment>routeC023</comment>
+  </data>
+  <data name="routeC024" xml:space="preserve">
+    <value>同一階層で移動することはできません。</value>
+    <comment>routeC024</comment>
+  </data>
+  <data name="routeC025" xml:space="preserve">
+    <value>移動先に同じブロックを指定することはできません。</value>
+    <comment>routeC025</comment>
+  </data>
+  <data name="routeC026" xml:space="preserve">
+    <value>移動先はブロックでなければなりません。</value>
+    <comment>routeC026</comment>
+  </data>
+  <data name="routeC027" xml:space="preserve">
+    <value>移動先に、移動させる項目の下位層を指定することはできません。</value>
+    <comment>routeC027</comment>
+  </data>
+  <data name="routeC028" xml:space="preserve">
+    <value>プロパティの入力に違があります。</value>
+    <comment>routeC028</comment>
+  </data>
+  <data name="routeC029" xml:space="preserve">
+    <value>{0}～{1}の間で設定してください。</value>
+    <comment>routeC029</comment>
+  </data>
+  <data name="routeC030" xml:space="preserve">
+    <value>結合項目に対象以外のフォームの項目が選択されています。[FORM={0}][VIEW={1}][FIELD={2}]</value>
+    <comment>routeC030</comment>
+  </data>
+  <data name="SelectErrorCondition" xml:space="preserve">
+    <value>条件項目に対象以外のフォームの項目が選択されています。[FORM={0}][VIEW={1}][FIELD={2}]</value>
+    <comment>SelectErrorCondition</comment>
+  </data>
+  <data name="SelectErrorGroup" xml:space="preserve">
+    <value>表示項目に対象以外のフォームの項目が選択されています。[FORM={0}][VIEW={1}][FIELD={2}]</value>
+    <comment>SelectErrorGroup</comment>
+  </data>
+  <data name="SelectErrorView" xml:space="preserve">
+    <value>表示項目に対象以外のフォームの項目が選択されています。[FORM={0}][VIEW={1}][FIELD={2}]</value>
+    <comment>SelectErrorView</comment>
+  </data>
+  <data name="SqlError" xml:space="preserve">
+    <value>生成されるSQL文が正常に動作しませんでした。SQL=[{0}]</value>
+    <comment>SqlError</comment>
+  </data>
+  <data name="TypeErrorNumber" xml:space="preserve">
+    <value>入力文字は数字のみ有効です</value>
+    <comment>TypeErrorNumber</comment>
+  </data>
+</root>

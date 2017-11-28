@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.25" name="DataClasses1">
+  <DataContextMoniker Name="/RabitFlowDB" />
+  <nestedChildShapes>
+    <classShape Id="3953788b-1cd4-4f9d-8bbc-32eb02e58600" absoluteBounds="0.5, 0.5, 2, 8.450625">
+      <DataClassMoniker Name="/RabitFlowDB/EGGA0001" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3040e7ff-cbd4-407a-aab0-a7c051dcc35b" absoluteBounds="0.51499999999999968, 0.96, 1.9700000000000002, 7.8906250000000009" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

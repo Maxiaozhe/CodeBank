@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="RabitFlow_410" Class="RabitFlowDB" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="ConnectionString" ConnectionString="Data Source=db12;Initial Catalog=RabitFlow_410;Persist Security Info=True;User ID=sa" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.EGGA0001" Member="EGGA0001">
+    <Type Name="EGGA0001">
+      <Column Name="IDDOC" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDFRM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STDOC" Type="System.String" DbType="NVarChar(800)" CanBeNull="true" />
+      <Column Name="DTMAKE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="NMMAKE" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="STMAKE" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="TPACPT" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="DTLASTACPT" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="NMLASTACPT" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="TPPRIORITY" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="STSUBJECT" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="FGDEL" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="IDNEXTRECOG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDUNNEXTRECOG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NMNEXTRECOG" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="VLSTATUS" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="FGADMIN" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGREVISION" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="DTREVISION" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMREVISION" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STCONTROLNO" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="DTRESPONSE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="STVERSION" Type="System.String" DbType="NVarChar(7)" CanBeNull="true" />
+      <Column Name="IDACTINGUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDDOCBEFORE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FGCUTINTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDCUTSYSBLG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FGBEFORECHK" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDCREUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTCREATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMCREATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="IDUPDUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTUPDATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMUPDATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="DTDIRECTORDAY" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IDCRESYSBLG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VLSTATUSBK" Type="System.String" DbType="NVarChar(32)" CanBeNull="true" />
+      <Column Name="VLDOCTYPE" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="VLBBSRELEASE" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="STATUSUPD" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="STATUSDNP" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

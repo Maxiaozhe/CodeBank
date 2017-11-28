@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NotesDesignerConvert", "NotesDesignerConvert.vbproj", "{6847C546-19B5-402A-9467-9DCDAFDAF7DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NsfPicker", "..\NsfPicker\NsfPicker.csproj", "{C921FEA0-7FE6-4915-9400-5AA7965860C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePointAccessor", "..\SharePointAccessor\SharePointAccessor.csproj", "{BDB62C7F-0A7D-42FD-BEC0-10FD00FFA01F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePointViewer", "..\SharePointViewer\SharePointViewer.csproj", "{F6120F2B-436A-4273-A80A-2CF80AA82D98}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccProjectUniqueName0 = NotesDesignerConvert.vbproj
+		SccProjectName0 = \u0022$/NSPConvert.old/NSPConvert\u0022,\u0020VFJAAAAA
+		SccLocalPath0 = ..\\..
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectFilePathRelativizedFromConnection0 = NotesSharePointTool\\NotesDesignerConvert\\
+		SccProjectUniqueName1 = ..\\NsfPicker\\NsfPicker.csproj
+		SccProjectName1 = \u0022$/NSPConverter/NSPConvert/NsfPicker\u0022,\u0020KDKAAAAA
+		SccLocalPath1 = ..\\NsfPicker
+		SccProvider1 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName2 = ..\\SharePointAccessor\\SharePointAccessor.csproj
+		SccProjectName2 = \u0022$/NSPConverter/NSPConvert/SharePointAccessor\u0022,\u0020CEKAAAAA
+		SccLocalPath2 = ..\\SharePointAccessor
+		SccProvider2 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6847C546-19B5-402A-9467-9DCDAFDAF7DE}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{6847C546-19B5-402A-9467-9DCDAFDAF7DE}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{6847C546-19B5-402A-9467-9DCDAFDAF7DE}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{6847C546-19B5-402A-9467-9DCDAFDAF7DE}.Debug|x86.ActiveCfg = Debug|x86
+		{6847C546-19B5-402A-9467-9DCDAFDAF7DE}.Debug|x86.Build.0 = Debug|x86
+		{6847C546-19B5-402A-9467-9DCDAFDAF7DE}.Release|Any CPU.ActiveCfg = Release|x86
+		{6847C546-19B5-402A-9467-9DCDAFDAF7DE}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{6847C546-19B5-402A-9467-9DCDAFDAF7DE}.Release|Mixed Platforms.Build.0 = Release|x86
+		{6847C546-19B5-402A-9467-9DCDAFDAF7DE}.Release|x86.ActiveCfg = Release|x86
+		{6847C546-19B5-402A-9467-9DCDAFDAF7DE}.Release|x86.Build.0 = Release|x86
+		{C921FEA0-7FE6-4915-9400-5AA7965860C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C921FEA0-7FE6-4915-9400-5AA7965860C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C921FEA0-7FE6-4915-9400-5AA7965860C2}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C921FEA0-7FE6-4915-9400-5AA7965860C2}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C921FEA0-7FE6-4915-9400-5AA7965860C2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C921FEA0-7FE6-4915-9400-5AA7965860C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C921FEA0-7FE6-4915-9400-5AA7965860C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C921FEA0-7FE6-4915-9400-5AA7965860C2}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C921FEA0-7FE6-4915-9400-5AA7965860C2}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C921FEA0-7FE6-4915-9400-5AA7965860C2}.Release|x86.ActiveCfg = Release|Any CPU
+		{BDB62C7F-0A7D-42FD-BEC0-10FD00FFA01F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDB62C7F-0A7D-42FD-BEC0-10FD00FFA01F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDB62C7F-0A7D-42FD-BEC0-10FD00FFA01F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BDB62C7F-0A7D-42FD-BEC0-10FD00FFA01F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BDB62C7F-0A7D-42FD-BEC0-10FD00FFA01F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BDB62C7F-0A7D-42FD-BEC0-10FD00FFA01F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDB62C7F-0A7D-42FD-BEC0-10FD00FFA01F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDB62C7F-0A7D-42FD-BEC0-10FD00FFA01F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BDB62C7F-0A7D-42FD-BEC0-10FD00FFA01F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BDB62C7F-0A7D-42FD-BEC0-10FD00FFA01F}.Release|x86.ActiveCfg = Release|Any CPU
+		{F6120F2B-436A-4273-A80A-2CF80AA82D98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6120F2B-436A-4273-A80A-2CF80AA82D98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6120F2B-436A-4273-A80A-2CF80AA82D98}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F6120F2B-436A-4273-A80A-2CF80AA82D98}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F6120F2B-436A-4273-A80A-2CF80AA82D98}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F6120F2B-436A-4273-A80A-2CF80AA82D98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6120F2B-436A-4273-A80A-2CF80AA82D98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6120F2B-436A-4273-A80A-2CF80AA82D98}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F6120F2B-436A-4273-A80A-2CF80AA82D98}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F6120F2B-436A-4273-A80A-2CF80AA82D98}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

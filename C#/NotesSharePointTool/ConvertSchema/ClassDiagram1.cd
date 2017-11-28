@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Interface Name="RJ.Tools.NotesTransfer.Engines.Interfaces.IDatabase" Collapsed="true">
+    <Position X="2.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAgAAAIAAAAAEAAAQAgAIAAAAAAAAAYAABAiwBAAAQ=</HashCode>
+      <FileName>Interfaces\IDatabase.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RJ.Tools.NotesTransfer.Engines.Interfaces.IDxlReader" Collapsed="true">
+    <Position X="8.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEACgAAAAAABAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Interfaces\IDxlReader.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RJ.Tools.NotesTransfer.Engines.Interfaces.IFieldRef" Collapsed="true">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IFieldRef.cs</FileName>
+      <NewMemberFileName>Interfaces\IField.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RJ.Tools.NotesTransfer.Engines.Interfaces.IForm" Collapsed="true">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAUQAAAQAIAQgAAAEAAgRAAAgAAkAIAgAAADAAgEA=</HashCode>
+      <FileName>Interfaces\IForm.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RJ.Tools.NotesTransfer.Engines.Interfaces.IUser" Collapsed="true">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Interfaces\IUser.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RJ.Tools.NotesTransfer.Engines.Interfaces.IView">
+    <Position X="4.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAIAAAAAEEAAAQIAAAAIAAAAEAAiAEAAAA=</HashCode>
+      <FileName>Interfaces\IView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RJ.Tools.NotesTransfer.Engines.Interfaces.IViewColumn">
+    <Position X="2.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAQAAAEAAAQAAAAAAAAAABBAABAAQAQAAGAQ=</HashCode>
+      <FileName>Interfaces\IViewColumn.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RJ.Tools.NotesTransfer.Engines.Interfaces.IField" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBCABIDAUggABABGAAIEIEQAhQAAAAAIAQCIBEAAA=</HashCode>
+      <FileName>Interfaces\IField.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RJ.Tools.NotesTransfer.Engines.Interfaces.IConditionItem" Collapsed="true">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAACAA=</HashCode>
+      <FileName>Interfaces\IConditionItem.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="メイリオ" Size="9" />
+</ClassDiagram>

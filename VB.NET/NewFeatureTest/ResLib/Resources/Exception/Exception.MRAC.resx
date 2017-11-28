@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Msg0001" xml:space="preserve">
+    <value>連携処理の設定情報が見つかりません。</value>
+    <comment>Msg0001</comment>
+  </data>
+  <data name="Msg0002" xml:space="preserve">
+    <value>連携オプションが見つかりません。</value>
+    <comment>Msg0002</comment>
+  </data>
+  <data name="Msg0003" xml:space="preserve">
+    <value>連携処理は現在実行中です。</value>
+    <comment>Msg0003</comment>
+  </data>
+  <data name="Msg0004" xml:space="preserve">
+    <value>連携処理はロックされています。</value>
+    <comment>Msg0004</comment>
+  </data>
+  <data name="Msg0005" xml:space="preserve">
+    <value>データベースのバックアップに失敗しました。</value>
+    <comment>Msg0005</comment>
+  </data>
+  <data name="Msg0006" xml:space="preserve">
+    <value>作業用トランザクションへのデータのコピーに失敗しました。</value>
+    <comment>Msg0006</comment>
+  </data>
+  <data name="Msg0007" xml:space="preserve">
+    <value>一時データの作成に失敗しました。</value>
+    <comment>Msg0007</comment>
+  </data>
+  <data name="Msg0008" xml:space="preserve">
+    <value>データのマージに失敗しました。</value>
+    <comment>Msg0008</comment>
+  </data>
+  <data name="Msg0009" xml:space="preserve">
+    <value>テーブルのリネームに失敗しました。</value>
+    <comment>Msg0009</comment>
+  </data>
+  <data name="Msg0010" xml:space="preserve">
+    <value>人事データの復元に失敗しました。</value>
+    <comment>Msg0010</comment>
+  </data>
+  <data name="Msg0011" xml:space="preserve">
+    <value>指定されたファイルが見つかりませんでした。ファイル名：{0}</value>
+    <comment>Msg0011</comment>
+  </data>
+  <data name="Msg0012" xml:space="preserve">
+    <value>指定されたファイルに取込み可能なレコードが存在しません。ファイル名：{0}</value>
+    <comment>Msg0012</comment>
+  </data>
+  <data name="Msg0013" xml:space="preserve">
+    <value>必須項目に空の文字列が指定されました。</value>
+    <comment>Msg0013</comment>
+  </data>
+  <data name="Msg0014" xml:space="preserve">
+    <value>人事データの復元処理は現在実行中です。</value>
+    <comment>Msg0014</comment>
+  </data>
+  <data name="Msg0015" xml:space="preserve">
+    <value>指定した値はフラグとして扱うことができません。</value>
+    <comment>Msg0015</comment>
+  </data>
+  <data name="Msg0016" xml:space="preserve">
+    <value>指定された値は許可されていないコードです。</value>
+    <comment>Msg0016</comment>
+  </data>
+  <data name="Msg0017" xml:space="preserve">
+    <value>一意制約の項目に重複した値が指定されました。</value>
+    <comment>Msg0017</comment>
+  </data>
+  <data name="Msg0018" xml:space="preserve">
+    <value>クラスインスタンスを再生するための行が見つかりませんでした。</value>
+    <comment>Msg0018</comment>
+  </data>
+  <data name="Msg0019" xml:space="preserve">
+    <value>クラスインスタンスを再生するための行が複数見つかりました。</value>
+    <comment>Msg0019</comment>
+  </data>
+  <data name="Msg0020" xml:space="preserve">
+    <value>上位組織を変更することはできません。</value>
+    <comment>Msg0020</comment>
+  </data>
+  <data name="Msg0021" xml:space="preserve">
+    <value>所属が存在するため、組織・グループ種別を変更することはできません。</value>
+    <comment>Msg0021</comment>
+  </data>
+  <data name="Msg0022" xml:space="preserve">
+    <value>配下に組織が存在するため、所属が存在するため組織・グループ種別を変更することはできません。</value>
+    <comment>Msg0022</comment>
+  </data>
+  <data name="Msg0023" xml:space="preserve">
+    <value>該当する{0}が存在しません。</value>
+    <comment>Msg0023</comment>
+  </data>
+  <data name="Msg0024" xml:space="preserve">
+    <value>{0} 行目の組織データは上位組織が存在しないため登録できません。</value>
+    <comment>Msg0024</comment>
+  </data>
+  <data name="Msg0025" xml:space="preserve">
+    <value>有効日付が重複する{0}が存在するため登録することができません。</value>
+    <comment>Msg0025</comment>
+  </data>
+  <data name="Msg0026" xml:space="preserve">
+    <value>{0} 行目の{1}データは、無効なデータです。有効開始日付：{2}
+有効期限日付：{3}
+</value>
+    <comment>Msg0026</comment>
+  </data>
+  <data name="Msg0027" xml:space="preserve">
+    <value>{0} 行の個人データは、無効なデータです。利用開始日付：{1}
+利用終了日付：{2}
+</value>
+    <comment>Msg0027</comment>
+  </data>
+  <data name="Msg0028" xml:space="preserve">
+    <value>{0} 行目の{1}データは、期限切れのため登録できません。有効期限日付：{2}
+</value>
+    <comment>Msg0028</comment>
+  </data>
+  <data name="Msg0029" xml:space="preserve">
+    <value>{0} 行目の個人データは、期限切れのため登録できません。利用終了日付：{1}
+</value>
+    <comment>Msg0029</comment>
+  </data>
+  <data name="Msg0030" xml:space="preserve">
+    <value>送信元の管理者メールアドレスが設定されていません。</value>
+    <comment>Msg0030</comment>
+  </data>
+  <data name="Msg0031" xml:space="preserve">
+    <value>受信元の管理者メールアドレスが設定されていません。</value>
+    <comment>Msg0031</comment>
+  </data>
+  <data name="Msg0032" xml:space="preserve">
+    <value>詳細設定が見つかりません。</value>
+    <comment>Msg0032</comment>
+  </data>
+  <data name="Msg0033" xml:space="preserve">
+    <value>グループコード {0} の上位組織が見つかりませんでした。</value>
+    <comment>Msg0033</comment>
+  </data>
+</root>

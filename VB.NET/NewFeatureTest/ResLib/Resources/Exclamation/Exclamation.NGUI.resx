@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AnotherNonInputItem" xml:space="preserve">
+    <value>開始日、終了日いずれかが未入力での登録はできません。</value>
+    <comment>AnotherNonInputItem</comment>
+  </data>
+  <data name="ChangeDateItem" xml:space="preserve">
+    <value>開始日は終了日以前の日付を入力して下さい。</value>
+    <comment>ChangeDateItem</comment>
+  </data>
+  <data name="ChangeGregorianExFailed" xml:space="preserve">
+    <value>項目「{0}」は不正な日付です。正しい日付を入力して下さい。</value>
+    <comment>ChangeGregorianExFailed</comment>
+  </data>
+  <data name="FaxMustInput" xml:space="preserve">
+    <value>項目「ＦＡＸ番号」は必須項目です。値を入力して下さい。</value>
+    <comment>FaxMustInput</comment>
+  </data>
+  <data name="FieldParamIncompleteExclamationMessage" xml:space="preserve">
+    <value>項目「{0}」の設計情報が不完全です。</value>
+    <comment>FieldParamIncompleteExclamationMessage</comment>
+  </data>
+  <data name="InputDateOutOfRange" xml:space="preserve">
+    <value>項目「{0}」の入力値は「1753年1月1日」から「9999年12月31日」の範囲で入力して下さい。</value>
+    <comment>InputDateOutOfRange</comment>
+  </data>
+  <data name="IntOverFlow" xml:space="preserve">
+    <value>項目「{0}」の入力値は「2,147,483,647」から「-2,147,483,648」の範囲にして下さい。</value>
+    <comment>IntOverFlow</comment>
+  </data>
+  <data name="MonneyOverFlow" xml:space="preserve">
+    <value>項目「{0}」の入力値は「922,337,203,685,477.5807」から「-922,337,203,685,477.5808」の範囲にして下さい。</value>
+    <comment>MonneyOverFlow</comment>
+  </data>
+  <data name="MustInputUnsatedExceptionExclamationMessage" xml:space="preserve">
+    <value>項目「{0}」は必須項目です。値を入力して下さい。</value>
+    <comment>MustInputUnsatedExceptionExclamationMessage</comment>
+  </data>
+  <data name="NameMustInput" xml:space="preserve">
+    <value>項目「氏名」は必須項目です。値を入力して下さい。</value>
+    <comment>NameMustInput</comment>
+  </data>
+  <data name="NonPrintDataMessage" xml:space="preserve">
+    <value>印刷できるデータが存在しません。</value>
+    <comment>NonPrintDataMessage</comment>
+  </data>
+  <data name="NoReportLayout" xml:space="preserve">
+    <value>選択された文書は帳票レイアウトが見つかりませんでした。</value>
+    <comment>NoReportLayout</comment>
+  </data>
+  <data name="NoSetRidocEntryMessage" xml:space="preserve">
+    <value>フォームの設定情報が不十分です。</value>
+    <comment>NoSetRidocEntryMessage</comment>
+  </data>
+  <data name="NotAddFileExceptionExclamationMessage" xml:space="preserve">
+    <value>添付ファイルを指定して下さい。</value>
+    <comment>NotAddFileExceptionExclamationMessage</comment>
+  </data>
+  <data name="NotCabSelectedExceptionExclamationMessage" xml:space="preserve">
+    <value>最終保存先・最終否認先を指定して下さい。</value>
+    <comment>NotCabSelectedExceptionExclamationMessage</comment>
+  </data>
+  <data name="NotInputVersionMessage" xml:space="preserve">
+    <value>版番号は必須項目です。値を入力して下さい。</value>
+    <comment>NotInputVersionMessage</comment>
+  </data>
+  <data name="NotLayoutFileInDocument" xml:space="preserve">
+    <value>帳票レイアウトが存在しない文書が含まれています。</value>
+    <comment>NotLayoutFileInDocument</comment>
+  </data>
+  <data name="NotRevisionMessage" xml:space="preserve">
+    <value>99.99を超えて版を更新することはできません。</value>
+    <comment>NotRevisionMessage</comment>
+  </data>
+  <data name="NumericErrorMessage" xml:space="preserve">
+    <value>項目「{0}」は不正な数値です。正しい数値を入力して下さい。</value>
+    <comment>NumericErrorMessage</comment>
+  </data>
+  <data name="OverPresenteVersion" xml:space="preserve">
+    <value>現在の版より大きい値を数値で入力して下さい。</value>
+    <comment>OverPresenteVersion</comment>
+  </data>
+  <data name="RangeOverDateItemDay" xml:space="preserve">
+    <value>開始日から終了日の範囲は{0}日間以内にして下さい。</value>
+    <comment>RangeOverDateItemDay</comment>
+  </data>
+  <data name="RangeOverDateItemMonth" xml:space="preserve">
+    <value>開始日から終了日の範囲は{0}ヶ月間以内にして下さい。</value>
+    <comment>RangeOverDateItemMonth</comment>
+  </data>
+  <data name="RangeOverDateItemOneYear" xml:space="preserve">
+    <value>開始日から終了日の範囲は{0}年以内にして下さい。</value>
+    <comment>RangeOverDateItemOneYear</comment>
+  </data>
+  <data name="RangeOverDateItemYear" xml:space="preserve">
+    <value>開始日から終了日の範囲は{0}年間以内にして下さい。</value>
+    <comment>RangeOverDateItemYear</comment>
+  </data>
+  <data name="Reorganization" xml:space="preserve">
+    <value>只今、組織改編中です。しばらく経った後、再度実行して下さい。</value>
+    <comment>Reorganization</comment>
+  </data>
+  <data name="TimeInputError" xml:space="preserve">
+    <value>項目「{0}」は不正な時間です。正しい時間を入力して下さい。</value>
+    <comment>TimeInputError</comment>
+  </data>
+  <data name="UnjustAttachedFileMessage" xml:space="preserve">
+    <value>複数添付不可のファイルが含まれています。</value>
+    <comment>UnjustAttachedFileMessage</comment>
+  </data>
+</root>

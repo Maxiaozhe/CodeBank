@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RJ.Tools.NotesTransfer.Engines.Notes.Entity.Form" Collapsed="true" HideInheritanceLine="true">
+    <Position X="3" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABIAIAAQgAAAEAAQAAGAAgQAAAAAABAAAAAAAAIQhQA=</HashCode>
+      <FileName>Entity\Form.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RJ.Tools.NotesTransfer.Engines.Notes.Entity.Field" Collapsed="true" HideInheritanceLine="true">
+    <Position X="5.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQDACgICAUgAMBAJEAAICcFQABQAAIAAJCUiIAkAAA=</HashCode>
+      <FileName>Entity\Field.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RJ.Tools.NotesTransfer.Engines.Notes.Entity.Database" Collapsed="true" HideInheritanceLine="true">
+    <Position X="0.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAiAACAAIAgAEQgQAAgIAAAAAAAAAAKACRBikBABAQ=</HashCode>
+      <FileName>Entity\Database.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RJ.Tools.NotesTransfer.Engines.Notes.Entity.View" Collapsed="true" HideInheritanceLine="true">
+    <Position X="7.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAIQCAAAAAAAAQAAEAIAQAAAAgIAAAACAAiAAAAAA=</HashCode>
+      <FileName>Entity\View.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RJ.Tools.NotesTransfer.Engines.Notes.Entity.ViewColumn" Collapsed="true" HideInheritanceLine="true">
+    <Position X="9.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQmBAQAAIBAgMAhAQAAAAAAAAAABBAIBAAAgUAAEAQ=</HashCode>
+      <FileName>Entity\ViewColumn.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RJ.Tools.NotesTransfer.Engines.Notes.Entity.User" Collapsed="true" HideInheritanceLine="true">
+    <Position X="7.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Entity\User.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="メイリオ" Size="9" />
+</ClassDiagram>

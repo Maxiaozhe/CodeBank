@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AbortCreate" xml:space="preserve">
+    <value>一時データ作成は中断されました。 </value>
+    <comment>AbortCreate</comment>
+  </data>
+  <data name="AbortUpdate" xml:space="preserve">
+    <value>処理が中断されました。 </value>
+    <comment>AbortUpdate</comment>
+  </data>
+  <data name="AlreadyCreateed" xml:space="preserve">
+    <value>一時データ作成は終了しています。 </value>
+    <comment>AlreadyCreateed</comment>
+  </data>
+  <data name="ChengedMappingFiles" xml:space="preserve">
+    <value>一時データと設定ファイルの内容が異なります。{0}一時データ作成からやり直してください。 </value>
+    <comment>ChengedMappingFiles</comment>
+  </data>
+  <data name="CopyEnd" xml:space="preserve">
+    <value>フォームのコピーが終了しました。{0}新フォームＩＤは「{1}」です。</value>
+    <comment>CopyEnd</comment>
+  </data>
+  <data name="CreateSeiyakuDataComplete" xml:space="preserve">
+    <value>制約マスタの更新が終了しました。 </value>
+    <comment>CreateSeiyakuDataComplete</comment>
+  </data>
+  <data name="CreateSeiyakuDataErr" xml:space="preserve">
+    <value>制約マスタの更新が失敗しました。 </value>
+    <comment>CreateSeiyakuDataErr</comment>
+  </data>
+  <data name="DataCreated" xml:space="preserve">
+    <value>一時データ作成が完了しました!</value>
+    <comment>DataCreated</comment>
+  </data>
+  <data name="DataUploaded" xml:space="preserve">
+    <value>データのアップロードが完了しました！</value>
+    <comment>DataUploaded</comment>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value>{0}</value>
+    <comment>Empty</comment>
+  </data>
+  <data name="EmptyData" xml:space="preserve">
+    <value>登録するデータが存在しません！</value>
+    <comment>EmptyData</comment>
+  </data>
+  <data name="NothingCallSubFrmGui" xml:space="preserve">
+    <value>移行先フォームを呼び出すGUIが存在しません。 </value>
+    <comment>NothingCallSubFrmGui</comment>
+  </data>
+  <data name="NothingTempData" xml:space="preserve">
+    <value>一時データが存在しないため、アップロードできません。 </value>
+    <comment>NothingTempData</comment>
+  </data>
+  <data name="SelectNoSeiyakuData" xml:space="preserve">
+    <value>制約マスタには一件もデータが存在しません。 </value>
+    <comment>SelectNoSeiyakuData</comment>
+  </data>
+  <data name="UpdatedUserMapping" xml:space="preserve">
+    <value>データの導入が完了しました、{0}{1}件成功、{2}件失敗</value>
+    <comment>UpdatedUserMapping</comment>
+  </data>
+  <data name="UploadComplete" xml:space="preserve">
+    <value>アップロードが終了しました。 </value>
+    <comment>UploadComplete</comment>
+  </data>
+  <data name="WriteDataXMLComplete" xml:space="preserve">
+    <value>データアップロード定義ファイルは正常に保存されました。{0}一時データ作成を実行して下さい。 </value>
+    <comment>WriteDataXMLComplete</comment>
+  </data>
+  <data name="WriteXMLComplete" xml:space="preserve">
+    <value>フォーム定義ファイルは正常に保存されました。 </value>
+    <comment>WriteXMLComplete</comment>
+  </data>
+</root>

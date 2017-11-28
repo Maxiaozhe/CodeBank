@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="GoogleService.PlaceService" CodeBehind="PlaceService.svc.cs" %>

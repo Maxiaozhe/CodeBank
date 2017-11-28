@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="RabitFlow_410" Class="FormLinqDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=db12;Initial Catalog=RabitFlow_410;Persist Security Info=True;User ID=sa" SettingsObjectName="NewFeatureTest.My.MySettings" SettingsPropertyName="RabitFlow_410ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ENVC0001" Member="ENVC0001">
+    <Type Name="ENVC0001">
+      <Column Name="IDCTG" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NMCTG" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="TPCLASS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NOINDI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FGDEL" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="TPZENKAKU" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TPORGA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDCREUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTCREATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMCREATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="IDUPDUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTUPDATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMUPDATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Association Name="ENVC0001_FRMC1000" Member="FRMC1000" OtherKey="IDCTG" Type="FRMC1000" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FRMC1000" Member="FRMC1000">
+    <Type Name="FRMC1000">
+      <Column Name="IDCTG" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDFRM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FGDEL" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="IDCREUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTCREATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMCREATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="IDUPDUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTUPDATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMUPDATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Association Name="FRMC1000_FRMF1000" Member="FRMF1000" ThisKey="IDCTG" OtherKey="IDCTG" Type="FRMF1000" />
+      <Association Name="ENVC0001_FRMC1000" Member="ENVC0001" ThisKey="IDCTG" Type="ENVC0001" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FRMF1000" Member="FRMF1000">
+    <Type Name="FRMF1000">
+      <Column Name="IDFRM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NMFRM" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="IDCTG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NMSYSTBL" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="PTFRMPG" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="STFRMPG" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="STFORMSIZE" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="STFLDIDX" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="FGEDT" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGDEL" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="NOFRMLEVEL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FGREPORT" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="IDCREUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTCREATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMCREATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="IDUPDUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTUPDATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMUPDATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="IDFRMKIND" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="FRMF1000_FRMI1001" Member="FRMI1001" OtherKey="IDFRM" Type="FRMI1001" />
+      <Association Name="FRMF1000_FRMF1020" Member="FRMF1020" OtherKey="IDFRM" Type="FRMF1020" Cardinality="One" />
+      <Association Name="FRMF1000_FRMS0001" Member="FRMS0001" OtherKey="IDFRM" Type="FRMS0001" />
+      <Association Name="FRMF1000_FRMH0001" Member="FRMH0001" OtherKey="IDFRM" Type="FRMH0001" Cardinality="One" />
+      <Association Name="FRMF1000_EGGA0013" Member="EGGA0013" OtherKey="IDFRM" Type="EGGA0013" Cardinality="One" />
+      <Association Name="FRMF1000_EGGA0007" Member="EGGA0007" OtherKey="IDFRM" Type="EGGA0007" Cardinality="One" />
+      <Association Name="FRMF1000_EGGA0007EX" Member="EGGA0007EX" OtherKey="IDFRM" Type="EGGA0007EX" Cardinality="One" />
+      <Association Name="FRMC1000_FRMF1000" Member="FRMC1000" ThisKey="IDCTG" OtherKey="IDCTG" Type="FRMC1000" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FRMF1020" Member="FRMF1020">
+    <Type Name="FRMF1020">
+      <Column Name="IDFRM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TPCULTURE" Type="System.String" DbType="NVarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="STMAKE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STACCEPT" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STSUBMIT" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STDENY" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STREMAND" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STPULLBACK" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STBEFORECHECK" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STBEFORECHECKLIST" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STCUTINTO" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STCUTINTO2" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STCONTRIB" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STCONTRIBSUB" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STRES" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STMAIL" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STHISTORY" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STROUTEDISPLAY" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STROUTECHANGE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STCOMMENT" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STCOMMENTDISPLAY" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STCHECKIN" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STCHECKOUT" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STSAVE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STDELETE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STPRINT" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STCOPY" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STSHARE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="STFREEROUTE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Association Name="FRMF1000_FRMF1020" Member="FRMF1000" ThisKey="IDFRM" Type="FRMF1000" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FRMI1001" Member="FRMI1001">
+    <Type Name="FRMI1001">
+      <Column Name="IDFLD" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NMSYSFLD" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="NMTXTFLD" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="TPFLD" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="VLSIZE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STVALUE" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="TPATTR" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="IDFRM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDGUI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDGUIP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOCTYPE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FGDEL" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="IDCREUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTCREATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMCREATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="IDUPDUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTUPDATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMUPDATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="TPDOCCOPY" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Association Name="FRMF1000_FRMI1001" Member="FRMF1000" ThisKey="IDFRM" Type="FRMF1000" IsForeignKey="true" />
+      <Association Name="FRMG1000_FRMI1001" Member="FRMG1000" ThisKey="IDGUI" Type="FRMG1000" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FRMI1000" Member="FRMI1000">
+    <Type Name="FRMI1000">
+      <Column Name="IDFLD" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NMSYSFLD" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="NMTXTFLD" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="TPFLD" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="VLSIZE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STVALUE" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="TPATTR" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="IDFRM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDGUI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDGUIP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FGDEL" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="IDCREUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTCREATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMCREATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="IDUPDUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTUPDATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMUPDATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Association Name="FRMG1000_FRMI1000" Member="FRMG1000" ThisKey="IDGUI" Type="FRMG1000" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FRMG1000" Member="FRMG1000">
+    <Type Name="FRMG1000">
+      <Column Name="IDGUI" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TPGUI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TPGUISUB" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NMSYSGUI" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="NMTXTGUI" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="NMGUITBL" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="NMGUIDTBL" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="NMONLYGUI" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PTGUIPG" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="PTGUISETPG" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="PTIMGFL" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="STCOLUMNS" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="NOSORT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TPREG" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TPMENUDISP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FGDEL" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="IDCREUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTCREATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMCREATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="IDUPDUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTUPDATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMUPDATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="NMGUIDTBLCLM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FGNOUGCOPY" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Association Name="FRMG1000_FRMI1001" Member="FRMI1001" OtherKey="IDGUI" Type="FRMI1001" />
+      <Association Name="FRMG1000_FRMI1000" Member="FRMI1000" OtherKey="IDGUI" Type="FRMI1000" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FRMG1001" Member="FRMG1001">
+    <Type Name="FRMG1001">
+      <Column Name="TPUSEKIND" Type="System.String" DbType="NVarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TPUSEPMTKIND" Type="System.String" DbType="NVarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDGUI" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDGUIGP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FGDEL" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="IDCREUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTCREATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMCREATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="IDUPDUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTUPDATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMUPDATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FRMG1002" Member="FRMG1002">
+    <Type Name="FRMG1002">
+      <Column Name="IDGUI" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TPWF" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TPBBS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TPWFTOBBS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TPSUB" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TPRES" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDCREUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTCREATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMCREATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="IDUPDUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTUPDATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMUPDATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FRMG1003" Member="FRMG1003">
+    <Type Name="FRMG1003">
+      <Column Name="IDGUIGP" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDGUI" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FRMG1004" Member="FRMG1004">
+    <Type Name="FRMG1004">
+      <Column Name="IDGUI" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NMTXTGUI" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FRMG1005" Member="FRMG1005">
+    <Type Name="FRMG1005">
+      <Column Name="IDSEQ" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NMCLASS" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="IDGUI" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FGSHOW" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FGDEL" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="COMMENT" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FRMG1010" Member="FRMG1010">
+    <Type Name="FRMG1010">
+      <Column Name="IDGUI" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TPGROUP" Type="System.String" DbType="NVarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDGUIAIM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FGDEL" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FRMH0001" Member="FRMH0001">
+    <Type Name="FRMH0001">
+      <Column Name="IDFRM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NMFRMLINK" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="STFRMURL" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="FGFRM" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="NMVIEWLINK" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="STVIEWURL" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="FGVIEW" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IDCREUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTCREATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMCREATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="IDUPDUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTUPDATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMUPDATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Association Name="FRMF1000_FRMH0001" Member="FRMF1000" ThisKey="IDFRM" Type="FRMF1000" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FRMH0002" Member="FRMH0002">
+    <Type Name="FRMH0002">
+      <Column Name="IDFRM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDVIW" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDDOC" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NMLINK" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="IDGUIDDOC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STURL" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+      <Column Name="FGSHOW" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IDCREUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTCREATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IDUPDUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTUPDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FRMS0001" Member="FRMS0001">
+    <Type Name="FRMS0001">
+      <Column Name="IDCSS" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDFRM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CSSFILE" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CSSDATA" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DTCREATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DTUPDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="FRMF1000_FRMS0001" Member="FRMF1000" ThisKey="IDFRM" Type="FRMF1000" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EGGA0007" Member="EGGA0007">
+    <Type Name="EGGA0007">
+      <Column Name="IDFRM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FGPUBLIC" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGCIRCU" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGRIDOCCHG" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGRIDOC" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGCHGSVDOC" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="IDPUBDOC" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="IDPUBFODOC" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="NMPUBDOC" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="IDNYDOC" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="IDNYFODOC" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="NMNYDOC" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="FGCPYDOC" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGMALMAKE" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGMALACEPT" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGMALSUBMIT" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGMALDENY" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGMALREMAND" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGUPDCIRCU" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGREPRE" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGDOCNO" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="VLDOCNOFIG" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FGTL" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="VLTTL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FGROUTBTN" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGSETPUB" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGBTNPRINT" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGALLFIND" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGPDFSAVE" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGNOTICE" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="NOTICETERM" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="FGOPTCHRPR" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGPRIINFPR" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGAPLINFPR" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGOPTCHRPO" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGPRIINFPO" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGAPLINFPO" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGKAI" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGTLCOM" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="VLTTLCOM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDCREUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTCREATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMCREATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="IDUPDUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DTUPDATE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TMUPDATE" Type="System.String" DbType="NVarChar(8)" CanBeNull="true" />
+      <Column Name="FGCOPY" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGBEFORE" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGHISTORY" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Association Name="FRMF1000_EGGA0007" Member="FRMF1000" ThisKey="IDFRM" Type="FRMF1000" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EGGA0007EX" Member="EGGA0007EX">
+    <Type Name="EGGA0007EX">
+      <Column Name="IDFRM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="STEMAIL" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="STMEMO" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="FGROUTE" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="STEMAILMEMO" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="FGREFMAIL" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGREFORG" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGREFGROUP" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGBEFORG" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGBEFGROUP" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGSNDMAIL" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGSNDMAILP" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGSNDORG" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGSNDGROUP" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGRESMAIL" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGRESMAILP" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGRESORG" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGRESGROUP" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGFORMADMIN" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGSYSADMIN" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="LVPOWER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FGSOURCESAFE" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGPULLBACK" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGSHARE" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGCHANGEROUTE" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGPRINTMAKE" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGHISTORYMAKE" Type="System.Char" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="FGROUTEGROUP" Type="System.Char" DbType="NVarChar(1) NOT NULL" CanBeNull="false" />
+      <Association Name="FRMF1000_EGGA0007EX" Member="FRMF1000" ThisKey="IDFRM" Type="FRMF1000" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EGGA0013" Member="EGGA0013">
+    <Type Name="EGGA0013">
+      <Column Name="IDFRM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SEQNO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDSYSGROUP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDSYSBLG" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DTENTRY" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="TPORGACOND" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TPEMP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="FRMF1000_EGGA0013" Member="FRMF1000" ThisKey="IDFRM" Type="FRMF1000" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

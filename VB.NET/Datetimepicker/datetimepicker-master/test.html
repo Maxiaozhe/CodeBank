@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="jquery.js"></script>
+    <script src="build/jquery.datetimepicker.full.js"></script>
+    <link href="build/jquery.datetimepicker.min.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript">
+        $(function () {
+            $.datetimepicker.setLocale('ja');
+
+            $("#datetimepicker1").datetimepicker({
+                datepicker: false,
+                format: 'H:i',
+                step: 5
+            });
+
+            $("#datetimepicker2").datetimepicker({
+                datepicker: true,
+                step:15
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="time" id="datetimepicker1" /><br />
+    <input type="datetime" id="datetimepicker2" /><br />
+</body>
+</html>

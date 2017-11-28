@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Mappings" targetNamespace="http://tempuri.org/Mappings.xsd" xmlns:mstns="http://tempuri.org/Mappings.xsd" xmlns="http://tempuri.org/Mappings.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="NotPublic" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Mappings" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Mappings" msprop:Generator_UserDSName="Mappings">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DbTypeMap" msprop:Generator_TableClassName="DbTypeMapDataTable" msprop:Generator_TableVarName="tableDbTypeMap" msprop:Generator_TablePropName="DbTypeMap" msprop:Generator_RowDeletingName="DbTypeMapRowDeleting" msprop:Generator_RowChangingName="DbTypeMapRowChanging" msprop:Generator_RowEvHandlerName="DbTypeMapRowChangeEventHandler" msprop:Generator_RowDeletedName="DbTypeMapRowDeleted" msprop:Generator_UserTableName="DbTypeMap" msprop:Generator_RowChangedName="DbTypeMapRowChanged" msprop:Generator_RowEvArgName="DbTypeMapRowChangeEvent" msprop:Generator_RowClassName="DbTypeMapRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NotesDbType" msprop:Generator_ColumnVarNameInTable="columnNotesDbType" msprop:Generator_ColumnPropNameInRow="NotesDbType" msprop:Generator_ColumnPropNameInTable="NotesDbTypeColumn" msprop:Generator_UserColumnName="NotesDbType" type="xs:string" />
+              <xs:element name="SPListType" msprop:Generator_ColumnVarNameInTable="columnSPListType" msprop:Generator_ColumnPropNameInRow="SPListType" msprop:Generator_ColumnPropNameInTable="SPListTypeColumn" msprop:Generator_UserColumnName="SPListType" type="xs:string" minOccurs="0" />
+              <xs:element name="CanConvert" msprop:Generator_ColumnVarNameInTable="columnCanConvert" msprop:Generator_ColumnPropNameInRow="CanConvert" msprop:Generator_ColumnPropNameInTable="CanConvertColumn" msprop:Generator_UserColumnName="CanConvert" type="xs:boolean" default="true" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FieldTypeMap" msprop:Generator_TableClassName="FieldTypeMapDataTable" msprop:Generator_TableVarName="tableFieldTypeMap" msprop:Generator_TablePropName="FieldTypeMap" msprop:Generator_RowDeletingName="FieldTypeMapRowDeleting" msprop:Generator_RowChangingName="FieldTypeMapRowChanging" msprop:Generator_RowEvHandlerName="FieldTypeMapRowChangeEventHandler" msprop:Generator_RowDeletedName="FieldTypeMapRowDeleted" msprop:Generator_UserTableName="FieldTypeMap" msprop:Generator_RowChangedName="FieldTypeMapRowChanged" msprop:Generator_RowEvArgName="FieldTypeMapRowChangeEvent" msprop:Generator_RowClassName="FieldTypeMapRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NotesFieldType" msprop:Generator_ColumnVarNameInTable="columnNotesFieldType" msprop:Generator_ColumnPropNameInRow="NotesFieldType" msprop:Generator_ColumnPropNameInTable="NotesFieldTypeColumn" msprop:Generator_UserColumnName="NotesFieldType" type="xs:string" />
+              <xs:element name="SPFieldType" msprop:Generator_ColumnVarNameInTable="columnSPFieldType" msprop:Generator_ColumnPropNameInRow="SPFieldType" msprop:Generator_ColumnPropNameInTable="SPFieldTypeColumn" msprop:Generator_UserColumnName="SPFieldType" type="xs:string" minOccurs="0" />
+              <xs:element name="CanConvert" msprop:Generator_ColumnVarNameInTable="columnCanConvert" msprop:Generator_ColumnPropNameInRow="CanConvert" msprop:Generator_ColumnPropNameInTable="CanConvertColumn" msprop:Generator_UserColumnName="CanConvert" type="xs:boolean" default="true" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ViewTypeMap" msprop:Generator_TableClassName="ViewTypeMapDataTable" msprop:Generator_TableVarName="tableViewTypeMap" msprop:Generator_TablePropName="ViewTypeMap" msprop:Generator_RowDeletingName="ViewTypeMapRowDeleting" msprop:Generator_RowChangingName="ViewTypeMapRowChanging" msprop:Generator_RowEvHandlerName="ViewTypeMapRowChangeEventHandler" msprop:Generator_RowDeletedName="ViewTypeMapRowDeleted" msprop:Generator_UserTableName="ViewTypeMap" msprop:Generator_RowChangedName="ViewTypeMapRowChanged" msprop:Generator_RowEvArgName="ViewTypeMapRowChangeEvent" msprop:Generator_RowClassName="ViewTypeMapRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NotesViewType" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnNotesViewType" msprop:Generator_ColumnPropNameInRow="NotesViewType" msprop:Generator_ColumnPropNameInTable="NotesViewTypeColumn" msprop:Generator_UserColumnName="NotesViewType" type="xs:string" />
+              <xs:element name="SPViewType" msprop:Generator_ColumnVarNameInTable="columnSPViewType" msprop:Generator_ColumnPropNameInRow="SPViewType" msprop:Generator_ColumnPropNameInTable="SPViewTypeColumn" msprop:Generator_UserColumnName="SPViewType" type="xs:string" minOccurs="0" />
+              <xs:element name="CanConvert" msprop:Generator_ColumnVarNameInTable="columnCanConvert" msprop:Generator_ColumnPropNameInRow="CanConvert" msprop:Generator_ColumnPropNameInTable="CanConvertColumn" msprop:Generator_UserColumnName="CanConvert" type="xs:boolean" default="true" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:DbTypeMap" />
+      <xs:field xpath="mstns:NotesDbType" />
+    </xs:unique>
+    <xs:unique name="FieldTypeMap_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:FieldTypeMap" />
+      <xs:field xpath="mstns:NotesFieldType" />
+    </xs:unique>
+    <xs:unique name="ViewTypeMap_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:ViewTypeMap" />
+      <xs:field xpath="mstns:NotesViewType" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

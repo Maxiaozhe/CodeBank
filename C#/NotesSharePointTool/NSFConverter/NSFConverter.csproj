@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{11E5506E-0F64-4753-A725-6C3898BCEAEA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RJ.Tools.NotesTransfer.UI</RootNamespace>
+    <AssemblyName>NSFConverter</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accessor\AccessorFactory.cs" />
+    <Compile Include="Accessor\Convertor.cs" />
+    <Compile Include="Component\Desgin\FormStyleEditor.cs" />
+    <Compile Include="Component\StyleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\StyleFlowLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\StyleLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\ControlStyleHelper.cs" />
+    <Compile Include="Component\StylePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\StyleTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\DataBaseSeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DataBaseSeting.Designer.cs">
+      <DependentUpon>DataBaseSeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EnvSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EnvSettingForm.Designer.cs">
+      <DependentUpon>EnvSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSelectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSelectDialog.Designer.cs">
+      <DependentUpon>FormSelectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSetting.Designer.cs">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LogAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LogAdmin.Designer.cs">
+      <DependentUpon>LogAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConvertTaskList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConvertTaskList.Designer.cs">
+      <DependentUpon>ConvertTaskList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NotesSettingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NotesSettingList.Designer.cs">
+      <DependentUpon>NotesSettingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PreViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PreViewForm.Designer.cs">
+      <DependentUpon>PreViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ViewSelectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewSelectDialog.Designer.cs">
+      <DependentUpon>ViewSelectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ViewSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewSetting.Designer.cs">
+      <DependentUpon>ViewSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Component\StyleLabel.resx">
+      <DependentUpon>StyleLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataBaseSeting.resx">
+      <DependentUpon>DataBaseSeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EnvSettingForm.resx">
+      <DependentUpon>EnvSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSelectDialog.resx">
+      <DependentUpon>FormSelectDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSetting.resx">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LogAdmin.resx">
+      <DependentUpon>LogAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConvertTaskList.resx">
+      <DependentUpon>ConvertTaskList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NotesSettingList.resx">
+      <DependentUpon>NotesSettingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PreViewForm.resx">
+      <DependentUpon>PreViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewSelectDialog.resx">
+      <DependentUpon>ViewSelectDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ViewSetting.resx">
+      <DependentUpon>ViewSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="FormStyle.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConvertSchema\ConvertCommon.csproj">
+      <Project>{46aedfd3-c2c4-4d1f-9b7d-6ab6ce8134cf}</Project>
+      <Name>ConvertCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NotesAccessor\NotesAccessor.csproj">
+      <Project>{6b708bb0-a363-42bc-83e2-3876ed66b7b8}</Project>
+      <Name>NotesAccessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NsfPicker\NsfPicker.csproj">
+      <Project>{c921fea0-7fe6-4915-9400-5aa7965860c2}</Project>
+      <Name>NsfPicker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharePointAccessor\SharePointAccessor.csproj">
+      <Project>{bdb62c7f-0a7d-42fd-bec0-10fd00ffa01f}</Project>
+      <Name>SharePointAccessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SqlAccessor\SqlAccessor.csproj">
+      <Project>{594fcb4a-7845-467a-ab00-789465ef1b78}</Project>
+      <Name>SqlAccessor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FormStyle.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Resource\checkmark.png" />
+    <None Include="Resources\title.gif" />
+    <Content Include="Resource\blue_ball.gif" />
+    <Content Include="Resource\defaultMark.png" />
+    <Content Include="Resource\empty.png" />
+    <Content Include="Resource\red_ball.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

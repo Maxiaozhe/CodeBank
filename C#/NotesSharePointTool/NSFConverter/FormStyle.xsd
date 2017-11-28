@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="styles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="style"  maxOccurs="unbounded" >
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="normal" type="commonstyle" minOccurs="0" />
+              <xs:element name="hover" type="commonstyle" minOccurs="0"/>
+              <xs:element name="focus" type="commonstyle" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:Name"></xs:attribute>
+            <xs:attribute name="category" type="xs:string" ></xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="font-style">
+    <xs:restriction  base="xs:string" >
+      <xs:enumeration value="Bold"  />
+      <xs:enumeration value="Italic" />
+      <xs:enumeration value="Underline" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="alignment">
+    <xs:restriction  base="xs:string" >
+      <xs:enumeration value="TopLeft" />
+      <xs:enumeration value="TopCenter" />
+      <xs:enumeration value="TopRight" />
+      <xs:enumeration value="MiddleLeft" />
+      <xs:enumeration value="MiddleCenter" />
+      <xs:enumeration value="MiddleRight" />
+      <xs:enumeration value="BottomLeft" />
+      <xs:enumeration value="BottomCenter" />
+      <xs:enumeration value="BottomRight" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="commonstyle">
+    <xs:sequence>
+      <xs:element name="font-size" type="xs:float"  minOccurs="0"/>
+      <xs:element name="forecolor" type="xs:string" minOccurs="0" />
+      <xs:element name="backcolor" type="xs:string" minOccurs="0" />
+      <xs:element name="font-name" type="xs:string" minOccurs="0" />
+      <xs:element name="font-style" type="font-style" minOccurs="0"  />
+      <xs:element name="backimage" type="xs:string" minOccurs="0"  />
+      <xs:element name="width" type="xs:int" minOccurs="0"  />
+      <xs:element name="height" type="xs:int" minOccurs="0"  />
+      <xs:element name="textalign" type="alignment" minOccurs="0" />
+      <xs:element name="image" type="xs:string" minOccurs="0"  />
+      <xs:element name="imagealign" type="alignment" minOccurs="0"  />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

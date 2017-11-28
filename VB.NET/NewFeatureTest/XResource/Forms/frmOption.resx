@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chkSign.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="chkSign.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="chkSign.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 21</value>
+  </data>
+  <data name="chkSign.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 16</value>
+  </data>
+  <data name="chkSign.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chkSign.Text" xml:space="preserve">
+    <value>アセンブリの署名</value>
+  </data>
+  <data name="&gt;&gt;chkSign.Name" xml:space="preserve">
+    <value>chkSign</value>
+  </data>
+  <data name="&gt;&gt;chkSign.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkSign.Parent" xml:space="preserve">
+    <value>grpBuild</value>
+  </data>
+  <data name="&gt;&gt;chkSign.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnKeyFile.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="btnKeyFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 44</value>
+  </data>
+  <data name="btnKeyFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 23</value>
+  </data>
+  <data name="btnKeyFile.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnKeyFile.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="&gt;&gt;btnKeyFile.Name" xml:space="preserve">
+    <value>btnKeyFile</value>
+  </data>
+  <data name="&gt;&gt;btnKeyFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnKeyFile.Parent" xml:space="preserve">
+    <value>pnlSign</value>
+  </data>
+  <data name="&gt;&gt;btnKeyFile.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtKeyFile.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="txtKeyFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 46</value>
+  </data>
+  <data name="txtKeyFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>369, 19</value>
+  </data>
+  <data name="txtKeyFile.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtKeyFile.Name" xml:space="preserve">
+    <value>txtKeyFile</value>
+  </data>
+  <data name="&gt;&gt;txtKeyFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtKeyFile.Parent" xml:space="preserve">
+    <value>pnlSign</value>
+  </data>
+  <data name="&gt;&gt;txtKeyFile.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rdbKeyFile.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdbKeyFile.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="rdbKeyFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 24</value>
+  </data>
+  <data name="rdbKeyFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 16</value>
+  </data>
+  <data name="rdbKeyFile.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="rdbKeyFile.Text" xml:space="preserve">
+    <value>厳密な名前のキーファイルを指定する</value>
+  </data>
+  <data name="&gt;&gt;rdbKeyFile.Name" xml:space="preserve">
+    <value>rdbKeyFile</value>
+  </data>
+  <data name="&gt;&gt;rdbKeyFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdbKeyFile.Parent" xml:space="preserve">
+    <value>pnlSign</value>
+  </data>
+  <data name="&gt;&gt;rdbKeyFile.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rdbAutoSign.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdbAutoSign.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="rdbAutoSign.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 2</value>
+  </data>
+  <data name="rdbAutoSign.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 16</value>
+  </data>
+  <data name="rdbAutoSign.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="rdbAutoSign.Text" xml:space="preserve">
+    <value>自動署名する</value>
+  </data>
+  <data name="&gt;&gt;rdbAutoSign.Name" xml:space="preserve">
+    <value>rdbAutoSign</value>
+  </data>
+  <data name="&gt;&gt;rdbAutoSign.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdbAutoSign.Parent" xml:space="preserve">
+    <value>pnlSign</value>
+  </data>
+  <data name="&gt;&gt;rdbAutoSign.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pnlSign.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 40</value>
+  </data>
+  <data name="pnlSign.Size" type="System.Drawing.Size, System.Drawing">
+    <value>435, 71</value>
+  </data>
+  <data name="pnlSign.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;pnlSign.Name" xml:space="preserve">
+    <value>pnlSign</value>
+  </data>
+  <data name="&gt;&gt;pnlSign.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlSign.Parent" xml:space="preserve">
+    <value>grpBuild</value>
+  </data>
+  <data name="&gt;&gt;pnlSign.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnBuildPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>421, 194</value>
+  </data>
+  <data name="btnBuildPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 23</value>
+  </data>
+  <data name="btnBuildPath.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnBuildPath.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="&gt;&gt;btnBuildPath.Name" xml:space="preserve">
+    <value>btnBuildPath</value>
+  </data>
+  <data name="&gt;&gt;btnBuildPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnBuildPath.Parent" xml:space="preserve">
+    <value>grpBuild</value>
+  </data>
+  <data name="&gt;&gt;btnBuildPath.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chkOpenDllFolder.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkOpenDllFolder.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="chkOpenDllFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 112</value>
+  </data>
+  <data name="chkOpenDllFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 16</value>
+  </data>
+  <data name="chkOpenDllFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="chkOpenDllFolder.Text" xml:space="preserve">
+    <value>ビルド後、フォルダを開く</value>
+  </data>
+  <data name="&gt;&gt;chkOpenDllFolder.Name" xml:space="preserve">
+    <value>chkOpenDllFolder</value>
+  </data>
+  <data name="&gt;&gt;chkOpenDllFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkOpenDllFolder.Parent" xml:space="preserve">
+    <value>grpBuild</value>
+  </data>
+  <data name="&gt;&gt;chkOpenDllFolder.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="txtBuildPath.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="txtBuildPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 196</value>
+  </data>
+  <data name="txtBuildPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>369, 19</value>
+  </data>
+  <data name="txtBuildPath.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtBuildPath.Name" xml:space="preserve">
+    <value>txtBuildPath</value>
+  </data>
+  <data name="&gt;&gt;txtBuildPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtBuildPath.Parent" xml:space="preserve">
+    <value>grpBuild</value>
+  </data>
+  <data name="&gt;&gt;txtBuildPath.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="rdbBuildPath.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdbBuildPath.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="rdbBuildPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 174</value>
+  </data>
+  <data name="rdbBuildPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 16</value>
+  </data>
+  <data name="rdbBuildPath.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="rdbBuildPath.Text" xml:space="preserve">
+    <value>指定のパスの下に出力する</value>
+  </data>
+  <data name="&gt;&gt;rdbBuildPath.Name" xml:space="preserve">
+    <value>rdbBuildPath</value>
+  </data>
+  <data name="&gt;&gt;rdbBuildPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdbBuildPath.Parent" xml:space="preserve">
+    <value>grpBuild</value>
+  </data>
+  <data name="&gt;&gt;rdbBuildPath.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="rdbAutoBuild.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdbAutoBuild.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="rdbAutoBuild.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 156</value>
+  </data>
+  <data name="rdbAutoBuild.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 16</value>
+  </data>
+  <data name="rdbAutoBuild.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="rdbAutoBuild.Text" xml:space="preserve">
+    <value>編集しているアセンブリのパスの下に出力する</value>
+  </data>
+  <data name="&gt;&gt;rdbAutoBuild.Name" xml:space="preserve">
+    <value>rdbAutoBuild</value>
+  </data>
+  <data name="&gt;&gt;rdbAutoBuild.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdbAutoBuild.Parent" xml:space="preserve">
+    <value>grpBuild</value>
+  </data>
+  <data name="&gt;&gt;rdbAutoBuild.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 137</value>
+  </data>
+  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 12</value>
+  </data>
+  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>ビルド出力パス：</value>
+  </data>
+  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
+    <value>Label1</value>
+  </data>
+  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
+    <value>grpBuild</value>
+  </data>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="grpBuild.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt, style=Bold</value>
+  </data>
+  <data name="grpBuild.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 15</value>
+  </data>
+  <data name="grpBuild.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 227</value>
+  </data>
+  <data name="grpBuild.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="grpBuild.Text" xml:space="preserve">
+    <value>ビルド設定</value>
+  </data>
+  <data name="&gt;&gt;grpBuild.Name" xml:space="preserve">
+    <value>grpBuild</value>
+  </data>
+  <data name="&gt;&gt;grpBuild.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpBuild.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpBuild.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="dlgSnkFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="dlgSnkFile.Filter" xml:space="preserve">
+    <value>厳密な名前のキーファイル(*.snk)|*.snk</value>
+  </data>
+  <data name="dlgSnkFile.Title" xml:space="preserve">
+    <value>厳密な名前のキーファイルの選択</value>
+  </data>
+  <data name="cmbEndcode.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="cmbEndcode.Items" xml:space="preserve">
+    <value>UTF-8</value>
+  </data>
+  <data name="cmbEndcode.Items1" xml:space="preserve">
+    <value>Shift-Jis</value>
+  </data>
+  <data name="cmbEndcode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 23</value>
+  </data>
+  <data name="cmbEndcode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 20</value>
+  </data>
+  <data name="cmbEndcode.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;cmbEndcode.Name" xml:space="preserve">
+    <value>cmbEndcode</value>
+  </data>
+  <data name="&gt;&gt;cmbEndcode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbEndcode.Parent" xml:space="preserve">
+    <value>grpExport</value>
+  </data>
+  <data name="&gt;&gt;cmbEndcode.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblCsvEncode.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCsvEncode.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="lblCsvEncode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 26</value>
+  </data>
+  <data name="lblCsvEncode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 12</value>
+  </data>
+  <data name="lblCsvEncode.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lblCsvEncode.Text" xml:space="preserve">
+    <value>CSVファイルのエンコード種類：</value>
+  </data>
+  <data name="&gt;&gt;lblCsvEncode.Name" xml:space="preserve">
+    <value>lblCsvEncode</value>
+  </data>
+  <data name="&gt;&gt;lblCsvEncode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCsvEncode.Parent" xml:space="preserve">
+    <value>grpExport</value>
+  </data>
+  <data name="&gt;&gt;lblCsvEncode.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chkOpenFile.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkOpenFile.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="chkOpenFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 59</value>
+  </data>
+  <data name="chkOpenFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 16</value>
+  </data>
+  <data name="chkOpenFile.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="chkOpenFile.Text" xml:space="preserve">
+    <value>エクスポート後、ファイルを自動開く</value>
+  </data>
+  <data name="&gt;&gt;chkOpenFile.Name" xml:space="preserve">
+    <value>chkOpenFile</value>
+  </data>
+  <data name="&gt;&gt;chkOpenFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkOpenFile.Parent" xml:space="preserve">
+    <value>grpExport</value>
+  </data>
+  <data name="&gt;&gt;chkOpenFile.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="grpExport.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt, style=Bold</value>
+  </data>
+  <data name="grpExport.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 248</value>
+  </data>
+  <data name="grpExport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 91</value>
+  </data>
+  <data name="grpExport.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="grpExport.Text" xml:space="preserve">
+    <value>ファイルエクスポート設定</value>
+  </data>
+  <data name="&gt;&gt;grpExport.Name" xml:space="preserve">
+    <value>grpExport</value>
+  </data>
+  <data name="&gt;&gt;grpExport.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpExport.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpExport.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="rdbMergeNotPreserve.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdbMergeNotPreserve.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="rdbMergeNotPreserve.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 60</value>
+  </data>
+  <data name="rdbMergeNotPreserve.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 16</value>
+  </data>
+  <data name="rdbMergeNotPreserve.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="rdbMergeNotPreserve.Text" xml:space="preserve">
+    <value>既存のリソースを保持しない</value>
+  </data>
+  <data name="&gt;&gt;rdbMergeNotPreserve.Name" xml:space="preserve">
+    <value>rdbMergeNotPreserve</value>
+  </data>
+  <data name="&gt;&gt;rdbMergeNotPreserve.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdbMergeNotPreserve.Parent" xml:space="preserve">
+    <value>grpImport</value>
+  </data>
+  <data name="&gt;&gt;rdbMergeNotPreserve.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rdbMargePreserve.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdbMargePreserve.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="rdbMargePreserve.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 41</value>
+  </data>
+  <data name="rdbMargePreserve.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 16</value>
+  </data>
+  <data name="rdbMargePreserve.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="rdbMargePreserve.Text" xml:space="preserve">
+    <value>既存のリソースを保持する</value>
+  </data>
+  <data name="&gt;&gt;rdbMargePreserve.Name" xml:space="preserve">
+    <value>rdbMargePreserve</value>
+  </data>
+  <data name="&gt;&gt;rdbMargePreserve.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdbMargePreserve.Parent" xml:space="preserve">
+    <value>grpImport</value>
+  </data>
+  <data name="&gt;&gt;rdbMargePreserve.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rdbReplaceAll.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rdbReplaceAll.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
+  <data name="rdbReplaceAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 22</value>
+  </data>
+  <data name="rdbReplaceAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 16</value>
+  </data>
+  <data name="rdbReplaceAll.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="rdbReplaceAll.Text" xml:space="preserve">
+    <value>既存のリソースを全部置き換える</value>
+  </data>
+  <data name="&gt;&gt;rdbReplaceAll.Name" xml:space="preserve">
+    <value>rdbReplaceAll</value>
+  </data>
+  <data name="&gt;&gt;rdbReplaceAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rdbReplaceAll.Parent" xml:space="preserve">
+    <value>grpImport</value>
+  </data>
+  <data name="&gt;&gt;rdbReplaceAll.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="grpImport.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt, style=Bold</value>
+  </data>
+  <data name="grpImport.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 345</value>
+  </data>
+  <data name="grpImport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 88</value>
+  </data>
+  <data name="grpImport.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="grpImport.Text" xml:space="preserve">
+    <value>インポート設定</value>
+  </data>
+  <data name="&gt;&gt;grpImport.Name" xml:space="preserve">
+    <value>grpImport</value>
+  </data>
+  <data name="&gt;&gt;grpImport.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpImport.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpImport.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnOK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 445</value>
+  </data>
+  <data name="btnOK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 23</value>
+  </data>
+  <data name="btnOK.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnOK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Name" xml:space="preserve">
+    <value>btnOK</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnOK.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>386, 445</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="dlgFolder.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>121, 17</value>
+  </metadata>
+  <data name="dlgFolder.Description" xml:space="preserve">
+    <value>ビルド出力パスを選択してください。</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>504, 478</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>オプション設定</value>
+  </data>
+  <data name="&gt;&gt;dlgSnkFile.Name" xml:space="preserve">
+    <value>dlgSnkFile</value>
+  </data>
+  <data name="&gt;&gt;dlgSnkFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dlgFolder.Name" xml:space="preserve">
+    <value>dlgFolder</value>
+  </data>
+  <data name="&gt;&gt;dlgFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmOption</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

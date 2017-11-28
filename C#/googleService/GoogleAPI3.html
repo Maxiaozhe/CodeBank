@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>住所検索サンプル</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map, #streeview {
+            float: left;
+            height: 100%;
+            width: 45%;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .maphidden{
+           display:none;
+        }
+
+        .mapshow{
+           display:inherit;
+        }
+
+        #autocomplete {
+            width: 300px;
+        }
+
+        table.result {
+            font-size: 10pt;
+        }
+
+        .label {
+            white-space: nowrap;
+            background-color: lightgrey;
+        }
+    </style>
+    <!-- <script src="https://apis.google.com/js/client.js"></script>-->
+    <script src="../js/json2.js"></script>
+    <script type="text/javascript">
+        var places = null;
+        var map = null;
+        var marker = null;
+        var tokyo = { lat: 35.689614, lng: 139.691585 };
+        var apiReady = false;
+        var mapReady = false;
+        //load API
+        function initAPI() {
+            gapi.client.setApiKey('AIzaSyBL6NtX1XlJKS547PZ9OEHRtt-tP_d9pxo');
+            gapi.client.load('urlshortener', 'v1', function () {
+                apiReady = true;
+                setTimeout(isReady, 100);
+            });
+        }
+
+        function isReady() {
+            if (apiReady && mapReady) {
+                document.getElementById('log').innerText = "";
+                document.getElementById('btnSearch').removeAttribute("disabled");
+            } else {
+                setTimeout(isReady, 100);
+            }
+        }
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: tokyo,
+                zoom: 15
+            });
+            places = new google.maps.places.PlacesService(map);
+            mapReady = true;
+            document.getElementById('log').innerText = "";
+            document.getElementById('btnSearch').removeAttribute("disabled");
+        }
+        function searchAddress() {
+            var autocomplete = document.getElementById("autocomplete");
+            if (!autocomplete) { return; }
+            var query = autocomplete.value;
+            var loca = new google.maps.LatLng(tokyo.lat, tokyo.lng);
+            places.textSearch({
+                location: loca,
+                query: query,
+                types: ['address']
+            }, function (results, status) {
+                if (status == google.maps.places.PlacesServiceStatus.OK) {
+                    showResult(results);
+                }
+            });
+        }
+
+        function showResult(results) {
+            if (!results || !results.hasOwnProperty("length") || results.length <= 0) {
+                return;
+            }
+            var place = results[0];
+            places.getDetails({ placeId: place.place_id },
+            function (place, status) {
+                if (status === google.maps.places.PlacesServiceStatus.OK) {
+                    showDetail(place);
+                }
+
+            });
+        }
+
+        function showDetail(place) {
+            var resultDiv = document.getElementById('result');
+            var goeTd = document.getElementById('goe');
+            var goe = place.geometry.location.lat() + "," + place.geometry.location.lng();
+            goeTd.innerText = goe;
+            var placeid = document.getElementById("place_id");
+            placeid.innerText = place.place_id;
+            var address = document.getElementById('address');
+            address.innerHTML = place.adr_address;
+            var url = document.getElementById('url');
+            url.href = place.url;
+            url.innerText = place.url;
+            resultDiv.className = "show";
+            var center = { lat: place.geometry.location.lat(), lng: place.geometry.location.lng() };
+            var div = document.getElementById("content");
+            if (div.className != 'mapshow') {
+                div.className = "mapshow";
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: center,
+                    zoom: 15,
+                    mapTypeControl: false,
+                    panControl: false,
+                    zoomControl: false,
+                    streetViewControl: true
+                });
+            } else {
+                map.setCenter(center);
+            }
+            createMarkers(place);
+            setStreeView(center);
+            //getShortUrl(place.url);
+        }
+
+        function createMarkers(place) {
+            if (marker) {
+                marker.setMap(null);
+            }
+            marker = new google.maps.Marker({
+                position: place.geometry.location,
+                animation: google.maps.Animation.DROP,
+                icon: place.icon
+            });
+            marker.placeResult = place;
+            setTimeout(function () {
+                marker.setMap(map);
+            }, 100);
+        }
+
+        function getShortUrl(longUrl) {
+            var request = gapi.client.urlshortener.url.insert({
+                'longUrl': longUrl
+            });
+            request.execute(function (response) {
+
+                if (response.id) {
+                    var url = document.getElementById('shorturl');
+                    url.href = response.id;
+                    url.innerText = response.id;
+                }
+                else {
+                    alert("error: unable to get URL information");
+                }
+
+            });
+        }
+
+        function setStreeView(pos) {
+            var panorama = new google.maps.StreetViewPanorama(
+                document.getElementById('streeview'), {
+                    position: pos,
+                    pov: {
+                        heading: 34,
+                        pitch: 10
+                    }
+                });
+            map.setStreetView(panorama);
+        }
+
+    </script>
+</head>
+<body>
+    <input id="autocomplete" placeholder="住所を入力してください" type="text" value="東京都中央区晴海１−８−１" /><input id="btnSearch" type="button" value="検索" onclick="return searchAddress();" disabled="disabled" /><span id="log">初期化中...</span>
+    <div id="result" class="hidden">
+        <table class="result">
+            <tr>
+                <td class="label">座標:</td>
+                <td id="goe"></td>
+            </tr>
+            <tr>
+                <td class="label">ID:</td>
+                <td id="place_id"></td>
+            </tr>
+            <tr>
+                <td class="label">アドレス:</td>
+                <td id="address"></td>
+            </tr>
+            <tr>
+                <td class="label">外部URL:</td>
+                <td>
+                    <a id="url" target="_blank"></a>
+                </td>
+            </tr>
+            <!--<tr>
+                <td class="label">短縮URL:</td>
+                <td>
+                    <a id="shorturl" target="_blank"></a>
+                </td>
+            </tr>-->
+        </table>
+    </div>
+    <div style="width:1200px; height:600px" id="content" class="maphidden" >
+        <div id="map" ></div>
+        <div id="streeview" ></div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL6NtX1XlJKS547PZ9OEHRtt-tP_d9pxo&signed_in=true&libraries=places&callback=initMap" async defer></script>
+</body>
+</html>

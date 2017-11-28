@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppointRange" xml:space="preserve">
+    <value>範囲を指定して下さい。</value>
+    <comment>AppointRange</comment>
+  </data>
+  <data name="AttributeAgreement" xml:space="preserve">
+    <value>比較する項目の属性が一致しません。</value>
+    <comment>AttributeAgreement</comment>
+  </data>
+  <data name="CannotMultiEntry" xml:space="preserve">
+    <value>同じ項目の組み合わせは二つ以上登録できません。</value>
+    <comment>CannotMultiEntry</comment>
+  </data>
+  <data name="CanNotSelectSameField" xml:space="preserve">
+    <value>同一のフィールドを指定することはできません。</value>
+    <comment>CanNotSelectSameField</comment>
+  </data>
+  <data name="CanNotSetSameControl" xml:space="preserve">
+    <value>必須設定対象と条件設定対象のコントロールを同じにすることはできません。</value>
+    <comment>CanNotSetSameControl</comment>
+  </data>
+  <data name="ClmChkErrMsgAbnomal" xml:space="preserve">
+    <value>予期しないエラーが発生しました。</value>
+    <comment>ClmChkErrMsgAbnomal</comment>
+  </data>
+  <data name="ClmChkErrMsgClumNotFind" xml:space="preserve">
+    <value>指定されたカラムが見つかりませんでした。</value>
+    <comment>ClmChkErrMsgClumNotFind</comment>
+  </data>
+  <data name="ClmChkErrMsgClumTypeErr" xml:space="preserve">
+    <value>指定されたカラムと属性が違います。</value>
+    <comment>ClmChkErrMsgClumTypeErr</comment>
+  </data>
+  <data name="ClmChkErrMsgClumTypeOver" xml:space="preserve">
+    <value>桁数オーバーです。</value>
+    <comment>ClmChkErrMsgClumTypeOver</comment>
+  </data>
+  <data name="CompareFieldSelect" xml:space="preserve">
+    <value>比較に項目の値を使用する場合は、比較する項目を選択して下さい。</value>
+    <comment>CompareFieldSelect</comment>
+  </data>
+  <data name="CompareSelect" xml:space="preserve">
+    <value>比較項目を選択して下さい。</value>
+    <comment>CompareSelect</comment>
+  </data>
+  <data name="CompareSrcSelect" xml:space="preserve">
+    <value>比較元を選択して下さい。</value>
+    <comment>CompareSrcSelect</comment>
+  </data>
+  <data name="ContentMustInput" xml:space="preserve">
+    <value>出力内容を入力して下さい。</value>
+    <comment>ContentMustInput</comment>
+  </data>
+  <data name="DateTypeError" xml:space="preserve">
+    <value>条件値はYYYY/MM/DDの形式で入力してください。</value>
+    <comment>DateTypeError</comment>
+  </data>
+  <data name="DelSeqitem" xml:space="preserve">
+    <value>採番項目の削除はできません。</value>
+    <comment>DelSeqitem</comment>
+  </data>
+  <data name="DupAuthInfo" xml:space="preserve">
+    <value>権限情報が重複しています。</value>
+    <comment>DupAuthInfo</comment>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value>{0}</value>
+    <comment>Empty</comment>
+  </data>
+  <data name="EndDateError" xml:space="preserve">
+    <value>開始日付が終了日付を超えています。</value>
+    <comment>EndDateError</comment>
+  </data>
+  <data name="ExpressCheckError" xml:space="preserve">
+    <value>計算式の設定に誤りがあります。</value>
+    <comment>ExpressCheckError</comment>
+  </data>
+  <data name="FieldDeleted" xml:space="preserve">
+    <value>項目「{0}」はありません。</value>
+    <comment>FieldDeleted</comment>
+  </data>
+  <data name="FormIdDataNotExisted" xml:space="preserve">
+    <value>指定されたフォームＩＤのデータが存在しません。[{0}][{1}]</value>
+    <comment>FormIdDataNotExisted</comment>
+  </data>
+  <data name="GetFieldInfoFailed" xml:space="preserve">
+    <value>フィールド情報の取得に失敗しました</value>
+    <comment>GetFieldInfoFailed</comment>
+  </data>
+  <data name="HaveSameItems" xml:space="preserve">
+    <value>比較項目と比較元が重複しています。</value>
+    <comment>HaveSameItems</comment>
+  </data>
+  <data name="illegalInput" xml:space="preserve">
+    <value>数値を入力してください。</value>
+    <comment>illegalInput</comment>
+  </data>
+  <data name="InputCharcterForAddFile" xml:space="preserve">
+    <value>添付文書タイトル入れて下さい。</value>
+    <comment>InputCharcterForAddFile</comment>
+  </data>
+  <data name="InputDate" xml:space="preserve">
+    <value>日付はYYYY/MM/DD形式で入力して下さい。</value>
+    <comment>InputDate</comment>
+  </data>
+  <data name="InputNumeric" xml:space="preserve">
+    <value>数値を入力して下さい。</value>
+    <comment>InputNumeric</comment>
+  </data>
+  <data name="ItemIsNotSetUp" xml:space="preserve">
+    <value>項目が設定されていません。</value>
+    <comment>ItemIsNotSetUp</comment>
+  </data>
+  <data name="ItemOverflow" xml:space="preserve">
+    <value>採番項目に指定可能な項目は20項目までです。</value>
+    <comment>ItemOverflow</comment>
+  </data>
+  <data name="ItemSetError" xml:space="preserve">
+    <value>項目の設定が誤りがあります。</value>
+    <comment>ItemSetError</comment>
+  </data>
+  <data name="LumpItemNothing" xml:space="preserve">
+    <value>一括更新項目設定がありません。</value>
+    <comment>LumpItemNothing</comment>
+  </data>
+  <data name="MainFormFieldInfoException" xml:space="preserve">
+    <value>メインフォーム項目情報が異常です。[{0}]</value>
+    <comment>MainFormFieldInfoException</comment>
+  </data>
+  <data name="MainFormInfoException" xml:space="preserve">
+    <value>メインフォーム情報が異常です。[{0}]</value>
+    <comment>MainFormInfoException</comment>
+  </data>
+  <data name="MinErr1" xml:space="preserve">
+    <value>0以上の数値を入力して下さい。</value>
+    <comment>MinErr1</comment>
+  </data>
+  <data name="MinErr2" xml:space="preserve">
+    <value>1以上の数値を入力して下さい。</value>
+    <comment>MinErr2</comment>
+  </data>
+  <data name="MinErr3" xml:space="preserve">
+    <value>整数値を入力して下さい。</value>
+    <comment>MinErr3</comment>
+  </data>
+  <data name="MustInputInlineGUI" xml:space="preserve">
+    <value>ファイルを添付して下さい。</value>
+    <comment>MustInputInlineGUI</comment>
+  </data>
+  <data name="MustInputOver1" xml:space="preserve">
+    <value>表示件数に1以上の数字を入力してください。</value>
+    <comment>MustInputOver1</comment>
+  </data>
+  <data name="NoDate" xml:space="preserve">
+    <value>比較項目は日付型ではないので比較することはできません。</value>
+    <comment>NoDate</comment>
+  </data>
+  <data name="NonInputConditionalText" xml:space="preserve">
+    <value>条件の判断値が入力されていません。「値がないとき」という条件の場合は「""」と入力して下さい。</value>
+    <comment>NonInputConditionalText</comment>
+  </data>
+  <data name="NonProperty" xml:space="preserve">
+    <value>登録できるプロパティがありません。</value>
+    <comment>NonProperty</comment>
+  </data>
+  <data name="NonSameCombination" xml:space="preserve">
+    <value>既に同一の組み合わせが存在します。</value>
+    <comment>NonSameCombination</comment>
+  </data>
+  <data name="NonSelectBaseItem" xml:space="preserve">
+    <value>基数項目が選択されていません。</value>
+    <comment>NonSelectBaseItem</comment>
+  </data>
+  <data name="NonSelectConditionControl" xml:space="preserve">
+    <value>条件設定対象のコントロールが選択されていません。</value>
+    <comment>NonSelectConditionControl</comment>
+  </data>
+  <data name="NonSelectCoverItem" xml:space="preserve">
+    <value>被数項目が選択されていません。</value>
+    <comment>NonSelectCoverItem</comment>
+  </data>
+  <data name="NonSelectexpressionItem" xml:space="preserve">
+    <value>算術式が選択されていません。</value>
+    <comment>NonSelectexpressionItem</comment>
+  </data>
+  <data name="NonSelectMustInputControl" xml:space="preserve">
+    <value>必須設定対象のコントロールが選択されていません。</value>
+    <comment>NonSelectMustInputControl</comment>
+  </data>
+  <data name="NonSelectOutput" xml:space="preserve">
+    <value>出力項目を選択して下さい。</value>
+    <comment>NonSelectOutput</comment>
+  </data>
+  <data name="NonSelectReferenceForm" xml:space="preserve">
+    <value>参照フォーム・ビューが選択されていないか、フォーム・ビューが削除されています。</value>
+    <comment>NonSelectReferenceForm</comment>
+  </data>
+  <data name="NonSelectReservItem" xml:space="preserve">
+    <value>指定可能な内容が選択されていません。</value>
+    <comment>NonSelectReservItem</comment>
+  </data>
+  <data name="NonSelectresultItem" xml:space="preserve">
+    <value>結果項目が選択されていません。</value>
+    <comment>NonSelectresultItem</comment>
+  </data>
+  <data name="NonSelectSameSeparator" xml:space="preserve">
+    <value>項目区切文字と行区切文字を同じにすることはできません。</value>
+    <comment>NonSelectSameSeparator</comment>
+  </data>
+  <data name="NonSelectSubForm" xml:space="preserve">
+    <value>サブフォームが選択されていません。</value>
+    <comment>NonSelectSubForm</comment>
+  </data>
+  <data name="NoNumeric" xml:space="preserve">
+    <value>比較項目は数値型ではないので比較することができません。</value>
+    <comment>NoNumeric</comment>
+  </data>
+  <data name="NoSettingsCompare" xml:space="preserve">
+    <value>条件式が設定されていません。</value>
+    <comment>NoSettingsCompare</comment>
+  </data>
+  <data name="NoSettingsDefValue" xml:space="preserve">
+    <value>初期値が設定されていません。</value>
+    <comment>NoSettingsDefValue</comment>
+  </data>
+  <data name="NoSettingsDispField" xml:space="preserve">
+    <value>表示項目が設定されていません。</value>
+    <comment>NoSettingsDispField</comment>
+  </data>
+  <data name="NoString" xml:space="preserve">
+    <value>比較項目は文字列型ではないので比較することができません。</value>
+    <comment>NoString</comment>
+  </data>
+  <data name="NotAddCheckCondition" xml:space="preserve">
+    <value>比較条件を追加してください。</value>
+    <comment>NotAddCheckCondition</comment>
+  </data>
+  <data name="NotBunki" xml:space="preserve">
+    <value>分岐を設定して下さい。</value>
+    <comment>NotBunki</comment>
+  </data>
+  <data name="NotCombinableFormField" xml:space="preserve">
+    <value>指定された項目に、複数の項目の値を設定することはできません。</value>
+    <comment>NotCombinableFormField</comment>
+  </data>
+  <data name="NotCompareItem" xml:space="preserve">
+    <value>比較項目を選択してください。</value>
+    <comment>NotCompareItem</comment>
+  </data>
+  <data name="NotCompareItem2" xml:space="preserve">
+    <value>比較元を選択してください。</value>
+    <comment>NotCompareItem2</comment>
+  </data>
+  <data name="NotCondition" xml:space="preserve">
+    <value>条件分岐を設定して下さい。</value>
+    <comment>NotCondition</comment>
+  </data>
+  <data name="NotEndDate" xml:space="preserve">
+    <value>終了日付を入力して下さい。</value>
+    <comment>NotEndDate</comment>
+  </data>
+  <data name="NotEntryDiffField" xml:space="preserve">
+    <value>データタイプが異なるため登録できません。</value>
+    <comment>NotEntryDiffField</comment>
+  </data>
+  <data name="NotExpress" xml:space="preserve">
+    <value>計算式を設定してください。</value>
+    <comment>NotExpress</comment>
+  </data>
+  <data name="NotFieldInExpress" xml:space="preserve">
+    <value>計算式の設定に誤りがあります。{1}項目{0}はありません。</value>
+    <comment>NotFieldInExpress</comment>
+  </data>
+  <data name="NotFixDate" xml:space="preserve">
+    <value>特定日付を入力して下さい。</value>
+    <comment>NotFixDate</comment>
+  </data>
+  <data name="NotMessage" xml:space="preserve">
+    <value>メッセージを入力してください。</value>
+    <comment>NotMessage</comment>
+  </data>
+  <data name="NotOperator" xml:space="preserve">
+    <value>比較演算子を選択してください。</value>
+    <comment>NotOperator</comment>
+  </data>
+  <data name="NotOutputitem" xml:space="preserve">
+    <value>出力項目を選択してください。</value>
+    <comment>NotOutputitem</comment>
+  </data>
+  <data name="NotStartDate" xml:space="preserve">
+    <value>開始日付を入力して下さい。</value>
+    <comment>NotStartDate</comment>
+  </data>
+  <data name="NotUnit" xml:space="preserve">
+    <value>加算日付の単位を選択して下さい。</value>
+    <comment>NotUnit</comment>
+  </data>
+  <data name="NoUserIDFLD" xml:space="preserve">
+    <value>社員コードを選択してください。</value>
+    <comment>NoUserIDFLD</comment>
+  </data>
+  <data name="NumberTypeError" xml:space="preserve">
+    <value>条件値は数値で入力してください。</value>
+    <comment>NumberTypeError</comment>
+  </data>
+  <data name="OperatorSelect" xml:space="preserve">
+    <value>比較演算子を選択して下さい。</value>
+    <comment>OperatorSelect</comment>
+  </data>
+  <data name="OutColumnsMustString" xml:space="preserve">
+    <value>出力先の項目は文字型でなければなりません。</value>
+    <comment>OutColumnsMustString</comment>
+  </data>
+  <data name="OverFlow" xml:space="preserve">
+    <value>開始日付が終了日付を超えています。</value>
+    <comment>OverFlow</comment>
+  </data>
+  <data name="OverInputCharcterLength" xml:space="preserve">
+    <value>入力可能文字数を超えています。</value>
+    <comment>OverInputCharcterLength</comment>
+  </data>
+  <data name="OverMaxRangeItem" xml:space="preserve">
+    <value>開始日から終了日までの範囲が期間の最大範囲を超えています。</value>
+    <comment>OverMaxRangeItem</comment>
+  </data>
+  <data name="Reorganization" xml:space="preserve">
+    <value>只今、組織改編中です。しばらく経った後、再度実行して下さい。</value>
+    <comment>Reorganization</comment>
+  </data>
+  <data name="SetDBGUIFailed" xml:space="preserve">
+    <value>DBGUI固有情報の設定に失敗しました。</value>
+    <comment>SetDBGUIFailed</comment>
+  </data>
+  <data name="UnSelectedView" xml:space="preserve">
+    <value>ビューが選択されていません。</value>
+    <comment>UnSelectedView</comment>
+  </data>
+  <data name="ValueOrField" xml:space="preserve">
+    <value>固定値を入力するかフィールドを選択して下さい。</value>
+    <comment>ValueOrField</comment>
+  </data>
+  <data name="ViewFieldInfoException" xml:space="preserve">
+    <value>指定されたビューの項目情報が異常です。[{0}]</value>
+    <comment>ViewFieldInfoException</comment>
+  </data>
+  <data name="ViewInfoException" xml:space="preserve">
+    <value>指定されたビューの情報が異常です。[{0}][{1}]</value>
+    <comment>ViewInfoException</comment>
+  </data>
+  <data name="ViewSqlNotExisted" xml:space="preserve">
+    <value>ビューSQLが存在しません</value>
+    <comment>ViewSqlNotExisted</comment>
+  </data>
+</root>

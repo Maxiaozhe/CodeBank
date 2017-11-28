@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="filters">
+    <xs:complexType>
+      <xs:sequence minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="filter" type="filter" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="filter">
+    <xs:sequence minOccurs="1" maxOccurs="1">
+      <xs:element name="type" type="filter.type" />
+      <xs:element name="source" type="xs:string" />
+      <xs:element name="target" type="xs:string" />
+      <xs:choice minOccurs="0" maxOccurs="1">
+        <xs:element name="conditions" type="conditions" />
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="conditions">
+    <xs:sequence minOccurs="1" maxOccurs="1" >
+      <xs:element name="logic" type="logic" />
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="logic">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" name="condition" type="condition" />
+      <xs:choice minOccurs="0" maxOccurs="1">
+        <xs:element name="logic" type="logic" />
+      </xs:choice>
+    </xs:sequence>
+    <xs:attribute name="type" type="logic.type" use="required" />
+  </xs:complexType>
+  
+  <xs:complexType name="condition">
+    <xs:sequence>
+      <xs:element name="attr" type="xs:string" />
+      <xs:element name="operator" type="operator" />
+      <xs:element name="value" type="xs:string" />
+      <xs:choice minOccurs="0" maxOccurs="1">
+        <xs:element name="logic" type="logic" />
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:simpleType name="filter.type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="database" />
+      <xs:enumeration value="view" />
+      <xs:enumeration value="form" />
+      <xs:enumeration value="field" />
+      <xs:enumeration value="viewcolumn" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="logic.type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="and" />
+      <xs:enumeration value="or" />
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="operator">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Eq" />
+      <xs:enumeration value="Neq" />
+      <xs:enumeration value="Contains" />
+      <xs:enumeration value="BeginsWith" />
+      <xs:enumeration value="IsNull" />
+      <xs:enumeration value="NotNull" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

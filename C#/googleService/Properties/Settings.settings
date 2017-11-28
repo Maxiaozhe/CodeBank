@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="googleService.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UserId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">z00h801962</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">m@xz1205</Value>
+    </Setting>
+    <Setting Name="ProxyServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://proxy.ricoh.co.jp:8080</Value>
+    </Setting>
+    <Setting Name="GoogleApiKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">AIzaSyBL6NtX1XlJKS547PZ9OEHRtt-tP_d9pxo</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,688 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AcceptDateExcess" xml:space="preserve">
+    <value>開始承認日付が終了承認日付を超えています。</value>
+    <comment>AcceptDateExcess</comment>
+  </data>
+  <data name="AcceptDateNotAppointBound" xml:space="preserve">
+    <value>承認日の範囲が指定されていません。</value>
+    <comment>AcceptDateNotAppointBound</comment>
+  </data>
+  <data name="AcceptDateNotIsDate" xml:space="preserve">
+    <value>承認日は日付項目のため、『YYYY/MM/DD』形式で入力して下さい。</value>
+    <comment>AcceptDateNotIsDate</comment>
+  </data>
+  <data name="AcceptDateOutOfBound" xml:space="preserve">
+    <value>承認日の入力可能範囲を超えています。</value>
+    <comment>AcceptDateOutOfBound</comment>
+  </data>
+  <data name="AcceptNoData" xml:space="preserve">
+    <value>選択された文書がありません。</value>
+    <comment>AcceptNoData</comment>
+  </data>
+  <data name="AccountLockMessage" xml:space="preserve">
+    <value>このアカウントは現在ロックされています。</value>
+    <comment>AccountLockMessage</comment>
+  </data>
+  <data name="CabPassMistake" xml:space="preserve">
+    <value>キャビネットのパスワードが正しくありません。</value>
+    <comment>CabPassMistake</comment>
+  </data>
+  <data name="CanNotCutIntoOn" xml:space="preserve">
+    <value>設備申立書の割込修正・差戻しです。{0}社内トップページの「設備申立作成」で該当申立を選択し、[承認フローへ]ボタンを押して下さい。{0}その後、この画面より承認フローを再開して下さい。</value>
+    <comment>CanNotCutIntoOn</comment>
+  </data>
+  <data name="CanNotMakeDocument" xml:space="preserve">
+    <value>このフォームは代理{0}ができません。</value>
+    <comment>CanNotMakeDocument</comment>
+  </data>
+  <data name="CanNotProcessByDuplicator" xml:space="preserve">
+    <value>代理者による処理はできません。</value>
+    <comment>CanNotProcessByDuplicator</comment>
+  </data>
+  <data name="CanNotProcessInDocument" xml:space="preserve">
+    <value>処理できない文書が含まれています。ビュー画面から文書を選択し直してください。</value>
+    <comment>CanNotProcessInDocument</comment>
+  </data>
+  <data name="CanNotRevision" xml:space="preserve">
+    <value>この文書は改訂できません。</value>
+    <comment>CanNotRevision</comment>
+  </data>
+  <data name="CanNotRouteSameLevelChk" xml:space="preserve">
+    <value>同一の所属者での並行審査設定はできません。</value>
+    <comment>CanNotRouteSameLevelChk</comment>
+  </data>
+  <data name="CanNotSelectGrp" xml:space="preserve">
+    <value>グループは選択できません。</value>
+    <comment>CanNotSelectGrp</comment>
+  </data>
+  <data name="CanNotSelectOrg" xml:space="preserve">
+    <value>組織は選択できません。</value>
+    <comment>CanNotSelectOrg</comment>
+  </data>
+  <data name="CanNotSelectRouteChange" xml:space="preserve">
+    <value>指定された承認者は設定できません。</value>
+    <comment>CanNotSelectRouteChange</comment>
+  </data>
+  <data name="CanNotSelectSamePerson" xml:space="preserve">
+    <value>一つの承認階層に同じ個人は追加できません。</value>
+    <comment>CanNotSelectSamePerson</comment>
+  </data>
+  <data name="CanNotSelectSelfUser" xml:space="preserve">
+    <value>本人は設定できません。</value>
+    <comment>CanNotSelectSelfUser</comment>
+  </data>
+  <data name="CanNotSelectUserForRoute" xml:space="preserve">
+    <value>フォームを利用できないユーザーまたは組織/グループは追加できません。</value>
+    <comment>CanNotSelectUserForRoute</comment>
+  </data>
+  <data name="CanNotSetAccepter" xml:space="preserve">
+    <value>ルートに設定できません。</value>
+    <comment>CanNotSetAccepter</comment>
+  </data>
+  <data name="CanNotSetChecker" xml:space="preserve">
+    <value>確認者に設定できません。</value>
+    <comment>CanNotSetChecker</comment>
+  </data>
+  <data name="CanNotSetEdit" xml:space="preserve">
+    <value>編集者に設定できません。</value>
+    <comment>CanNotSetEdit</comment>
+  </data>
+  <data name="CanNotSetMailUser" xml:space="preserve">
+    <value>メール送信者に設定できません。</value>
+    <comment>CanNotSetMailUser</comment>
+  </data>
+  <data name="CanNotSetPublic" xml:space="preserve">
+    <value>公開者に設定できません。</value>
+    <comment>CanNotSetPublic</comment>
+  </data>
+  <data name="CanNotSetRefer" xml:space="preserve">
+    <value>参照者に設定できません。</value>
+    <comment>CanNotSetRefer</comment>
+  </data>
+  <data name="CanNotSetViewInfo" xml:space="preserve">
+    <value>表示できるビューがありません。</value>
+    <comment>CanNotSetViewInfo</comment>
+  </data>
+  <data name="CanNotUseResFormView" xml:space="preserve">
+    <value>レスフォームの項目を表示するビューをここで使用することはできません。</value>
+    <comment>CanNotUseResFormView</comment>
+  </data>
+  <data name="CapsPasswordMessage" xml:space="preserve">
+    <value>入力されたパスワードに大文字小文字が混在されていません。</value>
+    <comment>CapsPasswordMessage</comment>
+  </data>
+  <data name="ChangeNewPassLen" xml:space="preserve">
+    <value>新しいパスワードは２０文字以内で入力して下さい。</value>
+    <comment>ChangeNewPassLen</comment>
+  </data>
+  <data name="ChangeNewPassword" xml:space="preserve">
+    <value>新しいパスワードが正しくありません。</value>
+    <comment>ChangeNewPassword</comment>
+  </data>
+  <data name="ChangePasswodMessage" xml:space="preserve">
+    <value>パスワードの有効期限が切れました。パスワードを変更してください。</value>
+    <comment>ChangePasswodMessage</comment>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>入力項目をすべて入力して下さい。</value>
+    <comment>ChangePassword</comment>
+  </data>
+  <data name="CheckerNotSetup" xml:space="preserve">
+    <value>確認者を設定して下さい。</value>
+    <comment>CheckerNotSetup</comment>
+  </data>
+  <data name="ChkDocDelete" xml:space="preserve">
+    <value>この文書は、返信文書が設定されているため、削除できません。</value>
+    <comment>ChkDocDelete</comment>
+  </data>
+  <data name="ChkDocItemValue" xml:space="preserve">
+    <value>この文書は、既に他のユーザーにより更新されています。{0}文書を再度、開き直して下さい。{0}注：編集された項目については、メモ帳又はワードパットに保存し、{0}再度、文書を再作成して下さい。</value>
+    <comment>ChkDocItemValue</comment>
+  </data>
+  <data name="ChkDocUser" xml:space="preserve">
+    <value>現在、設定されているルートは別の担当者で設定されています{0}再度、ルート変更ボタンでルートを再設定して下さい。</value>
+    <comment>ChkDocUser</comment>
+  </data>
+  <data name="ChkMailUser" xml:space="preserve">
+    <value>メール送信者を選択して下さい。</value>
+    <comment>ChkMailUser</comment>
+  </data>
+  <data name="ChkNoPersons" xml:space="preserve">
+    <value>審査･承認数が可決数より下回るため、削除できません。</value>
+    <comment>ChkNoPersons</comment>
+  </data>
+  <data name="ClamorChkKingaku" xml:space="preserve">
+    <value>本体金額に不正な文字が入力されています。</value>
+    <comment>ClamorChkKingaku</comment>
+  </data>
+  <data name="ClamorChkMax" xml:space="preserve">
+    <value>申立者は１０人以上指定できません。</value>
+    <comment>ClamorChkMax</comment>
+  </data>
+  <data name="ClamorChkMin" xml:space="preserve">
+    <value>申立者は１人以上指定して下さい。</value>
+    <comment>ClamorChkMin</comment>
+  </data>
+  <data name="ClamorChkRepeat" xml:space="preserve">
+    <value>同一の申立者が指定されています。</value>
+    <comment>ClamorChkRepeat</comment>
+  </data>
+  <data name="ClamorChkTitle" xml:space="preserve">
+    <value>タイトル選択、タイトル入力が両方とも設定されています。</value>
+    <comment>ClamorChkTitle</comment>
+  </data>
+  <data name="ClamorChkZeikin" xml:space="preserve">
+    <value>税金に不正な文字が入力されています。</value>
+    <comment>ClamorChkZeikin</comment>
+  </data>
+  <data name="CommentDunInput" xml:space="preserve">
+    <value>コメントを入力して下さい。</value>
+    <comment>CommentDunInput</comment>
+  </data>
+  <data name="ComparePassword" xml:space="preserve">
+    <value>新しいパスワードは前回のパスワードと同じものは使えません。</value>
+    <comment>ComparePassword</comment>
+  </data>
+  <data name="ControlNumberNotAppointBound" xml:space="preserve">
+    <value>管理番号の範囲が指定されていません。</value>
+    <comment>ControlNumberNotAppointBound</comment>
+  </data>
+  <data name="CreateVersionNoFailed" xml:space="preserve">
+    <value>版番号を数値で入力して下さい。</value>
+    <comment>CreateVersionNoFailed</comment>
+  </data>
+  <data name="DaiSameChk" xml:space="preserve">
+    <value>同一の代理者で代理権限が指定されています。</value>
+    <comment>DaiSameChk</comment>
+  </data>
+  <data name="DataTransferAbortMessage" xml:space="preserve">
+    <value>連携項目の更新に失敗しました。</value>
+    <comment>DataTransferAbortMessage</comment>
+  </data>
+  <data name="DecimalOverFlow" xml:space="preserve">
+    <value>項目「{0}」の入力値は「922,337,203,685,477.5807」から「-922,337,203,685,477.5808」の範囲にして下さい。</value>
+    <comment>DecimalOverFlow</comment>
+  </data>
+  <data name="DireCtorDayChk" xml:space="preserve">
+    <value>有効日に達していないため、処理を行うことはできません。</value>
+    <comment>DireCtorDayChk</comment>
+  </data>
+  <data name="DocumentNoNotInput" xml:space="preserve">
+    <value>登録番号が入力されていません。</value>
+    <comment>DocumentNoNotInput</comment>
+  </data>
+  <data name="DocumentNumberDuplicatedException" xml:space="preserve">
+    <value>指定した登録番号は既に使用されています。</value>
+    <comment>DocumentNumberDuplicatedException</comment>
+  </data>
+  <data name="DocumentNumberNotAppointBound" xml:space="preserve">
+    <value>登録番号の範囲が指定されていません。</value>
+    <comment>DocumentNumberNotAppointBound</comment>
+  </data>
+  <data name="DoumentAuthority" xml:space="preserve">
+    <value>この文書に参照権がありません。</value>
+    <comment>DoumentAuthority</comment>
+  </data>
+  <data name="ErrorInLogin" xml:space="preserve">
+    <value>認証に失敗しました。</value>
+    <comment>ErrorInLogin</comment>
+  </data>
+  <data name="ExclusiveChk" xml:space="preserve">
+    <value>既に別ユーザーが開いています。</value>
+    <comment>ExclusiveChk</comment>
+  </data>
+  <data name="ExiStenceDocChk" xml:space="preserve">
+    <value>選択された文書は、既に削除されています。</value>
+    <comment>ExiStenceDocChk</comment>
+  </data>
+  <data name="FileLengthCheck" xml:space="preserve">
+    <value>0バイトのファイルは添付できません。別のファイルを選択して下さい。</value>
+    <comment>FileLengthCheck</comment>
+  </data>
+  <data name="FileLengthCheck_sizeOver" xml:space="preserve">
+    <value>添付ファイルのサイズが大きすぎます。</value>
+    <comment>FileLengthCheck_sizeOver</comment>
+  </data>
+  <data name="FileLengthCheck_tenpuSuuOver" xml:space="preserve">
+    <value>99ファイルを超えて添付できません</value>
+    <comment>FileLengthCheck_tenpuSuuOver</comment>
+  </data>
+  <data name="FileNameCheck" xml:space="preserve">
+    <value>ファイル名に無効な文字が含まれています。{0}  文字 %</value>
+    <comment>FileNameCheck</comment>
+  </data>
+  <data name="FileNameCheck2" xml:space="preserve">
+    <value>ファイル名に無効な文字が含まれています。{0}  文字 &amp;#</value>
+    <comment>FileNameCheck2</comment>
+  </data>
+  <data name="FileNameCheck3" xml:space="preserve">
+    <value>ファイル名に無効な文字が含まれています。{0}  文字 ,</value>
+    <comment>FileNameCheck3</comment>
+  </data>
+  <data name="FileNameCheck4" xml:space="preserve">
+    <value>ファイル名に無効な文字が含まれています。{0}  文字 '</value>
+    <comment>FileNameCheck4</comment>
+  </data>
+  <data name="FileNameCheck5" xml:space="preserve">
+    <value>ファイル名に無効な文字が含まれています。{0}  文字 #</value>
+    <comment>FileNameCheck5</comment>
+  </data>
+  <data name="FileNoSupportMessage" xml:space="preserve">
+    <value>選択したファイルはサポートされていません。</value>
+    <comment>FileNoSupportMessage</comment>
+  </data>
+  <data name="FormNotExisted" xml:space="preserve">
+    <value>選択されたフォームが存在しません。</value>
+    <comment>FormNotExisted</comment>
+  </data>
+  <data name="GUIMustInputCHKErr" xml:space="preserve">
+    <value>項目「{0}」は必須項目です。値を入力して下さい。</value>
+    <comment>GUIMustInputCHKErr</comment>
+  </data>
+  <data name="HistoryPasswordMessage" xml:space="preserve">
+    <value>入力されたパスワードは過去に使われたパスワードです。</value>
+    <comment>HistoryPasswordMessage</comment>
+  </data>
+  <data name="IgnoreWord" xml:space="preserve">
+    <value>入力された検索キーでは該当文書が多い可能性があります。再度、検索キーを設定して下さい。</value>
+    <comment>IgnoreWord</comment>
+  </data>
+  <data name="InitPasswordMessage" xml:space="preserve">
+    <value>初回ログインです。パスワードを変更してください。</value>
+    <comment>InitPasswordMessage</comment>
+  </data>
+  <data name="InputMoneyOverErr" xml:space="preserve">
+    <value>金額が登録できる値を超えています。登録できません。</value>
+    <comment>InputMoneyOverErr</comment>
+  </data>
+  <data name="InputMoneyUnderErr" xml:space="preserve">
+    <value>金額が登録できる値を下回っています。登録できません。</value>
+    <comment>InputMoneyUnderErr</comment>
+  </data>
+  <data name="Int32OverFlow" xml:space="preserve">
+    <value>項目「{0}」の入力値は「2,147,483,647」から「-2,147,483,648」の範囲にして下さい。</value>
+    <comment>Int32OverFlow</comment>
+  </data>
+  <data name="LoginAdministrator" xml:space="preserve">
+    <value>管理者ではログインできません。</value>
+    <comment>LoginAdministrator</comment>
+  </data>
+  <data name="LoginFailed" xml:space="preserve">
+    <value>ユーザIDまたはパスワードが間違っています。</value>
+    <comment>LoginFailed</comment>
+  </data>
+  <data name="MakeDateExcess" xml:space="preserve">
+    <value>開始作成日付が終了作成日付を超えています。</value>
+    <comment>MakeDateExcess</comment>
+  </data>
+  <data name="MakeDateNotAppointBound" xml:space="preserve">
+    <value>作成日の範囲が指定されていません。</value>
+    <comment>MakeDateNotAppointBound</comment>
+  </data>
+  <data name="MakeDateNotIsDate" xml:space="preserve">
+    <value>作成日は日付項目のため、『YYYY/MM/DD』形式で入力して下さい。</value>
+    <comment>MakeDateNotIsDate</comment>
+  </data>
+  <data name="MakeDateOutOfBound" xml:space="preserve">
+    <value>作成日の入力可能範囲を超えています。</value>
+    <comment>MakeDateOutOfBound</comment>
+  </data>
+  <data name="MakeNewDoc" xml:space="preserve">
+    <value>文書の新規作成の権限がありません。</value>
+    <comment>MakeNewDoc</comment>
+  </data>
+  <data name="MakeNumYearCHKErr" xml:space="preserve">
+    <value>年に不正な値が入力されています。</value>
+    <comment>MakeNumYearCHKErr</comment>
+  </data>
+  <data name="MakeNumYearNoInput" xml:space="preserve">
+    <value>年に値が入力されていません。</value>
+    <comment>MakeNumYearNoInput</comment>
+  </data>
+  <data name="MakeNumYearOverErr" xml:space="preserve">
+    <value>年は来年より大きい年は設定できません。</value>
+    <comment>MakeNumYearOverErr</comment>
+  </data>
+  <data name="MakeNumYearUnderErr" xml:space="preserve">
+    <value>年は去年より小さい年は設定できません。</value>
+    <comment>MakeNumYearUnderErr</comment>
+  </data>
+  <data name="MarkPasswordMessage" xml:space="preserve">
+    <value>入力されたパスワードに記号が含まれていません。</value>
+    <comment>MarkPasswordMessage</comment>
+  </data>
+  <data name="MaxPasswordMessage" xml:space="preserve">
+    <value>入力されたパスワードは最大文字列長を超えています。{1}{0}文字以内に設定して下さい。</value>
+    <comment>MaxPasswordMessage</comment>
+  </data>
+  <data name="MinPasswordMessage" xml:space="preserve">
+    <value>入力されたパスワードは最小文字列長を満たしていません。{1}{0}文字以上に設定して下さい。</value>
+    <comment>MinPasswordMessage</comment>
+  </data>
+  <data name="NonInputDocName" xml:space="preserve">
+    <value>文書名を入力して下さい。</value>
+    <comment>NonInputDocName</comment>
+  </data>
+  <data name="NonInputRidocDirectory" xml:space="preserve">
+    <value>最終保存先・最終否認先が未設定です。</value>
+    <comment>NonInputRidocDirectory</comment>
+  </data>
+  <data name="NonUserMessage" xml:space="preserve">
+    <value>ユーザＩＤまたはメールアドレスが間違っています。</value>
+    <comment>NonUserMessage</comment>
+  </data>
+  <data name="NoRightOfAccess" xml:space="preserve">
+    <value>権限がないためルートに指定することは出来ません。</value>
+    <comment>NoRightOfAccess</comment>
+  </data>
+  <data name="NotActionDoc" xml:space="preserve">
+    <value>この文書は、既に審査・承認をされました。</value>
+    <comment>NotActionDoc</comment>
+  </data>
+  <data name="NotSettingRoute" xml:space="preserve">
+    <value>ルートが指定されていません。</value>
+    <comment>NotSettingRoute</comment>
+  </data>
+  <data name="NowPasswordError" xml:space="preserve">
+    <value>現在のパスワードが正しくありません。</value>
+    <comment>NowPasswordError</comment>
+  </data>
+  <data name="NumberOutOfRangeException" xml:space="preserve">
+    <value>連番が有効桁数を超えました。</value>
+    <comment>NumberOutOfRangeException</comment>
+  </data>
+  <data name="NumberPasswordMessage" xml:space="preserve">
+    <value>入力されたパスワードに数値が含まれていません。</value>
+    <comment>NumberPasswordMessage</comment>
+  </data>
+  <data name="NumericMoneyErr" xml:space="preserve">
+    <value>タイトル金額に不正な値が入力されています。</value>
+    <comment>NumericMoneyErr</comment>
+  </data>
+  <data name="NumericOverMoneyErr" xml:space="preserve">
+    <value>予算超過金額に不正な値が入力されています。</value>
+    <comment>NumericOverMoneyErr</comment>
+  </data>
+  <data name="OldPassError" xml:space="preserve">
+    <value>旧パスワードが正しくありません。</value>
+    <comment>OldPassError</comment>
+  </data>
+  <data name="OtherMessage" xml:space="preserve">
+    <value>{0}</value>
+    <comment>OtherMessage</comment>
+  </data>
+  <data name="OverPresentVersion" xml:space="preserve">
+    <value>版番号は現在の版より大きい値を指定して下さい。</value>
+    <comment>OverPresentVersion</comment>
+  </data>
+  <data name="OverSizeMessage" xml:space="preserve">
+    <value>保存可能なファイルのサイズを超えています。</value>
+    <comment>OverSizeMessage</comment>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>パスワードを入力して下さい。</value>
+    <comment>Password</comment>
+  </data>
+  <data name="PasswordMistake" xml:space="preserve">
+    <value>パスワードが正しくありません。</value>
+    <comment>PasswordMistake</comment>
+  </data>
+  <data name="PrintFileNoSelectMessage" xml:space="preserve">
+    <value>一括印刷を行う文書が選択されていません。</value>
+    <comment>PrintFileNoSelectMessage</comment>
+  </data>
+  <data name="ProxyDateExcess" xml:space="preserve">
+    <value>開始日付が終了日付を超えています。</value>
+    <comment>ProxyDateExcess</comment>
+  </data>
+  <data name="ProxyDateNotIsDate" xml:space="preserve">
+    <value>期間は日付項目のため、『YYYY/MM/DD』形式で入力して下さい。</value>
+    <comment>ProxyDateNotIsDate</comment>
+  </data>
+  <data name="ProxyDateOutOfBound" xml:space="preserve">
+    <value>入力可能範囲を超えています。</value>
+    <comment>ProxyDateOutOfBound</comment>
+  </data>
+  <data name="ProxyDunInputStartDate" xml:space="preserve">
+    <value>開始日を入力して下さい。</value>
+    <comment>ProxyDunInputStartDate</comment>
+  </data>
+  <data name="ProxyOverRangeBelong" xml:space="preserve">
+    <value>代理者の有効期間が代理者当人の所属期間を超えているため登録できません。{0}期間を再入力して下さい。</value>
+    <comment>ProxyOverRangeBelong</comment>
+  </data>
+  <data name="PublicationCanNotDelete" xml:space="preserve">
+    <value>この公開者は削除できません。</value>
+    <comment>PublicationCanNotDelete</comment>
+  </data>
+  <data name="ReferenceCanNotDelete" xml:space="preserve">
+    <value>この参照者は削除できません。</value>
+    <comment>ReferenceCanNotDelete</comment>
+  </data>
+  <data name="Reorganization" xml:space="preserve">
+    <value>只今、組織改編中です。しばらく経った後、再度実行して下さい。</value>
+    <comment>Reorganization</comment>
+  </data>
+  <data name="RepeatStringPasswordMessage" xml:space="preserve">
+    <value>入力されたパスワードに同一文字が繰り返されています。{1}{0}文字以上の繰り返しがない設定をして下さい。</value>
+    <comment>RepeatStringPasswordMessage</comment>
+  </data>
+  <data name="ReplayTermDunInput" xml:space="preserve">
+    <value>回答期限を入力して下さい。</value>
+    <comment>ReplayTermDunInput</comment>
+  </data>
+  <data name="ReplayTermNotIsDate" xml:space="preserve">
+    <value>回答期限は日付項目のため、『YYYY/MM/DD』形式で入力して下さい。</value>
+    <comment>ReplayTermNotIsDate</comment>
+  </data>
+  <data name="ReplayTermOutOfBound" xml:space="preserve">
+    <value>入力可能範囲を超えています。</value>
+    <comment>ReplayTermOutOfBound</comment>
+  </data>
+  <data name="RequestChkEndRouteErr" xml:space="preserve">
+    <value>選択されている申立者が、ルート上の最終者になっています。</value>
+    <comment>RequestChkEndRouteErr</comment>
+  </data>
+  <data name="RequestChkLvPowerErr" xml:space="preserve">
+    <value>選択されている申立者が、申立者として条件を満たしていません。</value>
+    <comment>RequestChkLvPowerErr</comment>
+  </data>
+  <data name="RequestChkNoRouteErr" xml:space="preserve">
+    <value>選択されている申立者が、ルート上に存在しません。</value>
+    <comment>RequestChkNoRouteErr</comment>
+  </data>
+  <data name="ResponseDateExcess" xml:space="preserve">
+    <value>開始回答期限が終了回答期限を超えています。</value>
+    <comment>ResponseDateExcess</comment>
+  </data>
+  <data name="ResponseDateNotAppointBound" xml:space="preserve">
+    <value>回答期限の範囲が指定されていません。</value>
+    <comment>ResponseDateNotAppointBound</comment>
+  </data>
+  <data name="ResponseDateNotIsDate" xml:space="preserve">
+    <value>回答期限は日付項目のため、『YYYY/MM/DD』形式で入力して下さい。</value>
+    <comment>ResponseDateNotIsDate</comment>
+  </data>
+  <data name="RGUINoDocumentReadAccess" xml:space="preserve">
+    <value>文書閲覧がありません。</value>
+    <comment>RGUINoDocumentReadAccess</comment>
+  </data>
+  <data name="RidocFileSelected" xml:space="preserve">
+    <value>選択された文書はすでに選択されています。別の文書を選択して下さい。</value>
+    <comment>RidocFileSelected</comment>
+  </data>
+  <data name="RidocNoSupportFormat" xml:space="preserve">
+    <value>このファイルはサポートされていません。</value>
+    <comment>RidocNoSupportFormat</comment>
+  </data>
+  <data name="RouteGroupNoData" xml:space="preserve">
+    <value>このルートは使用できません。{0}新規作成ボタンでルートを設定するか、管理者ツールで再定義する必要があります。</value>
+    <comment>RouteGroupNoData</comment>
+  </data>
+  <data name="RouteMenberNoData" xml:space="preserve">
+    <value>このルートは使用できません。{0}新規作成ボタンでルートを設定するか、管理者ツールで再定義する必要があります。</value>
+    <comment>RouteMenberNoData</comment>
+  </data>
+  <data name="RouteTermsPointChk" xml:space="preserve">
+    <value>選択されたルートは、条件分岐を使用しているため、編集できません。</value>
+    <comment>RouteTermsPointChk</comment>
+  </data>
+  <data name="SameFileSaved" xml:space="preserve">
+    <value>すでに選択されています。</value>
+    <comment>SameFileSaved</comment>
+  </data>
+  <data name="SaveCabinetError" xml:space="preserve">
+    <value>選択されたキャビネットには保存できません。</value>
+    <comment>SaveCabinetError</comment>
+  </data>
+  <data name="SystemOwnChk" xml:space="preserve">
+    <value>代理者として自分を指定することはできません。</value>
+    <comment>SystemOwnChk</comment>
+  </data>
+  <data name="UnionRouteChk" xml:space="preserve">
+    <value>使用しているフォームのルート設定が変更されています。再度、ルート変更を行って下さい。</value>
+    <comment>UnionRouteChk</comment>
+  </data>
+  <data name="UserError" xml:space="preserve">
+    <value>ユーザーが存在しません。</value>
+    <comment>UserError</comment>
+  </data>
+  <data name="UserID" xml:space="preserve">
+    <value>ユーザーIDを入力して下さい。</value>
+    <comment>UserID</comment>
+  </data>
+  <data name="UserIDMistake" xml:space="preserve">
+    <value>ユーザーIDが正しくありません。</value>
+    <comment>UserIDMistake</comment>
+  </data>
+  <data name="UserIdPasswordMessage" xml:space="preserve">
+    <value>入力されたパスワードに利用者ＩＤが含まれています。</value>
+    <comment>UserIdPasswordMessage</comment>
+  </data>
+  <data name="UserOpenedMessage" xml:space="preserve">
+    <value>既に{0}が開いています。</value>
+    <comment>UserOpenedMessage</comment>
+  </data>
+  <data name="WrapPasswordMessage" xml:space="preserve">
+    <value>入力されたパスワードに禁則文字が含まれています。{1}「{0}」はパスワードに設定できません。</value>
+    <comment>WrapPasswordMessage</comment>
+  </data>
+</root>

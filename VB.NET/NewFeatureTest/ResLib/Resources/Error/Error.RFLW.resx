@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AcceptFailed" xml:space="preserve">
+    <value>{0}処理に失敗しました。</value>
+    <comment>AcceptFailed</comment>
+  </data>
+  <data name="AddPublicationFailed" xml:space="preserve">
+    <value>公開者の追加に失敗しました。</value>
+    <comment>AddPublicationFailed</comment>
+  </data>
+  <data name="AddReferenceFailed" xml:space="preserve">
+    <value>参照者の追加に失敗しました。</value>
+    <comment>AddReferenceFailed</comment>
+  </data>
+  <data name="AllAcceptFalied" xml:space="preserve">
+    <value>一括{0}に失敗しました。</value>
+    <comment>AllAcceptFalied</comment>
+  </data>
+  <data name="CallFailed" xml:space="preserve">
+    <value>フォーム起動処理に異常が発生しました。</value>
+    <comment>CallFailed</comment>
+  </data>
+  <data name="CheckInProcessFailed" xml:space="preserve">
+    <value>チェックイン処理に失敗しました。</value>
+    <comment>CheckInProcessFailed</comment>
+  </data>
+  <data name="CheckOutProcessFailed" xml:space="preserve">
+    <value>チェックアウト処理に失敗しました。</value>
+    <comment>CheckOutProcessFailed</comment>
+  </data>
+  <data name="CreateCSVFailed" xml:space="preserve">
+    <value>ＣＳＶファイルの作成に失敗しました。</value>
+    <comment>CreateCSVFailed</comment>
+  </data>
+  <data name="CreateRouteFailed" xml:space="preserve">
+    <value>ルートの作成に失敗しました。</value>
+    <comment>CreateRouteFailed</comment>
+  </data>
+  <data name="DefSysBlgUpdateErr" xml:space="preserve">
+    <value>デフォルト所属設定の処理を失敗しました。</value>
+    <comment>DefSysBlgUpdateErr</comment>
+  </data>
+  <data name="DelPublicationFailed" xml:space="preserve">
+    <value>公開者の削除に失敗しました。</value>
+    <comment>DelPublicationFailed</comment>
+  </data>
+  <data name="DelReferenceFailed" xml:space="preserve">
+    <value>参照者の削除に失敗しました。</value>
+    <comment>DelReferenceFailed</comment>
+  </data>
+  <data name="DenyFailed" xml:space="preserve">
+    <value>{0}処理に失敗しました。</value>
+    <comment>DenyFailed</comment>
+  </data>
+  <data name="DocAcceptErr" xml:space="preserve">
+    <value>審査処理に失敗しました。</value>
+    <comment>DocAcceptErr</comment>
+  </data>
+  <data name="DocCutIntoErr" xml:space="preserve">
+    <value>割込修正依頼処理に失敗しました。</value>
+    <comment>DocCutIntoErr</comment>
+  </data>
+  <data name="DocCutIntoOnErr" xml:space="preserve">
+    <value>割込修正完了処理に失敗しました。</value>
+    <comment>DocCutIntoOnErr</comment>
+  </data>
+  <data name="DocDenyErr" xml:space="preserve">
+    <value>否認処理に失敗しました。</value>
+    <comment>DocDenyErr</comment>
+  </data>
+  <data name="DocMakeErr" xml:space="preserve">
+    <value>申請処理に失敗しました。</value>
+    <comment>DocMakeErr</comment>
+  </data>
+  <data name="DocReleaseUpdate" xml:space="preserve">
+    <value>排他解除処理に失敗しました。</value>
+    <comment>DocReleaseUpdate</comment>
+  </data>
+  <data name="DocRemandErr" xml:space="preserve">
+    <value>差戻し処理に失敗しました。</value>
+    <comment>DocRemandErr</comment>
+  </data>
+  <data name="DocSubmitErr" xml:space="preserve">
+    <value>承認処理に失敗しました。</value>
+    <comment>DocSubmitErr</comment>
+  </data>
+  <data name="FailedDBGrid" xml:space="preserve">
+    <value>一覧表示に異常発生しました。管理者に問い合わせてください。</value>
+    <comment>FailedDBGrid</comment>
+  </data>
+  <data name="FailedGetProperty" xml:space="preserve">
+    <value>登録データ取得失敗しました。管理者に問い合わせてください。</value>
+    <comment>FailedGetProperty</comment>
+  </data>
+  <data name="FailedIncent" xml:space="preserve">
+    <value>奨励金科目の設定に異常発生しました。管理者に問い合わせてください</value>
+    <comment>FailedIncent</comment>
+  </data>
+  <data name="GetCalFailed" xml:space="preserve">
+    <value>日付の取得に失敗しました。</value>
+    <comment>GetCalFailed</comment>
+  </data>
+  <data name="GetDocumentFailed" xml:space="preserve">
+    <value>文書の取得に失敗しました。</value>
+    <comment>GetDocumentFailed</comment>
+  </data>
+  <data name="GetFormFailed" xml:space="preserve">
+    <value>フォームの取得に失敗しました。</value>
+    <comment>GetFormFailed</comment>
+  </data>
+  <data name="GetViewFailed" xml:space="preserve">
+    <value>ビューの取得に失敗しました。</value>
+    <comment>GetViewFailed</comment>
+  </data>
+  <data name="illegalDataInput" xml:space="preserve">
+    <value>項目{0}に数値を入力してください。</value>
+    <comment>illegalDataInput</comment>
+  </data>
+  <data name="InitFailed" xml:space="preserve">
+    <value>初期化に失敗しました。</value>
+    <comment>InitFailed</comment>
+  </data>
+  <data name="MakeCopyStampDenyError" xml:space="preserve">
+    <value>鑑作成に失敗しました。{0}処理をやり直して下さい。</value>
+    <comment>MakeCopyStampDenyError</comment>
+  </data>
+  <data name="MakeCopyStampSubmitError" xml:space="preserve">
+    <value>鑑作成に失敗しました。{0}処理をやり直して下さい。</value>
+    <comment>MakeCopyStampSubmitError</comment>
+  </data>
+  <data name="MakeFailed" xml:space="preserve">
+    <value>{0}処理に失敗しました。</value>
+    <comment>MakeFailed</comment>
+  </data>
+  <data name="MakeNUserNotFind" xml:space="preserve">
+    <value>{0}が見つかりません。</value>
+    <comment>MakeNUserNotFind</comment>
+  </data>
+  <data name="NextNUserNotFind" xml:space="preserve">
+    <value>次の{0}者が見つかりません。</value>
+    <comment>NextNUserNotFind</comment>
+  </data>
+  <data name="NonBasePage" xml:space="preserve">
+    <value>フォーム異常が発生されました。管理者に問い合わせてください</value>
+    <comment>NonBasePage</comment>
+  </data>
+  <data name="NotFieldInExpress" xml:space="preserve">
+    <value>計算式の設定に誤りがあります。{1}項目{0}はありません。</value>
+    <comment>NotFieldInExpress</comment>
+  </data>
+  <data name="OtherError" xml:space="preserve">
+    <value>{0}</value>
+    <comment>OtherError</comment>
+  </data>
+  <data name="PageBackToFailed" xml:space="preserve">
+    <value>前のページに戻れません。</value>
+    <comment>PageBackToFailed</comment>
+  </data>
+  <data name="PageGoToFailed" xml:space="preserve">
+    <value>次のページに進めません。</value>
+    <comment>PageGoToFailed</comment>
+  </data>
+  <data name="PrevNUserNotFind" xml:space="preserve">
+    <value>前の{0}者が見つかりません。</value>
+    <comment>PrevNUserNotFind</comment>
+  </data>
+  <data name="ProcessFailed" xml:space="preserve">
+    <value>処理に失敗しました。</value>
+    <comment>ProcessFailed</comment>
+  </data>
+  <data name="RemandFailed" xml:space="preserve">
+    <value>{0}処理に失敗しました。</value>
+    <comment>RemandFailed</comment>
+  </data>
+  <data name="RidocDocumentLockedError" xml:space="preserve">
+    <value>申請文書がRidocにて使用中です。</value>
+    <comment>RidocDocumentLockedError</comment>
+  </data>
+  <data name="RidocError" xml:space="preserve">
+    <value>Ridocエラーです。管理者に問い合わせて下さい。</value>
+    <comment>RidocError</comment>
+  </data>
+  <data name="SendMailFailed" xml:space="preserve">
+    <value>メール送信に失敗しました。</value>
+    <comment>SendMailFailed</comment>
+  </data>
+  <data name="SetACLError" xml:space="preserve">
+    <value>文書のＡＣＬ登録に失敗しました。</value>
+    <comment>SetACLError</comment>
+  </data>
+  <data name="SubmitFailed" xml:space="preserve">
+    <value>{0}処理に失敗しました。</value>
+    <comment>SubmitFailed</comment>
+  </data>
+  <data name="SystemError" xml:space="preserve">
+    <value>システムエラーです。管理者に問い合わせて下さい。</value>
+    <comment>SystemError</comment>
+  </data>
+  <data name="UserInfoGetException" xml:space="preserve">
+    <value>社員情報の取得に失敗しました。</value>
+    <comment>UserInfoGetException</comment>
+  </data>
+</root>
