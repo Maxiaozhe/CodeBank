@@ -1,0 +1,107 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using DenshowCommon;
+using DenshowBusinessComponent;
+using DenshowBusinessInterface.Entity;
+using DenshowDataAccessInterface.Dto;
+
+namespace DenshowBusinessComponentTest.{0}
+{{
+	/// <summary>
+    /// {1}
+    /// </summary>
+    [TestClass]
+    public class {2}Test
+    {{
+	   //private Common common = new Common();
+       private TestContext testContextInstance;
+ 
+        /// <summary>
+        ///現在のテストの実行についての情報および機能を提供するテスト コンテキストを取得または設定します。
+        ///</summary>
+        public TestContext TestContext
+        {{
+            get
+            {{
+                return testContextInstance;
+            }}
+            set
+            {{
+                testContextInstance = value;
+            }}
+        }}
+
+        #region 追加のテスト属性
+        /// <summary>
+        /// 開始処理
+        /// </summary>
+        /// <remarks>クラスインスタンス生成時に１回だけ実行</remarks>
+        [ClassInitialize()]
+        public static void Start(TestContext TestContext)
+        {{
+        }}
+
+        /// <summary>
+        /// 終了処理
+        /// </summary>
+        /// <remarks>クラスインスタンス生成時に１回だけ実行</remarks>
+        [ClassCleanup()]
+        public static void End()
+        {{
+
+        }}
+
+        /// <summary>
+        /// 各テスト共通開始処理
+        /// </summary>
+        /// <remarks>各テストを実行する前にコードを実行するには、TestInitialize を使用</remarks>
+        [TestInitialize()]
+        public void MyTestInitialize()
+        {{
+            // テストデータの削除
+            //common.DeleteAllData();
+        }}
+
+        /// <summary>
+        /// 各テスト共通終了処理
+        /// </summary>
+        /// <remarks>各テストを実行した後にコードを実行するには、TestCleanup を使用</remarks>
+        [TestCleanup()]
+        public void MyTestCleanup()
+        {{
+            // テストデータの削除
+            //common.DeleteAllData();
+        }}
+        #endregion
+
+		/// <summary>
+        /// {3}のテスト 
+        /// </summary>
+        [TestMethod]
+        public void {0}_{4}_OK_001()
+        {{
+            // 実行前処理
+
+			//テスト対象オブジェクトの作成
+            var business= new {8}();
+
+			//期待値
+			{5}
+			//パラメタ定義
+{6}
+            // Action
+            // テスト対象メソッド呼び出し
+            {9}business.{4}({7});
+
+            // 結果確認
+            {10}
+        }}
+		
+	}}
+
+}}

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CheckInfoSet" targetNamespace="http://tempuri.org/CheckInfo.xsd" xmlns:mstns="http://tempuri.org/CheckInfo.xsd" xmlns="http://tempuri.org/CheckInfo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CheckInfoSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CheckInfoSet" msprop:Generator_UserDSName="CheckInfoSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CheckPartten" msprop:Generator_TableClassName="CheckParttenDataTable" msprop:Generator_TableVarName="tableCheckPartten" msprop:Generator_TablePropName="CheckPartten" msprop:Generator_RowDeletingName="CheckParttenRowDeleting" msprop:Generator_RowChangingName="CheckParttenRowChanging" msprop:Generator_RowEvHandlerName="CheckParttenRowChangeEventHandler" msprop:Generator_RowDeletedName="CheckParttenRowDeleted" msprop:Generator_UserTableName="CheckPartten" msprop:Generator_RowChangedName="CheckParttenRowChanged" msprop:Generator_RowEvArgName="CheckParttenRowChangeEvent" msprop:Generator_RowClassName="CheckParttenRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TableName" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="TableName" msprop:Generator_ColumnVarNameInTable="columnTableName" msprop:Generator_ColumnPropNameInTable="TableNameColumn" msprop:Generator_UserColumnName="TableName" type="xs:string" minOccurs="0" />
+              <xs:element name="ColumnName" msprop:Generator_ColumnVarNameInTable="columnColumnName" msprop:Generator_ColumnPropNameInRow="ColumnName" msprop:Generator_ColumnPropNameInTable="ColumnNameColumn" msprop:Generator_UserColumnName="ColumnName" type="xs:string" minOccurs="0" />
+              <xs:element name="ProcessType" msprop:Generator_ColumnVarNameInTable="columnProcessType" msprop:Generator_ColumnPropNameInRow="ProcessType" msprop:Generator_ColumnPropNameInTable="ProcessTypeColumn" msprop:Generator_UserColumnName="ProcessType" type="xs:string" minOccurs="0" />
+              <xs:element name="ProcessTarget" msprop:Generator_ColumnVarNameInTable="columnProcessTarget" msprop:Generator_ColumnPropNameInRow="ProcessTarget" msprop:Generator_ColumnPropNameInTable="ProcessTargetColumn" msprop:Generator_UserColumnName="ProcessTarget" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

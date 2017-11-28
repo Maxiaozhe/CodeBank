@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TableDesignInfo.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SeedDatabase" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=10.247.7.39;Initial Catalog=Live_Content;Integrated Security=False;User ID=sa;Password=n0pa$$wd;Connect Timeout=30;Encrypt=False;&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=10.247.7.39;Initial Catalog=Live_Content;Integrated Security=False;User ID=sa;Password=n0pa$$wd;Connect Timeout=30;Encrypt=False;</Value>
+    </Setting>
+    <Setting Name="LocalSeedDB" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=192.168.137.163;Initial Catalog=SeedDB;Integrated Security=False;User ID=sa;Password=p;Connect Timeout=30;Encrypt=False;&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=192.168.137.163;Initial Catalog=SeedDB;Integrated Security=False;User ID=sa;Password=p;Connect Timeout=30;Encrypt=False;</Value>
+    </Setting>
+    <Setting Name="LiveDatabase" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=192.168.137.163;Initial Catalog=LIVE06;Persist Security Info=True;User ID=sa;Password=p&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=192.168.137.163;Initial Catalog=LIVE06;Persist Security Info=True;User ID=sa;Password=p</Value>
+    </Setting>
+    <Setting Name="CommandTimeOut" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="TemplateFile" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Template\データベース設計書.xlsx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

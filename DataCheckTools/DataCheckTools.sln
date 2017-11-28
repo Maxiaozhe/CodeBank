@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataCheckTool", "DataCheckTools\DataCheckTool.csproj", "{40B8C987-A50E-4B0D-BC41-CC74C86C24E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableDesignInfo", "TableDesignInfo\TableDesignInfo.csproj", "{E6835A23-9E2A-4091-8D10-B9D9CBB5D678}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassReflect", "ClassReflect\ClassReflect.csproj", "{E980375D-25BE-40FF-8039-ECC8AE78E60C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxzAuthProxyModule", "MaxzAuthProxyModule\MaxzAuthProxyModule.csproj", "{84745BB1-7543-4BDB-BE34-F1A0C89A3ECE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataCheckToolForPostgre", "DataCheckToolsForPostgre\DataCheckToolForPostgre.csproj", "{9A946C57-0DDB-4123-B9F7-DE8F09C36869}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40B8C987-A50E-4B0D-BC41-CC74C86C24E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B8C987-A50E-4B0D-BC41-CC74C86C24E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B8C987-A50E-4B0D-BC41-CC74C86C24E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40B8C987-A50E-4B0D-BC41-CC74C86C24E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6835A23-9E2A-4091-8D10-B9D9CBB5D678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6835A23-9E2A-4091-8D10-B9D9CBB5D678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6835A23-9E2A-4091-8D10-B9D9CBB5D678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6835A23-9E2A-4091-8D10-B9D9CBB5D678}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E980375D-25BE-40FF-8039-ECC8AE78E60C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E980375D-25BE-40FF-8039-ECC8AE78E60C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E980375D-25BE-40FF-8039-ECC8AE78E60C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E980375D-25BE-40FF-8039-ECC8AE78E60C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84745BB1-7543-4BDB-BE34-F1A0C89A3ECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84745BB1-7543-4BDB-BE34-F1A0C89A3ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84745BB1-7543-4BDB-BE34-F1A0C89A3ECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84745BB1-7543-4BDB-BE34-F1A0C89A3ECE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A946C57-0DDB-4123-B9F7-DE8F09C36869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A946C57-0DDB-4123-B9F7-DE8F09C36869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A946C57-0DDB-4123-B9F7-DE8F09C36869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A946C57-0DDB-4123-B9F7-DE8F09C36869}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

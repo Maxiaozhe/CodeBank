@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="LIVE04" Class="LiveDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.137.163;Initial Catalog=LIVE06;Persist Security Info=True;User ID=sa" SettingsObjectName="TableDesignInfo.Properties.Settings" SettingsPropertyName="LiveDatabase" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TableList" Member="TableList">
+    <Type Name="TableList">
+      <Column Name="TableName" Type="System.String" DbType="NVarChar(200) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TableDisplayName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TableLayoutInfo" Member="TableLayoutInfo">
+    <Type Name="TableLayoutInfo">
+      <Column Name="TableName" Type="System.String" DbType="NVarChar(200) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TableDisplayName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ColumnName" Type="System.String" DbType="NVarChar(200) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ColumnDisplayName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DataType" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Length" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Precision" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Scale" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nullable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsPrimaryKey" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ColumnId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IndexId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Category" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
