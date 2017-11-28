@@ -1,2 +1,0 @@
-interpret.ObjectReferChangedListener
-interpret.ObjectReferChangedEvent
