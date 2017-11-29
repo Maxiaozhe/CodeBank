@@ -1,0 +1,40 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{6C232850-8568-4837-B830-4A78B3963CDD}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\ICSharpCode.TextEditor.dll = Lib\ICSharpCode.TextEditor.dll
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OraSQLViewer", "OraSQLViewer\OraSQLViewer.vbproj", "{D0775A74-E7E6-4C55-A42C-555C5DBCC9B8}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DBAccess", "DBACCESS\DBAccess.vbproj", "{D1BB9D0B-4B72-4F73-817A-E4709523A694}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DBACCESS\\DBAccess.vbproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = DBACCESS\\
+		SccProjectUniqueName2 = OraSQLViewer\\OraSQLViewer.vbproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = OraSQLViewer\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0775A74-E7E6-4C55-A42C-555C5DBCC9B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0775A74-E7E6-4C55-A42C-555C5DBCC9B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0775A74-E7E6-4C55-A42C-555C5DBCC9B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0775A74-E7E6-4C55-A42C-555C5DBCC9B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1BB9D0B-4B72-4F73-817A-E4709523A694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1BB9D0B-4B72-4F73-817A-E4709523A694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1BB9D0B-4B72-4F73-817A-E4709523A694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1BB9D0B-4B72-4F73-817A-E4709523A694}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

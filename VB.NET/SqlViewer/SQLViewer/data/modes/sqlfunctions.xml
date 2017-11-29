@@ -1,0 +1,190 @@
+<functions>
+	<group name="MISC FUNCTIONS" description="">
+		<function name="ROUND" description="Rounds a number down or up">
+			<parameter name="aNumber" typename="number" description="The number to round." />
+			<parameter name="length" typename="int" description="The length to round to." />
+		</function>
+		<function name="SIGN" description="">
+			<parameter name="aNumber" typename="number" description="The number to get the sign of." />
+		</function>
+		<function name="REVERSE" description="Reverses a string">
+			<parameter name="aString" typename="string" description="the string column or value to reverse." />
+		</function>
+		<function name="REPLACE" description="Replaces occurrances of one string with another, in a given string">
+			<parameter name="aString" typename="string" description="The string to replace in" />
+			<parameter name="find" typename="string" description="The value to find." />
+			<parameter name="replacement" typename="string" description="The value to replace found with." />
+		</function>
+		<function name="PATINDEX" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="PARSENAME" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="NULLIF" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="NEWID" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="RAND" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+	</group>
+	<group name="AGGREGATE FUNCTIONS" description="">
+		<function name="CAST" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="MIN" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="MAX" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="COUNT" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+	</group>
+	<group name="STRING FUNCTIONS" description="">
+		<function name="LEN" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="UPPER" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="LOWER" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="LEFT" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="RIGHT" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="SUBSTRING" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="LTRIM" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="RTRIM" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="LTRIM" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+	</group>
+	<group name="SYSTEM FUNCTIONS" description="">
+		<function name="APP_NAME" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="CAST" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="COALESCE" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="DATALENGTH" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="HOST_ID" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="HOST_NAME" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="IDENT_CURRENT" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="IDENT_SEED" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="ISDATE" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="ISNULL" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="ISNUMERIC" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="NEWID" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="NULLIF" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="ROWCOUNT_BIG" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="SCOPE_IDENTITY" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="STATS_DATE" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+	</group>
+	<group name="SECURITY FUNCTIONS" description="">
+		<function name="HAS_DBACCESS" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="IS_MEMBER" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="SUSER_ID" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="SUSER_NAME" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="USER_ID" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="USER_NAME" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+	</group>
+	<group name="NILADIC FUNCTIONS" description="">
+		<function name="CURRENT_USER" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="SESSION_USER" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="CURRENT_TIMESTAMP" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="SYSTEM_USER" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="USER" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+	</group>
+	<group name="METADATA FUNCTIONS" description="">
+		<function name="COL_LENGTH" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="COL_NAME" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="COLUMNPROPERTY" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="DB_ID" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="DB_NAME" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="FILE_ID" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="FILE_NAME" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+		<function name="INDEX_COL" description="">
+			<parameter name="" typename="" description="" />
+		</function>
+	</group>
+</functions>

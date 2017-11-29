@@ -1,0 +1,308 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D0775A74-E7E6-4C55-A42C-555C5DBCC9B8}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>SQLViewer</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>On</OptionStrict>
+    <RootNamespace>SQLViewer</RootNamespace>
+    <StartupObject>SQLViewer.My.MyApplication</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsForms</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SQLViewer.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>SQLViewer.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.TextEditor">
+      <Name>ICSharpCode.TextEditor</Name>
+      <HintPath>ICSharpCode.TextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\DBACCESS\DBAccess.vbproj">
+      <Name>DBAccess</Name>
+      <Project>{D1BB9D0B-4B72-4F73-817A-E4709523A694}</Project>
+      <Package>{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="data\cvs\Entries" />
+    <None Include="data\cvs\Entries.Extra" />
+    <None Include="data\cvs\Entries.Extra.Old" />
+    <None Include="data\cvs\Entries.Old" />
+    <None Include="data\cvs\Repository" />
+    <None Include="data\cvs\Root" />
+    <None Include="data\modes\cvs\Entries" />
+    <None Include="data\modes\cvs\Entries.Extra" />
+    <None Include="data\modes\cvs\Entries.Extra.Old" />
+    <None Include="data\modes\cvs\Entries.Old" />
+    <None Include="data\modes\cvs\Repository" />
+    <None Include="data\modes\cvs\Root" />
+    <None Include="data\modes\Default-Mode.xshd" />
+    <None Include="data\modes\Mode.xsx">
+      <DependentUpon>Mode.xsd</DependentUpon>
+    </None>
+    <None Include="data\modes\SQL.xshd" />
+    <BaseApplicationManifest Include="My Project\app.manifest" />
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Control\SqlDataGrid.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form\AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSelectObject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\IconCombBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\ListViewSortManager.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Control\MyTabControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form\frmSetTableName.Designer.vb">
+      <DependentUpon>frmSetTableName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSetTableName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\Errors.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Errors.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\Errors.vb" />
+    <Compile Include="Resource\Informations.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Informations.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\Informations.vb" />
+    <Compile Include="Resource\Questions.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Questions.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\Questions.vb" />
+    <Compile Include="Resource\ResManager.vb" />
+    <Compile Include="Resource\Messages.vb" />
+    <Compile Include="Resource\Warnings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Warnings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource\Warnings.vb" />
+    <Compile Include="Control\SqlEditor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\SqlObjView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Control\SqlDataGrid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SqlDataGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AboutBox1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSelectObject.resx">
+      <DependentUpon>frmSelectObject.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\IconCombBox.resx">
+      <DependentUpon>IconCombBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\MyTabControl.resx">
+      <DependentUpon>MyTabControl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSetTableName.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSetTableName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Errors.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Errors.vb</DependentUpon>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Errors.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Informations.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Informations.vb</DependentUpon>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Informations.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Questions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Questions.vb</DependentUpon>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Questions.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\Warnings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Warnings.vb</DependentUpon>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Warnings.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\SqlEditor.resx">
+      <DependentUpon>SqlEditor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\SqlObjView.resx">
+      <DependentUpon>SqlObjView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="data\modes\Mode.xsd">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="data\modes\sqlfunctions.xml" />
+    <Content Include="data\modes\sqlserver2000statements.xml" />
+    <Content Include="icon.ico" />
+    <Content Include="Images\CateGoly.bmp" />
+    <Content Include="Images\Database.bmp" />
+    <Content Include="Images\FN.bmp" />
+    <Content Include="Images\fns.bmp" />
+    <Content Include="Images\icon.ico" />
+    <Content Include="Images\Icon1.ico" />
+    <Content Include="Images\IF.bmp" />
+    <Content Include="Images\SP.bmp" />
+    <Content Include="Images\sps.bmp" />
+    <Content Include="Images\SQL.bmp" />
+    <Content Include="Images\table.bmp" />
+    <Content Include="Images\Tables.bmp" />
+    <Content Include="Images\view.bmp" />
+    <Content Include="Images\Views.bmp" />
+    <Content Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

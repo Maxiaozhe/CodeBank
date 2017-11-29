@@ -1,0 +1,223 @@
+<?xml version = "1.0"?>
+
+<SyntaxDefinition name = "ORACLE" extensions = ".sql">
+
+  <Environment>
+    <Default      color = "SystemColors.WindowText" bgcolor="SystemColors.Window"/>
+    <VRuler       color = "Blue"/>
+    <Selection    color = "#FFFFFF" bgcolor = "#619AE5"/>
+    <Cursor       color = "SystemColors.WindowFrame"/>
+    <LineNumbers  color = "Teal" bgcolor = "SystemColors.Window"/>
+    <InvalidLines color = "Red"/>
+    <EOLMarkers   color = "#E0E0E5"/>
+    <SpaceMarkers color = "#E0E0E5"/>
+    <TabMarkers   color = "#E0E0E5"/>
+    <CaretMarker  color = "Yellow"/>
+    <BookMarks    color = "SystemColors.WindowText"  bgcolor = "#FF60A0A0"/>
+    <FoldLine     color = "#808080" bgcolor="Black"/>
+    <FoldMarker   color = "#808080" bgcolor="White"/>
+  </Environment>
+
+  <Properties>
+    <Property name="LineComment" value="--"/>
+  </Properties>
+
+  <Digits name = "Digits" bold = "false" italic = "false" color = "Red"/>
+
+  <RuleSets>
+    <RuleSet ignorecase = "true">
+
+      <Delimiters>=!&gt;&lt;+-/*%&amp;|^~.}{,;][?:()</Delimiters>
+
+      <Span name ="LineComment" bold ="false" italic ="false" color ="DarkGreen" stopateol ="true">
+        <Begin>--</Begin>
+      </Span>
+
+      <Span name ="BlockComment" bold ="false" italic ="false" color ="DarkGreen" stopateol ="false">
+        <Begin>/*</Begin>
+        <End>*/</End>
+      </Span>
+
+      <Span name ="String" bold ="false" italic ="false" color ="Red" stopateol ="false">
+        <Begin>&quot;</Begin>
+        <End>&quot;</End>
+      </Span>
+
+      <Span name = "Character" bold = "false" italic = "false" color = "Sienna" stopateol = "true">
+        <Begin>&apos;</Begin>
+        <End>&apos;</End>
+      </Span>
+
+      <KeyWords name ="SqlKeywords" bold="false" italic = "false" color = "Blue">
+        <Key word = "set" />
+        <Key word = "distinct" />
+        <Key word = "rownum" />
+        <Key word = "from" />
+        <Key word = "where" />
+        <Key word = "in" />
+        <Key word = "on" />
+        <Key word = "exists" />
+        <Key word = "or" />
+        <Key word = "and" />
+        <Key word = "not" />
+        <Key word = "is" />
+        <Key word = "between" />
+        <Key word = "null" />
+        <Key word = "having" />
+        <Key word = "group" />
+        <Key word = "by" />
+        <Key word = "order" />
+        <Key word = "into" />
+        <Key word = "values" />
+        <Key word = "set" />
+        <Key word = "inner" />
+        <Key word = "outer" />
+        <Key word = "join" />
+        <Key word = "union" />
+        <Key word = "desc" />
+        <Key word = "asc" />
+        <Key word = "intersect" />
+        <Key word = "minus" />
+        <Key word = "SESSION" />
+        <Key word = "THEN" />
+        <Key word = "VALIDATE" />
+        <Key word = "WHENEVER" />
+      </KeyWords>
+
+      <KeyWords name ="SqlActionWords" bold="false" italic = "false" color = "Blue">
+        <Key word = "select" />
+        <Key word = "update" />
+        <Key word = "use" />
+        <Key word = "insert" />
+        <Key word = "create" />
+        <Key word = "drop" />
+        <Key word = "delete" />
+        <Key word = "truncate" />
+        <Key word = "alter" />
+        <Key word = "add" />
+        <Key word = "lock" />
+        <Key word = "NOWAIT" />
+        <Key word = "WAIT" />
+        <Key word = "SHARE" />
+      </KeyWords>
+
+      <KeyWords name ="SqlTypes" bold="false" italic = "false" color = "DarkRed">
+        <Key word = "VARCHAR" />
+        <Key word = "VARCHAR2" />
+        <Key word = "NVARCHAR" />
+        <Key word = "NVARCHAR2" />
+        <Key word = "CHAR" />
+        <Key word = "NCHAR" />
+        <Key word = "NUMBER" />
+        <Key word = "FLOAT" />
+        <Key word = "LONG" />
+        <Key word = "DATE" />
+        <Key word = "BINARY_FLOAT" />
+        <Key word = "BINARY_DOUBLE" />
+        <Key word = "TIMESTAMP" />
+        <Key word = "RAW" />
+        <Key word = "UROWID" />
+        <Key word = "CLOB" />
+        <Key word = "NCLOB" />
+        <Key word = "BLOB" />
+        <Key word = "BFILE" />
+      </KeyWords>
+
+      <KeyWords name ="SqlObjects" bold="false" italic = "false" color = "DarkRed">
+        <Key word = "table" />
+        <Key word = "proc" />
+        <Key word = "procedure" />
+        <Key word = "function" />
+        <Key word = "view" />
+        <Key word = "trigger" />
+        <Key word = "index" />
+        <Key word = "database" />
+        <Key word = "DUAL" />
+        <Key word = "SYNONYM" />
+        <Key word = "type" />
+        <Key word = "SEQUENCE" />
+      </KeyWords>
+
+      <KeyWords name ="TSql" bold="false" italic = "false" color = "DarkBlue">
+        <Key word = "IF" />
+        <Key word = "ELSE" />
+        <Key word = "CASE" />
+        <Key word = "RETURN" />
+        <Key word = "END" />
+        <Key word = "DECLARE" />
+        <Key word = "BEGIN" />
+        <Key word = "CASE" />
+        <Key word = "WHEN" />
+        <Key word = "END" />
+        <Key word = "OPEN" />
+        <Key word = "CLOSE" />
+        <Key word = "DEALLOCATE" />
+        <Key word = "FETCH" />
+        <Key word = "NEXT" />
+        <Key word = "WHILE" />
+      </KeyWords>
+
+      <KeyWords name ="Punctuation" bold="true" italic = "false" color = "DarkSlateGray">
+        <Key word = "(" />
+        <Key word = ")" />
+      </KeyWords>
+
+      <KeyWords name ="Operators" bold="false" italic = "false" color = "DarkSlateGray">
+        <Key word = "&lt;" />
+        <Key word = "&gt;" />
+        <Key word = "=" />
+        <Key word = "+" />
+        <Key word = "-" />
+        <Key word = "*" />
+        <Key word = "/" />
+        <Key word = "&amp;" />
+        <Key word = "|" />
+        <Key word = "!" />
+      </KeyWords>
+
+      <KeyWords name ="Functions" bold="false" italic = "false" color = "#ff00ff">
+        <Key word = "substring" />
+        <Key word = "upper" />
+        <Key word = "lower" />
+        <Key word = "reverse" />
+        <Key word = "avg" />
+        <Key word = "min" />
+        <Key word = "max" />
+        <Key word = "replace" />
+        <Key word = "ltrim" />
+        <Key word = "rtrim" />
+        <Key word = "cast" />
+        <Key word="count" />
+        <Key word="getdate" />
+        <Key word="month" />
+        <Key word="year" />
+        <Key word="day" />
+        <Key word="dateadd" />
+        <Key word="datediff" />
+        <Key word="DATENAME" />
+        <Key word="DATEPART" />
+        <Key word="ASCII" />
+        <Key word="LEFT" />
+        <Key word="LEN" />
+        <Key word="NVL" />
+      </KeyWords>
+      <KeyWords name="Varablers" bold="false" italic="false" color="#ff00ff">
+        <Key word="@@ERROR" />
+        <Key word="@@IDENTITY" />
+        <Key word="@@ROWCOUNT" />
+        <Key word="@@TRANCOUNT" />
+        <Key word="@@DATEFIRST" />
+        <Key word="@@OPTIONS" />
+        <Key word="@@VERSION" />
+        <Key word="@@TRANCOUNT" />
+        <Key word="@@TEXTSIZE" />
+        <Key word="@@SPID" />
+        <Key word="@@CONNECTIONS" />
+        <Key word="@@CURSOR_ROWS" />
+        <Key word="@@FETCH_STATUS" />
+      </KeyWords>
+
+    </RuleSet>
+  </RuleSets>
+</SyntaxDefinition>
+

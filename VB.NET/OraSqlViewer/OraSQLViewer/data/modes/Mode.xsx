@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--このファイルは XML スキーマ デザイナで自動生成されています。コンポーネントのレイアウト情報はデザイナ画面に保持されます。-->
+<XSDDesignerLayout layoutVersion="1" viewPortLeft="-365" viewPortTop="0">
+    <Default_XmlComplexType left="635" top="635" width="5292" height="2646" selected="0" zOrder="0" index="0" />
+    <VRuler_XmlComplexType left="7197" top="635" width="5292" height="2646" selected="0" zOrder="2" index="1" />
+    <Selection_XmlComplexType left="13759" top="635" width="5292" height="2646" selected="0" zOrder="4" index="2" />
+    <Cursor_XmlComplexType left="20321" top="635" width="5292" height="2646" selected="0" zOrder="6" index="3" />
+    <LineNumbers_XmlComplexType left="26883" top="635" width="5292" height="2646" selected="0" zOrder="7" index="4" />
+    <InvalidLines_XmlComplexType left="33445" top="635" width="5292" height="2646" selected="0" zOrder="8" index="5" />
+    <EOLMarkers_XmlComplexType left="40007" top="635" width="5292" height="2646" selected="0" zOrder="9" index="6" />
+    <SpaceMarkers_XmlComplexType left="46569" top="635" width="5292" height="2646" selected="0" zOrder="10" index="7" />
+    <TabMarkers_XmlComplexType left="53131" top="635" width="5292" height="2646" selected="0" zOrder="11" index="8" />
+    <CaretMarker_XmlComplexType left="59693" top="635" width="5292" height="2646" selected="0" zOrder="12" index="9" />
+    <BookMarks_XmlComplexType left="66255" top="635" width="5292" height="2646" selected="0" zOrder="13" index="10" />
+    <FoldLine_XmlComplexType left="72817" top="635" width="5292" height="2646" selected="0" zOrder="14" index="11" />
+    <FoldMarker_XmlComplexType left="79379" top="635" width="5292" height="2646" selected="0" zOrder="15" index="12" />
+    <Environment_XmlComplexType left="125313" top="635" width="5292" height="2646" selected="0" zOrder="16" index="13">
+        <Default_XmlElement left="85941" top="4551" width="5292" height="2646" selected="0" zOrder="17" index="0" />
+        <VRuler_XmlElement left="92503" top="4551" width="5292" height="2646" selected="0" zOrder="19" index="1" />
+        <Selection_XmlElement left="99065" top="4551" width="5292" height="2646" selected="0" zOrder="21" index="2" />
+        <Cursor_XmlElement left="105627" top="4551" width="5292" height="2646" selected="0" zOrder="23" index="3" />
+        <LineNumbers_XmlElement left="112189" top="4551" width="5292" height="2646" selected="0" zOrder="25" index="4" />
+        <InvalidLines_XmlElement left="118751" top="4551" width="5292" height="2646" selected="0" zOrder="27" index="5" />
+        <EOLMarkers_XmlElement left="125313" top="4551" width="5292" height="2646" selected="0" zOrder="29" index="6" />
+        <SpaceMarkers_XmlElement left="131875" top="4551" width="5292" height="2646" selected="0" zOrder="31" index="7" />
+        <TabMarkers_XmlElement left="138437" top="4551" width="5292" height="2646" selected="0" zOrder="33" index="8" />
+        <CaretMarker_XmlElement left="144999" top="4551" width="5292" height="2646" selected="0" zOrder="35" index="9" />
+        <BookMarks_XmlElement left="151561" top="4551" width="5292" height="2646" selected="0" zOrder="37" index="10" />
+        <FoldLine_XmlElement left="158123" top="4551" width="5292" height="2646" selected="0" zOrder="39" index="11" />
+        <FoldMarker_XmlElement left="164685" top="4551" width="5292" height="2646" selected="0" zOrder="41" index="12" />
+    </Environment_XmlComplexType>
+    <Properties_XmlComplexType left="171247" top="635" width="5292" height="2646" selected="0" zOrder="43" index="14">
+        <Property_XmlElement left="171247" top="4551" width="5292" height="2646" selected="0" zOrder="44" index="0" />
+    </Properties_XmlComplexType>
+    <Property_XmlComplexType left="177809" top="635" width="5292" height="2646" selected="0" zOrder="46" index="15" />
+    <Digits_XmlComplexType left="184371" top="635" width="5292" height="2646" selected="0" zOrder="47" index="16" />
+    <Delimiters_XmlComplexType left="190933" top="635" width="5292" height="2646" selected="0" zOrder="48" index="17" />
+    <Begin_XmlComplexType left="197495" top="635" width="5292" height="2646" selected="0" zOrder="49" index="18" />
+    <End_XmlComplexType left="204057" top="635" width="5292" height="2646" selected="0" zOrder="50" index="19" />
+    <Span_XmlComplexType left="213900" top="635" width="5292" height="2646" selected="0" zOrder="51" index="20">
+        <Begin_XmlElement left="210619" top="4551" width="5292" height="2646" selected="0" zOrder="52" index="0" />
+        <End_XmlElement left="217181" top="4551" width="5292" height="2646" selected="0" zOrder="54" index="1" />
+    </Span_XmlComplexType>
+    <MarkPrevious_XmlComplexType left="223743" top="635" width="5292" height="2646" selected="0" zOrder="56" index="21" />
+    <MarkFollowing_XmlComplexType left="230305" top="635" width="5292" height="2646" selected="0" zOrder="57" index="22" />
+    <Key_XmlComplexType left="236867" top="635" width="5292" height="2646" selected="0" zOrder="58" index="23" />
+    <KeyWords_XmlComplexType left="243429" top="635" width="5292" height="2646" selected="0" zOrder="59" index="24">
+        <Key_XmlElement left="243429" top="4551" width="5292" height="2646" selected="0" zOrder="60" index="0" />
+    </KeyWords_XmlComplexType>
+    <RuleSet_XmlComplexType left="266396" top="635" width="5292" height="2646" selected="0" zOrder="62" index="25">
+        <Delimiters_XmlElement left="249991" top="4551" width="5292" height="2646" selected="0" zOrder="63" index="0" />
+        <Span_XmlElement left="259834" top="4551" width="5292" height="2646" selected="0" zOrder="65" index="1">
+            <Begin_XmlElement left="256553" top="8467" width="5292" height="2646" selected="0" zOrder="67" index="0" />
+            <End_XmlElement left="263115" top="8467" width="5292" height="2646" selected="0" zOrder="69" index="1" />
+        </Span_XmlElement>
+        <MarkPrevious_XmlElement left="269677" top="4551" width="5292" height="2646" selected="0" zOrder="71" index="2" />
+        <MarkFollowing_XmlElement left="276239" top="4551" width="5292" height="2646" selected="0" zOrder="73" index="3" />
+        <KeyWords_XmlElement left="282801" top="4551" width="5292" height="2646" selected="0" zOrder="75" index="4">
+            <Key_XmlElement left="282801" top="8467" width="5292" height="2646" selected="0" zOrder="77" index="0" />
+        </KeyWords_XmlElement>
+    </RuleSet_XmlComplexType>
+    <RuleSets_XmlComplexType left="305768" top="635" width="5292" height="2646" selected="0" zOrder="79" index="26">
+        <RuleSet_XmlElement left="305768" top="4551" width="5292" height="2646" selected="0" zOrder="80" index="0">
+            <Delimiters_XmlElement left="289363" top="8467" width="5292" height="2646" selected="0" zOrder="82" index="0" />
+            <Span_XmlElement left="299206" top="8467" width="5292" height="2646" selected="0" zOrder="84" index="1">
+                <Begin_XmlElement left="295925" top="12383" width="5292" height="2646" selected="0" zOrder="86" index="0" />
+                <End_XmlElement left="302487" top="12383" width="5292" height="2646" selected="0" zOrder="88" index="1" />
+            </Span_XmlElement>
+            <MarkPrevious_XmlElement left="309049" top="8467" width="5292" height="2646" selected="0" zOrder="90" index="2" />
+            <MarkFollowing_XmlElement left="315611" top="8467" width="5292" height="2646" selected="0" zOrder="92" index="3" />
+            <KeyWords_XmlElement left="322173" top="8467" width="5292" height="2646" selected="0" zOrder="94" index="4">
+                <Key_XmlElement left="322173" top="12383" width="5292" height="2646" selected="0" zOrder="96" index="0" />
+            </KeyWords_XmlElement>
+        </RuleSet_XmlElement>
+    </RuleSets_XmlComplexType>
+    <SyntaxDefinition_XmlElement left="394355" top="635" width="5292" height="2646" selected="0" zOrder="98" index="27">
+        <Environment_XmlElement left="368107" top="4551" width="5292" height="2646" selected="0" zOrder="99" index="0">
+            <Default_XmlElement left="328735" top="8467" width="5292" height="2646" selected="0" zOrder="101" index="0" />
+            <VRuler_XmlElement left="335297" top="8467" width="5292" height="2646" selected="0" zOrder="103" index="1" />
+            <Selection_XmlElement left="341859" top="8467" width="5292" height="2646" selected="0" zOrder="105" index="2" />
+            <Cursor_XmlElement left="348421" top="8467" width="5292" height="2646" selected="0" zOrder="107" index="3" />
+            <LineNumbers_XmlElement left="354983" top="8467" width="5292" height="2646" selected="0" zOrder="109" index="4" />
+            <InvalidLines_XmlElement left="361545" top="8467" width="5292" height="2646" selected="0" zOrder="111" index="5" />
+            <EOLMarkers_XmlElement left="368107" top="8467" width="5292" height="2646" selected="0" zOrder="113" index="6" />
+            <SpaceMarkers_XmlElement left="374669" top="8467" width="5292" height="2646" selected="0" zOrder="115" index="7" />
+            <TabMarkers_XmlElement left="381231" top="8467" width="5292" height="2646" selected="0" zOrder="117" index="8" />
+            <CaretMarker_XmlElement left="387793" top="8467" width="5292" height="2646" selected="0" zOrder="119" index="9" />
+            <BookMarks_XmlElement left="394355" top="8467" width="5292" height="2646" selected="0" zOrder="121" index="10" />
+            <FoldLine_XmlElement left="400917" top="8467" width="5292" height="2646" selected="0" zOrder="123" index="11" />
+            <FoldMarker_XmlElement left="407479" top="8467" width="5292" height="2646" selected="0" zOrder="125" index="12" />
+        </Environment_XmlElement>
+        <Properties_XmlElement left="414041" top="4551" width="5292" height="2646" selected="0" zOrder="127" index="1">
+            <Property_XmlElement left="414041" top="8467" width="5292" height="2646" selected="0" zOrder="129" index="0" />
+        </Properties_XmlElement>
+        <Digits_XmlElement left="420603" top="4551" width="5292" height="2646" selected="0" zOrder="131" index="2" />
+        <RuleSets_XmlElement left="443570" top="4551" width="5292" height="2646" selected="0" zOrder="133" index="3">
+            <RuleSet_XmlElement left="443570" top="8467" width="5292" height="2646" selected="0" zOrder="135" index="0">
+                <Delimiters_XmlElement left="427165" top="12383" width="5292" height="2646" selected="0" zOrder="137" index="0" />
+                <Span_XmlElement left="437008" top="12383" width="5292" height="2646" selected="0" zOrder="139" index="1">
+                    <Begin_XmlElement left="433727" top="16299" width="5292" height="2646" selected="0" zOrder="141" index="0" />
+                    <End_XmlElement left="440289" top="16299" width="5292" height="2646" selected="0" zOrder="143" index="1" />
+                </Span_XmlElement>
+                <MarkPrevious_XmlElement left="446851" top="12383" width="5292" height="2646" selected="0" zOrder="145" index="2" />
+                <MarkFollowing_XmlElement left="453413" top="12383" width="5292" height="2646" selected="0" zOrder="147" index="3" />
+                <KeyWords_XmlElement left="459975" top="12383" width="5292" height="2646" selected="0" zOrder="149" index="4">
+                    <Key_XmlElement left="459975" top="16299" width="5292" height="2646" selected="0" zOrder="151" index="0" />
+                </KeyWords_XmlElement>
+            </RuleSet_XmlElement>
+        </RuleSets_XmlElement>
+    </SyntaxDefinition_XmlElement>
+</XSDDesignerLayout>

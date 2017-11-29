@@ -375,7 +375,7 @@ namespace FileThumbCreator
       IShellFolder folder = null;
       try
       {
-        folder = getDesktopFolder;
+        folder = getDesktopFolder();
       }
       catch (Exception ex)
       {
@@ -408,8 +408,7 @@ namespace FileThumbCreator
         if (pidlMain != IntPtr.Zero)
         {
           // IShellFolder:
-          Guid iidShellFolder = new
-          Guid("000214E6-0000-0000-C000-000000000046");
+          Guid iidShellFolder = new Guid("000214E6-0000-0000-C000-000000000046");
           IShellFolder item = null;
 
           try
@@ -488,7 +487,7 @@ namespace FileThumbCreator
               item.ParseDisplayName(IntPtr.Zero, IntPtr.Zero, sFileName, out cParsed, out pidlFile, out pdwAttrib);
               if (pidlFile != IntPtr.Zero)
               {
-                  getThumbnail(_filename, pidlFile, item);
+                getThumbnail(_filename, pidlFile, item);
                 Allocator.Free(pidlFile);
               }
             }
@@ -592,14 +591,12 @@ namespace FileThumbCreator
       }
     }
 
-    private IShellFolder getDesktopFolder
+    private IShellFolder getDesktopFolder()
     {
-      get
-      {
+
         IShellFolder ppshf;
         int r = UnManagedMethods.SHGetDesktopFolder(out ppshf);
         return ppshf;
-      }
     }
     #endregion
 

@@ -1,0 +1,3 @@
+﻿SELECT
+dbms_metadata.get_ddl(:OBJTYPE,:OBJNAME,:SCHEMA) AS DDL
+FROM DUAL
