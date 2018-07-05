@@ -35,3 +35,5 @@
 * <a href="/Java/Interpret/">Javaクラスブラウザ</a>
 
 * <a href="/C%23/googleService">Google Map API サービス</a>
+
+* WMI(Windows Management Instrumentation）クエリ(WMI （/C%23/googleService）)
