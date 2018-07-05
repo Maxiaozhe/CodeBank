@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/wysiwyg-editor.css" />
+	<link href="css/demo.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+	<div style="width:860px; margin: 30px auto;">
+	  <div style="color:#aa0000;font-weight:bold;font-size:0.8em;padding-bottom:8px;"></div>
+	  <textarea id="editor1" name="editor" placeholder="Type your text here..."> </textarea>
+	</div>
+	<div class="btn">1111111</div>
+	
+
+
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/wysiwyg.js"></script>
+	<script type="text/javascript" src="js/wysiwyg-editor.js"></script>
+	<script type="text/javascript" src="js/demo.js"></script>
+	<script>
+
+		$('.btn').on('click',function(){
+			console.log($('#editor1').val());
+		})
+		
+	</script>
+</body>
+</html>
