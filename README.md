@@ -36,4 +36,4 @@
 
 * <a href="/C%23/googleService">Google Map API サービス</a>
 
-* WMI(Windows Management Instrumentation）クエリ(WMI （/C%23/googleService）)
+* <a href="/VB.NET/WMIConsule">WMI(Windows Management Instrumentation）クエリ</a>
