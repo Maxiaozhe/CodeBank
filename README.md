@@ -1,5 +1,5 @@
 # CodeBank
-<h4>１０数年間、余暇の間に開発されたさまざまなツールです。</h4>
+<h4>１０数年間、余暇の間に開発されたさまざまなツールです。</h4>###整理中
 
 * <a href="/VB.NET/ADAccesser">ActiveDirectory　アクセスツール</a>
 
