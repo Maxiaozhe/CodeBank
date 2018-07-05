@@ -1,11 +1,11 @@
 # CodeBank
-<h4>１０数年間、余暇の間に開発されたさまざまなツールです。(<font color="Red">整理中</font>) </h4>
+<h4>１０数年間、余暇の間に開発されたさまざまなツールです。(<font color="Red">整理中 </font>) </h4>
 
 * <a href="/VB.NET/ADAccesser">ActiveDirectory　アクセスツール</a>
 
 + データベースブラウザ
   - <a href="/VB.NET/SqlViewer">データベースブラウザ（SQLServer）</a>
-  - <a href="VB.NET/OraSqlViewer">データベースブラウザ（Oracle）</a>Z
+  - <a href="VB.NET/OraSqlViewer">データベースブラウザ（Oracle）</a>
 
 + データツール/自動化ツール
   - <a href="C%23/DataTools/DataCheckTools">SQLServer<=>Excelデータ変換ツール</a>
