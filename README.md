@@ -35,3 +35,5 @@
 * <a href="/C%23/googleService">Google Map API サービス</a>
 
 * <a href="/VB.NET/WMIConsule">WMI(Windows Management Instrumentation）クエリ</a>
+
+* <a href="/VB.NET/HtmlToImage">HTMLから画像へ変換ツール</a>
