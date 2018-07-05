@@ -17,7 +17,7 @@
 
 ・PhotoShareサイト（ASP.NET MVC）
 
-・NodejS
+・NodejSーMongoDBの練習
 
 ・Javaクラスブラウザ
 
