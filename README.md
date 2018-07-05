@@ -7,13 +7,14 @@
   - <a href="/VB.NET/SqlViewer">データベースブラウザ（SQLServer）</a>
   - <a href="VB.NET/OraSqlViewer">データベースブラウザ（Oracle）</a>
 
-* SQLServer<=>Excel双方向データ変換ツール
++ データツール/自動化ツール
+  - <a href="C%23/DataTools/DataCheckTools">SQLServer<=>Excel双方向データ変換ツール</a>
+  - <a href="/C%23/DataTools/DataCheckToolsForPostgre">PostgreSql<=>Excel双方向データ変換ツール</a>
+  - <a href="/C%23/DataTools/TableDesignInfo">データベース設計書とSQLScript自動生成ツール</a>
+  - <a href="/C%23/DataTools/ClassReflect">クラス図とテストコード自動生成ツール</a>
+  - <a href="/C%23/DataTools/BulkCopy">BulkCopyツール</a>
 
-* データベース設計書とSQLScript生成ツール
-
-* テストコード自動生成ツール
-
-* リリース時の自動パッケージ化ツール
+* <a href="/VB.NET/ReleaseUtility">パッケージリリースの自動化ツール</a>
 
 * JQueryの拡張ライブラリ 
 
