@@ -3,9 +3,9 @@
 
 * <a href="/VB.NET/ADAccesser">ActiveDirectory　アクセスツール</a>
 
-* <a href="/VB.NET/SqlViewer">データベースブラウザ（SQLServer）</a>
-
-* <a href="VB.NET/OraSqlViewer">データベースブラウザ（Oracle）</a>
++ データベースブラウザ
+  - <a href="/VB.NET/SqlViewer">データベースブラウザ（SQLServer）</a>
+  - <a href="VB.NET/OraSqlViewer">データベースブラウザ（Oracle）</a>
 
 * SQLServer<=>Excel双方向データ変換ツール
 
