@@ -13,6 +13,8 @@
   - <a href="/C%23/DataTools/TableDesignInfo">データベース設計書とSQLScript自動生成ツール</a>
   - <a href="/C%23/DataTools/ClassReflect">クラス図とテストコード自動生成ツール</a>
   - <a href="/C%23/DataTools/BulkCopy">BulkCopyツール</a>
+ 
+* <a href="/C%23/NotesSharePointTool">LotusNotes→SharePoint設計移行ツール</a>
 
 * <a href="/VB.NET/ReleaseUtility">パッケージリリースの自動化ツール</a>
 
