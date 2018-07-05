@@ -1,7 +1,7 @@
 # CodeBank
 <h4>１０数年間、余暇の間に開発されたさまざまなツールです。</h4>
 
-* <a href="/tree/master/VB.NET/ADAccesser">ActiveDirectory　アクセスツール</a>
+* <a href="/VB.NET/ADAccesser">ActiveDirectory　アクセスツール</a>
 
 * データベースブラウザ（Oracle、SQLServer）
 
