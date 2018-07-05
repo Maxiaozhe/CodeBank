@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:scrollbars="vertical"
+    android:divider="@drawable/divider"
+    android:showDividers="middle"
+    >
+    <!--back button-->
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backButton"
+        android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha">
+    </ImageButton>
+    <!--text size-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout style="@style/setting_horizontal_view" android:layout_width="match_parent"   >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/text_size"
+                android:id="@+id/textSizeCaption" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textSize"
+                android:textColor="@color/setting_text_color"
+                android:text="48dp"
+                android:layout_marginLeft="24dp" />
+        </LinearLayout>
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sizeBar"
+            android:indeterminate="false"
+            android:max="@integer/max_text_size_value"
+            android:clickable="true"
+            android:labelFor="@id/textSize"
+            android:progress="@integer/default_text_size_value"
+            android:splitTrack="false" />
+    </LinearLayout>
+   <!--text color-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        style="@style/setting_horizontal_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/text_color"
+            android:id="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textColor"
+            android:textColor="@color/setting_text_color"
+            android:layout_marginLeft="24dp" />
+
+    </LinearLayout>
+    <com.maxz.digitalclock.LineColorPicker
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/textColorPicker"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:colors="@array/text_colors"
+        app:selectedColor="@color/default_clock_color"
+        />
+    </LinearLayout>
+    <!--background color-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        style="@style/setting_horizontal_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:divider="@color/gray_dark">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/background_color"
+            android:id="@+id/bgColor" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/backgroundColor"
+            android:textColor="@color/setting_text_color"
+            android:layout_marginLeft="24dp" />
+    </LinearLayout>
+    <com.maxz.digitalclock.LineColorPicker
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/bgColorPicker"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:colors="@array/bg_colors"
+        app:selectedColor="@color/default_background"
+        />
+    </LinearLayout>
+    <!--background image-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            style="@style/setting_horizontal_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:divider="@color/gray_dark"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/background_image"
+                android:id="@+id/bgImage" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/bgImgSwitch"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/bgImageSelect"
+            android:text="@string/background_image_select"
+            android:textColorHighlight="@android:color/holo_blue_light"
+            android:textColorHint="@android:color/holo_blue_light"
+            android:textColor="@color/midnight_blue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/textImgUrl"
+            android:layout_gravity="left" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:id="@+id/bgImageView"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/bg" />
+    </LinearLayout>
+
+
+</LinearLayout>

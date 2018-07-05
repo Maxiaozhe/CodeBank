@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="yellow">#fffb29</color>
+    <color name="yellow_dark">#ffc6c233</color>
+    <color name="orange_light">@android:color/holo_orange_light</color>
+    <color name="orange_dark">@android:color/holo_orange_dark</color>
+    <color name="red_light">@android:color/holo_red_light</color>
+    <color name="red_dark">@android:color/holo_red_dark</color>
+    <color name="green_light">@android:color/holo_green_light</color>
+    <color name="green">#67bb43</color>
+    <color name="green_bright">#41b691</color>
+    <color name="green_dark">@android:color/holo_green_dark</color>
+    <color name="cyan">@android:color/holo_blue_bright</color>
+    <color name="blue_light">@android:color/holo_blue_light</color>
+    <color name="blue_dark">@android:color/holo_blue_dark</color>
+    <color name="midnight_blue">#ff0a0680</color>
+    <color name="blue">#a00000ff</color>
+    <color name="magenta">#FF00FF</color>
+    <color name="purple">@android:color/holo_purple</color>
+    <color name="magenta_dark">#7641b6</color>
+    <color name="white">@android:color/white</color>
+    <color name="gray_light">#cccccc</color>
+    <color name="gray">#888888</color>
+    <color name="gray_dark">#444444</color>
+    <color name="black">#000000</color>
+
+    <integer-array name="text_colors">
+        <item>@color/yellow</item>
+        <item>@color/orange_light</item>
+        <item>@color/red_light</item>
+        <item>@color/green_light</item>
+        <item>@color/green</item>
+        <item>@color/green_bright</item>
+        <item>@color/cyan</item>
+        <item>@color/blue</item>
+        <item>@color/magenta</item>
+        <item>@color/magenta_dark</item>
+        <item>@color/white</item>
+        <item>@color/gray_light</item>
+        <item>@color/gray</item>
+        <item>@color/gray_dark</item>
+    </integer-array>
+    <integer-array name="bg_colors">
+        <item>@color/yellow_dark</item>
+        <item>@color/orange_dark</item>
+        <item>@color/red_dark</item>
+        <item>@color/green</item>
+        <item>@color/green_bright</item>
+        <item>@color/blue_dark</item>
+        <item>@color/midnight_blue</item>
+        <item>@color/purple</item>
+        <item>@color/magenta_dark</item>
+        <item>@color/white</item>
+        <item>@color/gray_light</item>
+        <item>@color/gray</item>
+        <item>@color/black</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin"  android:background="@color/default_background"
+    android:id="@+id/widget_clock_Layout"
+    >
+
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/widgt_imageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop" />
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textWidgetClock"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:format12Hour="HH:mm:ss"
+        android:format24Hour="HH:mm:ss"
+        android:textColor="@color/default_clock_color"
+        android:textSize="@dimen/default_text_size"
+
+        />
+</RelativeLayout>
