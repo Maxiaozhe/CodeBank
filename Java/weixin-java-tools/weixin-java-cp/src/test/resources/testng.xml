@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Weixin-java-tool-suite" verbose="1">
+  <test name="API_Test">
+    <classes>
+      <class name="me.chanjar.weixin.cp.api.WxCpBusyRetryTest"/>
+      <class name="me.chanjar.weixin.cp.api.WxCpBaseAPITest"/>
+      <class name="me.chanjar.weixin.cp.api.WxCpMessageAPITest"/>
+      <class name="me.chanjar.weixin.cp.api.WxCpMessageRouterTest"/>
+    </classes>
+  </test>
+
+  <test name="Bean_Test">
+    <classes>
+      <class name="me.chanjar.weixin.cp.bean.WxCpMessageTest"/>
+      <class name="me.chanjar.weixin.cp.bean.WxCpXmlMessageTest"/>
+      <class name="me.chanjar.weixin.cp.bean.WxCpXmlOutImageMessageTest"/>
+      <class name="me.chanjar.weixin.cp.bean.WxCpXmlOutNewsMessageTest"/>
+      <class name="me.chanjar.weixin.cp.bean.WxCpXmlOutVideoMessageTest"/>
+      <class name="me.chanjar.weixin.cp.bean.WxCpXmlOutVoiceMessageTest"/>
+      <class name="me.chanjar.weixin.cp.bean.WxCpXmlOutTextMessageTest"/>
+    </classes>
+  </test>
+</suite>
