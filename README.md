@@ -1,24 +1,26 @@
 # CodeBank
 １０数年間、余暇の間に開発されたさまざまなツールです。
 
-・データベースブラウザ（Oracle、SQLServer）
+*ActiveDirectory　アクセスツール
 
-・SQLServer<=>Excel双方向データ変換ツール
+*データベースブラウザ（Oracle、SQLServer）
 
-・データベース設計書とSQLScript生成ツール
+*SQLServer<=>Excel双方向データ変換ツール
 
-・テストコード自動生成ツール
+*データベース設計書とSQLScript生成ツール
 
-・リリース時の自動パッケージ化ツール
+*テストコード自動生成ツール
 
-・JQueryの拡張ライブラリ 
+*リリース時の自動パッケージ化ツール
 
-・WeChar開発ツール
+*JQueryの拡張ライブラリ 
 
-・PhotoShareサイト（ASP.NET MVC）
+*WeChat開発ツール
 
-・NodejSーMongoDBの練習
+*PhotoShareサイト（ASP.NET MVC）
 
-・Javaクラスブラウザ
+*NodejSーMongoDBの練習
+
+*Javaクラスブラウザ
 
 
