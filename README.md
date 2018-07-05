@@ -8,22 +8,30 @@
   - <a href="VB.NET/OraSqlViewer">データベースブラウザ（Oracle）</a>
 
 + データツール/自動化ツール
-  - <a href="C%23/DataTools/DataCheckTools">SQLServer<=>Excel双方向データ変換ツール</a>
-  - <a href="/C%23/DataTools/DataCheckToolsForPostgre">PostgreSql<=>Excel双方向データ変換ツール</a>
+  - <a href="C%23/DataTools/DataCheckTools">SQLServer<=>Excelデータ変換ツール</a>
+  - <a href="/C%23/DataTools/DataCheckToolsForPostgre">PostgreSql<=>Excelデータ変換ツール</a>
   - <a href="/C%23/DataTools/TableDesignInfo">データベース設計書とSQLScript自動生成ツール</a>
   - <a href="/C%23/DataTools/ClassReflect">クラス図とテストコード自動生成ツール</a>
   - <a href="/C%23/DataTools/BulkCopy">BulkCopyツール</a>
 
 * <a href="/VB.NET/ReleaseUtility">パッケージリリースの自動化ツール</a>
 
-* JQueryの拡張ライブラリ 
+* JQueryの拡張ライブラリ
+  - グレードビュー
+  - リッチテキスト
+  - ダイアローグ
+  - フォームデータバイド
+  - ファイルドロップ
+  - Header Fixed Table
+  
+* <a href="/VB.NET/XResource">多国語リソース編集・コンパイルツール</a>
 
-* WeChat開発ツール
+* <a href="/Java/weixin-java-tools">WeChat開発ツール</a>
 
-* PhotoShareサイト（ASP.NET MVC）
+* <a href="/C%23/PhotoSharing">PhotoShareサイト（ASP.NET MVC）</a>
 
-* NodejSーMongoDBの練習
+* <a href="/VB.NET/ReleaseUtility">NodejSーMongoDBの練習</a>
 
-* Javaクラスブラウザ
+* <a href="/Java/Interpret/">Javaクラスブラウザ</a>
 
 
