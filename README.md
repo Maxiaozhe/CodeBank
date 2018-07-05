@@ -30,8 +30,6 @@
 
 * <a href="/C%23/PhotoSharing">PhotoShareサイト（ASP.NET MVC）</a>
 
-* <a href="/VB.NET/ReleaseUtility">NodejSーMongoDBの練習</a>
-
 * <a href="/Java/Interpret/">Javaクラスブラウザ</a>
 
 * <a href="/C%23/googleService">Google Map API サービス</a>
