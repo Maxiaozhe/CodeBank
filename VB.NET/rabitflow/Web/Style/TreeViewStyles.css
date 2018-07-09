@@ -1,0 +1,69 @@
+﻿/* RtsTreeView*/
+.NormalItem
+{
+	font-size:10pt;
+}
+A.NormalItem:link	{	
+	text-decoration:	none;
+	color:	#3333cc;
+	text-decoration:none;
+	}	
+		
+A.NormalItem:visited	
+{	
+	text-decoration:	none;
+	color:	#333399;
+}	
+		
+A.NormalItem:active	
+{	
+	text-decoration:	none;
+	color:	#333399;
+	text-decoration:underline;
+}	
+		
+A.NormalItem:hover	
+{	
+	text-decoration:	underline;
+	color:	#3333cc;
+	font-weight:bold;
+}
+
+.SelectedItem
+{
+ background-color:MidnightBlue;
+ color:White;
+ font-size:10pt;
+}
+
+A.SelectedItem:link	{	
+	text-decoration:	none;
+	color:	#FFFFFF;
+	text-decoration:none;
+	}	
+		
+A.SelectedItem:visited	{	
+	text-decoration:	none;
+	color:	#FFFFFF;
+	}	
+		
+A.SelectedItem:active	
+{	
+	text-decoration:	none;
+	color:	#FFFFFF;
+	text-decoration:underline;
+}	
+		
+A.SelectedItem:hover	
+{	
+	text-decoration:underline;
+	font-weight:bold;
+	color:	#FFFFFF;
+}	
+
+img
+{
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}

@@ -1,0 +1,56 @@
+﻿.sys_navigate_link
+{
+    font-size: 10pt;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.body_table
+{
+    font-size: 10pt;
+    border-collapse: collapse;
+}
+.body_row_title
+{
+    background-color: #c0c0c0;
+    border-collapse: collapse;
+    width: 15%;
+    height: 25px;
+    vertical-align: middle;
+}
+.body_description
+{
+    width: 50%;
+    color: #ff0000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.alpha_num_only
+{
+    ime-mode: disabled;
+}
+.numeric_only
+{
+    ime-mode: disabled;
+    text-align: right;
+}
+.must_input
+{
+    color: #ff0000;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.commentative_row
+{
+    font-size: 10pt;
+    vertical-align: middle;
+    height: 25px;
+}
+.readonly_input_text
+{
+    background-color: #c0c0c0;
+}
+.warning_description
+{
+    font-size: 10pt;
+    color: #ff0000;
+}

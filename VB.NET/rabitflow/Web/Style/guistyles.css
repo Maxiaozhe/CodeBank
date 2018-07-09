@@ -1,0 +1,18 @@
+﻿.richtext hr{
+    width:99%;/*when calc not support*/
+    width:calc(100% - 4px);
+    text-align:center;
+    display:inline-block;
+}
+.richtext table{
+    border:1px solid gray;
+    border-collapse:collapse;
+}
+.richtext td{
+    border:1px solid gray;
+}
+.richtext blockquote{
+    margin-left:20px;
+    margin-top:inherit;
+    margin-bottom:inherit;
+}

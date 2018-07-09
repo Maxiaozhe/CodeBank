@@ -1,0 +1,55 @@
+/* 新しい Web アプリケーション プロジェクトの既定の CSS スタイルシート */
+/*
+BODY
+{
+	font-family: 'ＭＳ Ｐゴシック';
+	font-size: 10pt;
+	letter-spacing: normal;
+	text-transform: none;
+	word-spacing: normal;
+}
+
+TABLE
+{
+	font-family: 'ＭＳ Ｐゴシック';
+	font-size: 10pt;
+	letter-spacing: normal;
+	text-transform: none;
+	word-spacing: normal;
+}
+
+INPUT
+{
+	font-family: 'ＭＳ Ｐゴシック';
+	font-size: 10pt;
+	letter-spacing: normal;
+	text-transform: none;
+	word-spacing: normal;
+}
+
+DIV
+{
+	font-family: 'ＭＳ Ｐゴシック';
+	font-size: 10pt;
+	letter-spacing: normal;
+	text-transform: none;
+	word-spacing: normal;
+}
+*/
+
+/*
+>TABLE内のフォントサイズを定義。クラス定義しなければ、
+>標準でこのフォントサイズが適用される。 
+*/
+/*
+table
+{
+	font-size: 12px;
+	font-style: normal;
+	color:#333333;
+}
+td{
+    padding:0px;
+    text-align:left;
+}
+*/

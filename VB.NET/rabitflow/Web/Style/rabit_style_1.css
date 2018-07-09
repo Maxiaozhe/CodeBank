@@ -1,0 +1,791 @@
+﻿/*-----------------------------------------------------------
+グローバル
+-----------------------------------------------------------*/
+body {
+    margin: 0px;
+}
+
+table {
+    margin: 0px;
+    padding: 0px;
+    border-collapse: collapse;
+    border-width: 0px;
+}
+
+td {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    font-size: 9pt;
+}
+
+/*
+-----------------------------------------------------------
+R@bit Flow用スタイルシート。
+-----------------------------------------------------------
+*/
+/*
+>画面全体のマージン、背景色、背景イメージ、フォントスタイル定義 
+*/
+.login {
+    font-family: "ＭＳ Ｐゴシック", "Arial";
+    font-size: 12px;
+    font-style: normal;
+    color: #333333;
+    background-color: #FFFFFF;
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    PADDING-TOP: 0px;
+    BACKGROUND-COLOR: #ffffff;
+    background-image: url(../images/back_blue.jpg);
+    background-repeat: repeat-x;
+}
+
+/*
+>個別フォントサイズ定義
+*/
+.f10 {
+    font-size: 10px;
+}
+
+.f11 {
+    font-size: 11px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+
+/*
+>以下カスタムクラス
+*/
+.hr {
+    background-image: url(../images/line.gif);
+    background-repeat: repeat-x;
+    background-position: 0px;
+    height: 1px;
+}
+
+.table_head {
+    background-image: url(../images/table_head.jpg);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    padding: 3px;
+    border-color: #B0B0B0;
+}
+
+.login_back {
+    background-image: url(../images/back_login.jpg);
+    background-repeat: no-repeat;
+    height: 228px;
+    width: 659px;
+}
+
+.head_back {
+    background-image: url(../images/head_back.jpg);
+    background-repeat: repeat-x;
+}
+
+.headbar_back {
+    background-image: url(../images/head_bar.jpg);
+    background-repeat: repeat-x;
+}
+
+.headbar_back2 {
+    background-image: url(../images/head_bar2.jpg);
+    background-repeat: repeat-x;
+}
+
+.menushadow_back {
+    background-image: url(../images/menu_shadow.jpg);
+    background-repeat: repeat-y;
+}
+
+.menutitle_back {
+    background-image: url(../images/menu_title.jpg);
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 200px;
+    padding-left: 25px;
+    font-size: 11pt;
+    font-weight: bold;
+    padding-bottom: 2px;
+    color: #FFFFFF;
+}
+
+.dialog_title {
+    background-image: url(../images/dialog_title.jpg);
+    background-repeat: repeat-x;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-left: 30px;
+    padding-top: 3px;
+    text-align: left;
+}
+
+.button_login {
+    right: 0;
+    bottom: 0;
+    border: 0;
+    padding: 0;
+    width: 80px;
+    height: 22px;
+    background-image: url(../images/button_login.jpg);
+    background-repeat: no-repeat;
+    color: #333333;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.button_cancel {
+    right: 0;
+    bottom: 0;
+    border: 0;
+    padding: 0;
+    width: 80px;
+    height: 22px;
+    background-image: url(../images/button_cancel.jpg);
+    background-repeat: no-repeat;
+    color: #333333;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.button_close {
+    right: 0;
+    bottom: 0;
+    border: 0;
+    padding: 1px 0 0 9px;
+    width: 70px;
+    height: 17px;
+    background-image: url(../images/close.gif);
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.button_back {
+    right: 0;
+    bottom: 0;
+    border: 0;
+    padding: 1px 0 0;
+    width: 70px;
+    height: 17px;
+    background-image: url(../images/back.gif);
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.button_headmenu {
+    right: 0;
+    bottom: 0;
+    border: 1px solid #B0B0B0;
+    padding: 0;
+    width: 100px;
+    height: 26px;
+    background-image: url(../images/button_head.jpg);
+    background-repeat: repeat-x;
+    color: #333333;
+    font-size: 10pt;
+    letter-spacing: 1px;
+}
+
+.button_headmenu_l {
+    right: 0;
+    bottom: 0;
+    border: 1px solid #B0B0B0;
+    padding: 0;
+    width: 150px;
+    height: 26px;
+    background-image: url(../images/button_head.jpg);
+    background-repeat: repeat-x;
+    color: #333333;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.button_menu_r {
+    right: 0;
+    bottom: 0;
+    border: 0;
+    padding: 1px 12px 0 26px;
+    width: 100%;
+    height: 32px;
+    background-image: url(../images/menu_back.jpg);
+    background-position: right top;
+    background-repeat: no-repeat;
+    color: #333333;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.button_menu_d {
+    right: 0;
+    bottom: 0;
+    border: 0;
+    padding: 1px 12px 0 26px;
+    width: 100%;
+    height: 32px;
+    background-image: url(../images/menu_back2.jpg);
+    background-position: right top;
+    background-repeat: no-repeat;
+    color: #333333;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.button_menu_s {
+    right: 0;
+    bottom: 0;
+    border: 0;
+    padding: 1px 12px 0 26px;
+    width: 100%;
+    height: 32px;
+    background-image: url(../images/menu_back4.jpg);
+    background-position: right top;
+    background-repeat: no-repeat;
+    color: #666666;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.button_view {
+    right: 0;
+    bottom: 0;
+    border: 0;
+    padding: 1px 12px 0 35px;
+    width: 200px;
+    height: 32px;
+    background-image: url(../images/menu_back3.jpg);
+    background-repeat: repeat-x;
+    color: #333333;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.button_select {
+    right: 0;
+    bottom: 0;
+    border: 0;
+    padding: 1px 12px 0 35px;
+    width: 200px;
+    height: 32px;
+    background-image: url(../images/menu_back4.jpg);
+    background-repeat: repeat-x;
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.button_viewback {
+    right: 0;
+    bottom: 0;
+    border: 0;
+    padding: 0px;
+    width: 35px;
+    height: 21px;
+    background-image: url(../images/back_view.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.button_viewnext {
+    right: 0;
+    bottom: 0;
+    border: 0;
+    padding: 0px;
+    width: 35px;
+    height: 21px;
+    background-image: url(../images/next_view.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.button_tsuika {
+    right: 0;
+    bottom: 0;
+    border: 0;
+    padding: 0px;
+    width: 25px;
+    height: 16px;
+    background-image: url(../images/yajirushi.gif);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.button01 {
+    right: 0;
+    bottom: 0;
+    border: 1px solid #828282;
+    padding: 0;
+    width: 100px;
+    height: 23px;
+    background-image: url(../images/input_back01.gif);
+    background-repeat: repeat-x;
+    color: #333333;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.button02 {
+    right: 0;
+    bottom: 0;
+    border: 1px solid #828282;
+    padding: 0;
+    width: 100px;
+    height: 23px;
+    background-image: url(../images/input_back02.gif);
+    background-repeat: repeat-x;
+    color: #333333;
+    font-size: 10pt;
+    letter-spacing: 1px;
+    font-family: "ＭＳ Ｐゴシック", "Arial";
+}
+
+.button03 {
+    right: 0;
+    bottom: 0;
+    /*border: 1px solid #828282;*/
+    border: 0px solid #828282;
+    padding: 0;
+    width: 41px;
+    height: 21px;
+    /*background-image: url(../images/input_back03.gif);*/
+    background-image: url(../images/Find.gif);
+    background-repeat: repeat-x;
+    /*color:#333333;
+	font-size: 12px;
+	letter-spacing: 3px;*/
+}
+
+.button04 {
+    right: 0;
+    bottom: 0;
+    border: 1px solid #828282;
+    padding: 0;
+    width: 41px;
+    height: 21px;
+    background-image: url(../images/input_back03.gif);
+    background-repeat: repeat-x;
+    color: #333333;
+    font-size: 11px;
+}
+
+.button05 {
+    right: 0;
+    bottom: 0;
+    border: 0;
+    padding: 3px 0 0;
+    width: 110px;
+    height: 26px;
+    background-image: url(../images/tab1.jpg);
+    background-repeat: no-repeat;
+    color: #333333;
+    font-size: 12px;
+    text-align: center;
+}
+
+.button06 {
+    right: 0;
+    bottom: 0;
+    border: 0;
+    padding: 3px 0 0;
+    width: 110px;
+    height: 26px;
+    background-image: url(../images/tab2.jpg);
+    background-repeat: no-repeat;
+    color: #666666;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.button07 {
+    right: 0;
+    bottom: 0;
+    border: 1px solid #828282;
+    padding: 0;
+    width: 81px;
+    height: 21px;
+    background-image: url(../images/input_back03.gif);
+    background-repeat: repeat-x;
+    color: #333333;
+    font-size: 11px;
+}
+
+.button08 {
+    right: 0;
+    bottom: 0;
+    border: 1px solid #828282;
+    padding: 0;
+    width: 100px;
+    height: 23px;
+    background-image: url(../images/input_back04.gif);
+    background-repeat: repeat-x;
+    color: #666666;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/*
+-----------------------------------------------------------
+個別コントロール拡張クラス
+-----------------------------------------------------------
+*/
+
+/*
+>TD内のフォントサイズを定義。クラス定義しなければ、
+>標準でこのフォントサイズが適用される。 
+*/
+.header_font {
+    font-size: 12px;
+    font-family: "ＭＳ Ｐゴシック", "Arial";
+    font-style: normal;
+    color: #ffffff;
+}
+
+.button05_s {
+    right: 0;
+    bottom: 0;
+    border: 0;
+    padding: 3px 0 0;
+    width: 72px;
+    height: 26px;
+    background-image: url(../images/tab4.jpg);
+    background-repeat: no-repeat;
+    color: #333333;
+    font-size: 12px;
+    text-align: center;
+}
+
+.button06_s {
+    right: 0;
+    bottom: 0;
+    border: 0;
+    padding: 3px 0 0;
+    width: 72px;
+    height: 26px;
+    background-image: url(../images/tab3.jpg);
+    background-repeat: no-repeat;
+    color: #666666;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.fixTitle {
+    margin-top: 0px;
+    line-height: 160%;
+    POSITION: relative;
+    /*TOP: expression(offsetParent.scrollTop-2);*/
+}
+
+span {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.hmark {
+    cursor: pointer;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 15px;
+}
+
+.head_back_aqua {
+    background-image: url(../images/head_back_aqua.jpg);
+    background-repeat: repeat-x;
+}
+
+.headbar_back_aqua {
+    background-image: url(../images/head_bar_aqua.jpg);
+    background-repeat: repeat-x;
+}
+
+.button_menu_aqua {
+    right: 0;
+    bottom: 0;
+    border: 0;
+    padding: 1px 12px 0 26px;
+    width: 200px;
+    height: 32px;
+    background-image: url(../images/menu_back_aqua.jpg);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.calender {
+    /*
+	right: 0;
+	bottom: 0;
+*/
+    border: 0;
+    padding: 0px;
+    width: 27px;
+    height: 21px;
+    background-image: url(../images/calender.gif);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+/*calendar trig button*/
+.ui-datepicker-trigger {
+    vertical-align: middle;
+    margin-bottom: 4px;
+}
+
+.watch {
+    /*
+	right: 0;
+	bottom: 0;
+*/
+    border: 0;
+    padding: 0px;
+    width: 27px;
+    height: 21px;
+    background-image: url(../images/watch.gif);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.viewallcheck {
+    right: 0;
+    bottom: 0;
+    border: 0px solid #828282;
+    padding: 0;
+    width: 41px;
+    height: 21px;
+    background-image: url(../images/ViewAllCheck.gif);
+    background-repeat: repeat-x;
+    /*color:#333333;
+	font-size: 11px;*/
+}
+
+.viewallclear {
+    right: 0;
+    bottom: 0;
+    border: 0px solid #828282;
+    padding: 0;
+    width: 41px;
+    height: 21px;
+    background-image: url(../images/ViewAllClear.gif);
+    background-repeat: repeat-x;
+    /*color:#333333;
+	font-size: 11px;*/
+}
+
+.viewallopen {
+    right: 0;
+    bottom: 0;
+    border: 0px solid #828282;
+    padding: 0;
+    width: 41px;
+    height: 21px;
+    background-image: url(../images/ViewAllOpen.gif);
+    background-repeat: repeat-x;
+}
+
+.viewallclose {
+    right: 0;
+    bottom: 0;
+    border: 0px solid #828282;
+    padding: 0;
+    width: 41px;
+    height: 21px;
+    background-image: url(../images/ViewAllClose.gif);
+    background-repeat: repeat-x;
+}
+
+.viewreload {
+    right: 0;
+    bottom: 0;
+    border: 0px solid #828282;
+    padding: 0;
+    width: 61px;
+    height: 21px;
+    background-image: url(../images/ViewReload.gif);
+    background-repeat: repeat-x;
+}
+
+.labeltodo_select {
+    background-color: #99CCFF;
+    color: #003366;
+    font-weight: bold;
+    padding: 2px;
+    vertical-align: middle;
+}
+
+.labeltodo_notselect {
+    background-color: Transparent;
+    color: Blue;
+    font-weight: normal;
+    padding: 2px;
+}
+
+.nowarp {
+    white-space: nowrap;
+}
+
+.warp {
+    white-space: normal;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: table-row;
+}
+
+.viewfont {
+    font-size: 9pt;
+    word-break: break-all;
+    word-wrap: normal;
+    padding: 3px;
+    border-color: #B0B0B0;
+}
+
+.hiddenonly {
+    display: none;
+}
+
+.align_left {
+    text-align: left;
+}
+
+.align_center {
+    text-align: center;
+}
+
+.align_right {
+    text-align: right;
+}
+
+.table_left {
+    margin-right: auto;
+}
+
+.table_center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table_right {
+    margin-left: auto;
+}
+
+div.htmleditor {
+    display: inline-block;
+}
+
+iframe.htmleditor {
+    border: 1px;
+    width: 100%;
+    margin: 0px;
+}
+
+.htmleditor-toolbar {
+    border-bottom: 1px solid gray;
+    width: 99%; /*when calc not supported*/
+    width: calc(100% - 4px);
+    margin: 0px;
+    padding: 2px;
+    text-align: left;
+    background-color: #f0f0f0;
+    display: inline-block;
+    overflow: visible;
+    vertical-align: top;
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+}
+
+.htmleditor-ui-button {
+    vertical-align: bottom;
+    border: 1px solid #f0f0f0;
+    display: inline-block;
+}
+
+.htmleditor-ui-button:active {
+    vertical-align: bottom;
+    border: 1px solid gray;
+    display: inline-block;
+}
+
+.htmleditor-ui-select, .htmleditor-ui-select:hover {
+    vertical-align: baseline;
+    margin: 1px;
+    display: inline-block;
+    background-color: #f0f0f0;
+    border: 1px solid gray;
+    max-width: 120px;
+}
+
+.htmleditor-ui-select:hover {
+    background-color: white;
+}
+
+.colorpicker .ui-dialog-titlebar {
+    display: none;
+}
+
+.colorpicker .ui-dialog-content {
+    padding: 4px;
+}
+
+.colorpicker.ui-widget-content {
+    border: 1px solid gray;
+}
+
+#__maindiv {
+    position: absolute;
+    max-width: 99%; /*calc not support */
+    max-width: calc(100% - 18px );
+    width: 99%; /*calc not supported */
+    width: calc(100% - 18px ) !important;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+/*treeview style*/
+#trvCategory table{
+    line-height:8px;
+}
+#trvCategory td{
+    vertical-align:top;
+}
+#trvCategory td.node img {
+    width:16px;
+    height:16px;
+}
+
+#trvCategory div{
+    overflow:visible;
+}
+/*ビュースタイル*/
+#dl table{
+    display:inline-table;
+}
+/*Table Gui*/
+table.TableGui{
+    display:inline-table!important;
+}

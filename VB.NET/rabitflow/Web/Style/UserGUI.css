@@ -1,0 +1,51 @@
+﻿/*
+ * <summary>
+ * GUIコンポーネントで使用するスタイルシートです。
+ * </summary>
+ */
+/* 添付ファイル */
+div.flw0821{
+    display:inline;
+}
+
+.flw0821 table.main_table {
+    border-collapse: collapse;
+    border: 0px;
+}
+
+.flw0821 table.main_table tr td {
+    padding: 1px;
+}
+
+.flw0821 table.button_table {
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+
+.flw0821 table.FLW0821_button_table tr td {
+    padding: 1px;
+}
+
+.flw0821 table.selected_item_table {
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+.flw0821 table.selected_item_table tr td {
+     padding: 0px;
+ }
+
+.fileview div.selected{
+    background-color: #316ac5;
+    text-overflow: unset;
+    white-space:normal;
+    word-wrap: break-word;
+    overflow:hidden;
+    color:white;
+}
+.fileview div.normal{
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+    color:black;
+}
