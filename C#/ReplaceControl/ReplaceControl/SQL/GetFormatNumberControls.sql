@@ -1,0 +1,1 @@
+﻿select NMSYSFLD from FRMI1001 where IDFRM=1122 and idgui=10000120 and FGDEL='0'
