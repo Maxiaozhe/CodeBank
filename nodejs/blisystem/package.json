@@ -1,0 +1,56 @@
+{
+  "_from": "blisystem@0.0.1",
+  "_id": "blisystem@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-0hrTDSqO3mJQkg8C3/H0VwG0O27MuNqnNxCcT16J6pCqVRk/BrYN44DdveTgSfAjbAilVWC6J90nGXJxP4AOnw==",
+  "_location": "/blisystem",
+  "_phantomChildren": {
+    "async-limiter": "1.0.0"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "blisystem@0.0.1",
+    "name": "blisystem",
+    "escapedName": "blisystem",
+    "rawSpec": "0.0.1",
+    "saveSpec": null,
+    "fetchSpec": "0.0.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/blisystem/-/blisystem-0.0.1.tgz",
+  "_shasum": "b5f9bf03e6d9031e8b5d12e6ff0f2c02a3776d3d",
+  "_spec": "blisystem@0.0.1",
+  "_where": "C:\\projects\\BLISystem",
+  "author": {
+    "name": "maxz"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@google-cloud/vision": "^0.21.0",
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.0",
+    "debug": "3.1.0",
+    "express": "^4.14.0",
+    "git": "^0.1.5",
+    "jquery": "^3.3.1",
+    "mocha": "^5.2.0",
+    "morgan": "^1.7.0",
+    "multer": "1.3.1",
+    "pg": "^7.4.3",
+    "pug": "^2.0.0-beta6",
+    "serve-favicon": "^2.3.0",
+    "ws": "^6.0.0"
+  },
+  "deprecated": false,
+  "description": "BLISystem",
+  "name": "blisystem",
+  "private": false,
+  "scripts": {
+    "start": "node app"
+  },
+  "version": "0.0.1"
+}

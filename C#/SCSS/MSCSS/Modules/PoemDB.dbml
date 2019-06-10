@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="POEMDB" Class="PoemDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.137.163;Initial Catalog=POEMDB;Persist Security Info=True;User ID=sa" SettingsObjectName="Maxz.PoemSystem.Engine.Properties.Settings" SettingsPropertyName="POEMDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.M_PoemType" Member="M_PoemType">
+    <Type Name="M_PoemType">
+      <Column Name="PoemType" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Catrgory" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_BookIndex" Member="M_BookIndex">
+    <Type Name="M_BookIndex">
+      <Column Name="BookNo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SectionNo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BookName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SectionName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_CipaiType" Member="M_CipaiType">
+    <Type Name="M_CipaiType">
+      <Column Name="CipaiType" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ZeYun" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Pingyun" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="HuanYun" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="XianYun" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="YunBu" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_Author" Member="M_Author">
+    <Type Name="M_Author">
+      <Column Name="Author" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CalledName" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="NickName1" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="NickName2" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="NickName3" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="NickName4" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Hometown" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BirthDay" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Biography" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Dynasty" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_Cipai" Member="M_Cipai">
+    <Type Name="M_Cipai">
+      <Column Name="Cipai" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CipaiType" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="OtherNames" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Metrical" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Summary" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_Poem" Member="M_Poem">
+    <Type Name="M_Poem">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BookNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SectionNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PoemNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Author" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dynasty" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Foreword" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PoemType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Cipai" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MainBody" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_PoemImage" Member="M_PoemImage">
+    <Type Name="M_PoemImage">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SubID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ImageId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ImageUrl" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Image" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_Poem2" Member="M_Poem2">
+    <Type Name="M_Poem2">
+      <Column Name="ID" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SubID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Author" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Dynasty" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Yun" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TitleNote" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="MainBody" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Footer" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Html" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

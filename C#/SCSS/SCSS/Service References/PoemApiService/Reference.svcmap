@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="da659a91-2d77-467f-ae26-ad9ac257a7a3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/PoemWebService/PoemApi.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PoemApi.xsd" MetadataType="Schema" ID="fbc276cf-8bac-4c28-a2d6-0887cdfe941b" SourceId="1" SourceUrl="http://localhost/PoemWebService/PoemApi.svc?xsd=xsd1" />
+    <MetadataFile FileName="PoemApi.disco" MetadataType="Disco" ID="ddbb5d4b-c552-4726-96f6-b33e49eb9fce" SourceId="1" SourceUrl="http://localhost/PoemWebService/PoemApi.svc?disco" />
+    <MetadataFile FileName="PoemApi1.xsd" MetadataType="Schema" ID="f6beae99-6b19-41f8-8b1b-790618a41523" SourceId="1" SourceUrl="http://localhost/PoemWebService/PoemApi.svc?xsd=xsd0" />
+    <MetadataFile FileName="PoemApi.wsdl" MetadataType="Wsdl" ID="9d1ec6a6-8e3d-4a84-a021-9ce2f01094b7" SourceId="1" SourceUrl="http://localhost/PoemWebService/PoemApi.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="PoemApi2.xsd" MetadataType="Schema" ID="bed6a683-6cbd-47cb-8be6-3dcd6cf47399" SourceId="1" SourceUrl="http://localhost/PoemWebService/PoemApi.svc?xsd=xsd2" />
+    <MetadataFile FileName="PoemApi1.wsdl" MetadataType="Wsdl" ID="790e5dd7-c195-400f-a90e-a5b834cef811" SourceId="1" SourceUrl="http://localhost/PoemWebService/PoemApi.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

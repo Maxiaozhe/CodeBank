@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ProxyCredProvider.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UserId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">z00h809162</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">m@xz1205</Value>
+    </Setting>
+    <Setting Name="ProxyServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://proxy.ricoh.co.jp:8080</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

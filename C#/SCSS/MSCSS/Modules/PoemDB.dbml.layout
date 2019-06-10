@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 10.5" name="PoemDB">
+  <DataContextMoniker Name="/PoemDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e495e09f-2c87-43af-87e8-cf66eaecbcad" absoluteBounds="3.75, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/PoemDBDataContext/M_PoemType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="05e89924-5f26-414e-947a-2c819e25a9c1" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ea46ff67-8068-470b-b5a3-23d0874e7a7c" absoluteBounds="3.75, 3.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/PoemDBDataContext/M_BookIndex" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f283114e-d8d8-4129-ab7c-7c3a4493b64a" absoluteBounds="3.765, 4.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="31337080-02ac-48b3-9bfa-1f432ada6779" absoluteBounds="0.75, 4.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/PoemDBDataContext/M_CipaiType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c7ea2235-a5bc-4b59-920f-ecac26df07a3" absoluteBounds="0.765, 5.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ea62f2f5-801e-4859-9941-9be9c17414e2" absoluteBounds="0.875, 0.875, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/PoemDBDataContext/M_Author" />
+      <nestedChildShapes>
+        <elementListCompartment Id="26e31074-266b-4266-a9f1-deec83a5aef0" absoluteBounds="0.89, 1.335, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6adc3017-1cc1-46e6-8035-515e9d4b5734" absoluteBounds="6.375, 0.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/PoemDBDataContext/M_Cipai" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d3c315f5-8e27-4e73-b22b-0e10c43e9ce2" absoluteBounds="6.39, 1.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8b434443-e34f-40ea-9c5d-5a9c9312a62e" absoluteBounds="6.25, 3.75, 2, 3.1170068359375">
+      <DataClassMoniker Name="/PoemDBDataContext/M_Poem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6f317679-75bb-440a-bcdc-67216a16b154" absoluteBounds="6.265, 4.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9df5ff7d-3715-48fe-91ad-6cff867cfe40" absoluteBounds="0.75, 7, 2, 1.9631982421875">
+      <DataClassMoniker Name="/PoemDBDataContext/M_PoemImage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="090e0096-31c2-4a70-80d2-a242e6f04088" absoluteBounds="0.76500000000000012, 7.4600000000000009, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1b688cb9-6fb5-489f-b928-d9b7d68e9e98" absoluteBounds="3.875, 7.375, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/PoemDBDataContext/M_Poem2" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4f3d8bf2-8e44-48a3-9cf1-013f85c32afe" absoluteBounds="3.89, 7.835, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

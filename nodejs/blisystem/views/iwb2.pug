@@ -1,0 +1,10 @@
+﻿extends layout
+block content
+  block header
+    div(class='main')
+    iframe(class='display')
+  block footer
+    script(src="/javascripts/jquery-3.3.1.min.js")
+    script(src="/javascripts/iwb2.js")
+    script.
+       const ws = iwbApp.wsClientRegist('#{host}');

@@ -1,0 +1,449 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>XPBurnComponent</name>
+    </assembly>
+    <members>
+        <member name="T:XPBurn.XPBurnCD">
+            <summary>
+            This class can burn DATA CDs.  Simply instantiate a version, call <see cref="M:XPBurn.XPBurnCD.AddFile(System.String,System.String)"/> 
+            with the files to be written, and finally call <see cref="M:XPBurn.XPBurnCD.RecordDisc(System.Boolean,System.Boolean)"/> to write the 
+            data to the CD.
+            </summary>
+        </member>
+        <member name="M:XPBurn.XPBurnCD.#ctor">
+            <summary>
+            The constructor for the burn component.  This call does a lot of work under the covers,
+            including communicating with imapi to find out whether there is an XP compatible cd drive attached.
+            </summary>
+        </member>
+        <member name="M:XPBurn.XPBurnCD.OnRecorderChange">
+            <summary>
+            This method is called when some Plug and Play activity has occurred.  This may mean that the set of discs available has changed, it may mean that the disc has been completely removed from the system.
+            </summary>
+        </member>
+        <member name="M:XPBurn.XPBurnCD.OnAddProgres(System.Int32,System.Int32)">
+            <summary>
+            This method is called periodically when burning either a music or data disc to report progress on buffering the data.  In invokes <see cref="E:XPBurn.XPBurnCD.AddProgress"/>.
+            </summary>
+            <param name="nCompletdSteps">The number of steps that have been completed.</param>
+            <param name="nTotalSteps">The total number of steps required to finish adding all of the data to the disc.</param>
+        </member>
+        <member name="M:XPBurn.XPBurnCD.OnBlockProgress(System.Int32,System.Int32)">
+            <summary>
+            This method is called periodically when burning a data disc to report progress on the blocks being burned.  It invokes <see cref="E:XPBurn.XPBurnCD.BlockProgress"/>
+            </summary>
+            <param name="nCompletedSteps">The number of stpes that have been completed.</param>
+            <param name="nTotalSteps">The total number of steps required to burn all of the blocks.</param>
+        </member>
+        <member name="M:XPBurn.XPBurnCD.OnTrackProgress(System.Int32,System.Int32)">
+            <summary>
+            This method is called periodically when burning a music disc to report progress on the tracks being burned.  It invokes <see cref="E:XPBurn.XPBurnCD.TrackProgress"/>.
+            </summary>
+            <param name="nCompletedSteps">The number of steps that have been completed.</param>
+            <param name="nTotalSteps">The number of steps in the entire track burning process.</param>
+        </member>
+        <member name="M:XPBurn.XPBurnCD.OnPreparingBurn(System.Int32)">
+            <summary>
+            This method is called with an esimated time of how long it will take to prepare the media for burning.  It invokes <see cref="E:XPBurn.XPBurnCD.PreparingBurn"/>.
+            </summary>
+            <param name="nEstimatedSeconds">The estimated number of seconds required to prepare the media for burning.</param>
+        </member>
+        <member name="M:XPBurn.XPBurnCD.OnClosingDisc(System.Int32)">
+            <summary>
+            This method is called when a closing operation has finished.  It invoke <see cref="E:XPBurn.XPBurnCD.ClosingDisc"/>.
+            </summary>
+            <param name="nEstimatedSeconds">The estimated number of seconds required to finish closing the disc.</param>
+        </member>
+        <member name="M:XPBurn.XPBurnCD.OnBurnComplete(System.UInt32)">
+            <summary>
+            This method is called when a burn operation has finished.  It invokes <see cref="E:XPBurn.XPBurnCD.BurnComplete"/>.
+            </summary>
+            <param name="status">The HRESULT that has been returned by the underlying IMAPI call.</param>
+        </member>
+        <member name="M:XPBurn.XPBurnCD.OnEraseComplete(System.UInt32)">
+            <summary>
+            This method is called when an erase operation has finished.  It invokes <see cref="E:XPBurn.XPBurnCD.EraseComplete"/>.
+            </summary>
+            <param name="status">The HRESULT that has been returned by the underlying IMAPI call.</param>
+        </member>
+        <member name="M:XPBurn.XPBurnCD.Eject">
+            <summary>
+            Ejects the CD tray.  This cannot be called when the CD Writer is burning or erasing a CD.
+            </summary>
+        </member>
+        <member name="M:XPBurn.XPBurnCD.Erase(XPBurn.EraseKind)">
+            <summary>
+            Erases the CD if the recorder is a CDRW and the media type is read write.
+            </summary>
+            <param name="eraseType">Either a quick or full delete</param>
+        </member>
+        <member name="M:XPBurn.XPBurnCD.AddFile(System.String,System.String)">
+            <summary>
+            Adds a file to a list that will written to the CD when <see cref="M:XPBurn.XPBurnCD.RecordDisc(System.Boolean,System.Boolean)"/> is called
+            </summary>
+            <param name="filename">The fully qualified path and filename of the file to burn to CD</param>
+            <param name="nameOnCD">The relative name of the file to write to the CD</param>
+        </member>
+        <member name="M:XPBurn.XPBurnCD.RemoveFile(System.String)">
+            <summary>
+            Removes a file from the list to be burned (executes in O(1)).  This file
+            must have previously been added via AddFile
+            </summary>
+            <param name="filename">The name of the file on disk to be removed</param>    
+        </member>
+        <member name="M:XPBurn.XPBurnCD.RecordDisc(System.Boolean,System.Boolean)">
+            <summary>
+            Use this method to actually burn the files added through AddFile to the CD.
+            </summary>
+            <remarks>Make sure that there is media in the CD burner before calling this method</remarks>
+            <param name="simulate">When set to true, the burner performs all actions (including progress events) just as if a 
+            real burn was occuring, but no data is written to the disc</param>
+            <param name="ejectAfterBurn">When set to true, the CD tray is ejected after the burn completes</param>
+        </member>
+        <member name="E:XPBurn.XPBurnCD.RecorderChange">
+            <summary>
+            This event occurs when some sort of plug and play activity has been detected.  
+            It may change both the number of CD recorders, the number of recorder drives, and possibly, 
+            it may indicate the removal of the recorder on which the component is currently acting.
+            </summary>
+        </member>
+        <member name="E:XPBurn.XPBurnCD.AddProgress">
+            <summary>
+            This event occurs as the first step of the burn process, while data which has been added through 
+            AddFile is being staged.
+            </summary>
+        </member>
+        <member name="E:XPBurn.XPBurnCD.BlockProgress">
+            <summary>
+            This event is the third step in the burn process (for data CDs), and is the main burning phase.  
+            While this phase executes, the staged area will be written to the CD.
+            </summary>
+        </member>
+        <member name="E:XPBurn.XPBurnCD.TrackProgress">
+            <summary>
+            This event is the third step in the burn process (for music CDs).  Currently it will never be invoked.
+            </summary>
+        </member>
+        <member name="E:XPBurn.XPBurnCD.PreparingBurn">
+            <summary>
+            This event is the second step in the burn process, it is called once with an estimated time it will take 
+            before the recorder starts writing data to the CD.
+            </summary>
+        </member>
+        <member name="E:XPBurn.XPBurnCD.ClosingDisc">
+            <summary>
+            This event occurs as the fourth and final step of the burn process.  It is called once with an estimated time 
+            it will take before the burn is completely finished (it is during this step that the recorder is writing the 
+            table of contents of the CD).
+            </summary>
+        </member>
+        <member name="E:XPBurn.XPBurnCD.BurnComplete">
+            <summary>
+            This event occurs after all four stages of the burn process have completed.  
+            After this event occurs the burner may burn again.
+            </summary>
+        </member>
+        <member name="E:XPBurn.XPBurnCD.EraseComplete">
+            <summary>
+            This event occurs after an erase has completed.
+            </summary>
+        </member>
+        <member name="P:XPBurn.XPBurnCD.Cancel">
+            <summary>
+            Reads or writes the current cancel state of the component.  If this value is set to true, 
+            then RecordDisc will stop executing and throw an exception indicating that the user cancelled the burn.
+            </summary>
+        </member>
+        <member name="P:XPBurn.XPBurnCD.IsErasing">
+            <summary>
+            Reads whether the currently selected BurnerDrive is erasing a CD.  Notice that this value is only
+            set by this component, so if another program is erasing a CD on the currently selected drive this value
+            will be set to false.  This property is read-only; however, you can use the Cancel property to cancel 
+            an active erase (so long as it was initiated by this component).
+            </summary>
+        </member>
+        <member name="P:XPBurn.XPBurnCD.IsBurning">
+            <summary>
+            Reads whether the currently selected BurnerDrive is burning a CD.  Notice that this value is only 
+            set by this component, so if another program is writing to a CD on the currently selected drive this 
+            value will be set to false.  This property is read-only; however, you can use the Cancel property to 
+            cancel an active burn (so long as it was initiated by this component).
+            </summary>
+        </member>
+        <member name="P:XPBurn.XPBurnCD.RecorderDrives">
+            <summary>
+            Reads a <b>copy</b> of the recorder drives available on the system.  
+            This may change in the same way that the NumberOfDrives property may change.  
+            Use the values returned in this ArrayList to set the BurnerDrive property.
+            </summary>
+        </member>
+        <member name="P:XPBurn.XPBurnCD.NumberOfDrives">
+            <summary>
+            Reads the current number of drives on the system.  It's possible that this number will change throughout 
+            the course of the existence of the component if a USB device (for example), is added or removed.  
+            The event (RecorderChange) is meant to indicate that this may have happened.
+            </summary>
+        </member>
+        <member name="P:XPBurn.XPBurnCD.ActiveFormat">
+            <summary>
+            Reads or writes the active format for recording.  This is largely useless in the current implementation 
+            as the only valid recording type is afData (afMusic is currently unsupported).
+            </summary>
+        </member>
+        <member name="P:XPBurn.XPBurnCD.FilesToBrun">
+            <summary>
+            Reads a copy of the list of files that are currently set to be burned to CD.  
+            Changing this list will not affect the list stored internally by the component.  
+            In order to change that list, use the AddFile and RemoveFile procedures.
+            </summary>
+        </member>
+        <member name="P:XPBurn.XPBurnCD.BurnerDrive">
+            <summary>
+            Reads or writes the current burner drive.  Depending on the computer that 
+            the component is running on the string returned may either be a drive letter, 
+            or a fully qualified device name (/dev/CDRom1).  In order to write to this value, 
+            use one of the strings returned by RecorderDrives.
+            </summary>
+        </member>
+        <member name="P:XPBurn.XPBurnCD.Vendor">
+            <summary>
+            Reads the vendor of the currently selected recorder.  
+            This string is set by the manufacturer of the recorder.
+            </summary>
+        </member>
+        <member name="P:XPBurn.XPBurnCD.ProductID">
+            <summary>
+            Reads the product ID of the currently selected recorder.  
+            This string is set by the manufacturer of the recorder. 
+            </summary>
+        </member>
+        <member name="P:XPBurn.XPBurnCD.Revision">
+            <summary>
+            Reads the revision of the currently selected recorder.  
+            This string is set by the manufacturer of the recorder (through the driver).
+            </summary>
+        </member>
+        <member name="P:XPBurn.XPBurnCD.RecorderType">
+            <summary>
+            Reads the currently selected burner's type.  This may be rtCDR or rtCDRW.  
+            If it's rtCDRW then the recorder supports erasing media, if it's rtCDR then it doesn't.
+            </summary>
+        </member>
+        <member name="P:XPBurn.XPBurnCD.MediaInfo">
+            <summary>
+            Reads information about the media inserted in the currently selected recorder.  
+            This information includes whether the CD is blank, writable, erasable (RW), or usable.
+            </summary>
+        </member>
+        <member name="P:XPBurn.XPBurnCD.MaxWriteSpeed">
+            <summary>
+            Reads the maximum write speed for the currently selected recorder.  
+            This number will be 4, 8, 10, etc. representing a 4x, 8x, or 10x CD recorder drive.
+            </summary>
+        </member>
+        <member name="P:XPBurn.XPBurnCD.WriteSpeed">
+            <summary>
+            Reads the currently selected recorder's write speed.  This is usually equal to the MaxWriteSpeed, however, 
+            it is occasionally lower if the CD recorder is unreliable at it's max speed.  
+            This property will be read/write in the future.
+            </summary>
+        </member>
+        <member name="P:XPBurn.XPBurnCD.AudioGapSize">
+            <summary>
+            Reads the current recorder setting for the number of blank audio blocks to put in 
+            between tracks when writing a music CD.  The default value is 150.
+            </summary>
+        </member>
+        <member name="P:XPBurn.XPBurnCD.VolumeName">
+            <summary>
+            Reads the volume name of the CD in the currently selected recorder.  
+            This property will be read/write in the future.
+            </summary>
+        </member>
+        <member name="P:XPBurn.XPBurnCD.DiscSpace">
+            <summary>
+            Reads the amount of space on the disc currently inserted in the recorder.
+            </summary>
+        </member>
+        <member name="P:XPBurn.XPBurnCD.FreeDiscSpace">
+            <summary>
+            Reads the amount of free disc space on a given CD.  
+            Notice that this number doesn't change based on the files which are currently in the file table 
+            (but not burned to CD).  
+            </summary>
+        </member>
+        <member name="T:XPBurn.CONSTS">
+            <summary>
+            Summary description for XPBurnConsts.
+            </summary>
+        </member>
+        <member name="T:XPBurn.QueryCancel">
+            <summary>
+            This delegate is used internally to allow the current burn to be cancelled.  
+            The system queries the method attached to this delegate periodically and if <see cref="P:XPBurn.XPBurnCD.Cancel"/> 
+            is true, the burn is stopped.
+            </summary>
+        </member>
+        <member name="T:XPBurn.NotifyPnPActivity">
+            <summary>
+            This delegate is used as the type of the <see cref="E:XPBurn.XPBurnCD.RecorderChange"/> event.
+            The method attached to it is invoked by the system when some plug and play acitvity has been detected, possibly 
+            the removal or addition of a cd burner drive.
+            </summary>
+        </member>
+        <member name="T:XPBurn.NotifyCDProgress">
+            <summary>
+            This delegate is used as the type of the <see cref="E:XPBurn.XPBurnCD.BlockProgress"/>, 
+            <see cref="E:XPBurn.XPBurnCD.AddProgress"/>, and <see cref="E:XPBurn.XPBurnCD.TrackProgress"/> events.  
+            The methods attached to the delegate are invoked periodically by the system when progress has been made 
+            with the burn.
+            </summary>
+        </member>
+        <member name="T:XPBurn.NotifyEstimatedTime">
+            <summary>
+            This delegate is used as the type of the <see cref="E:XPBurn.XPBurnCD.PreparingBurn"/>and 
+            <see cref="E:XPBurn.XPBurnCD.ClosingDisc"/> events.  
+            </summary>
+        </member>
+        <member name="T:XPBurn.NotifyCompletionStatus">
+            <summary>
+            This delegate is used as the type of the <see cref="E:XPBurn.XPBurnCD.EraseComplete"/> and 
+            <see cref="E:XPBurn.XPBurnCD.BurnComplete"/> events.
+            </summary>
+        </member>
+        <member name="T:XPBurn.SupportedRecordTypes">
+            <summary>
+            Ignore this enum for the moment, in the future it will be returned by a property which will indicate which 
+            types of recording operations are permitted by the active recorder. 
+            </summary>
+        </member>
+        <member name="F:XPBurn.SupportedRecordTypes.sfNone">
+            <summary>
+            No recording options available on the recorder set by <see cref="P:XPBurn.XPBurnCD.BurnerDrive"/>.
+            </summary>
+        </member>
+        <member name="F:XPBurn.SupportedRecordTypes.sfData">
+            <summary>
+            The current <see cref="P:XPBurn.XPBurnCD.BurnerDrive"/> allows burning data CDs.
+            </summary>
+        </member>
+        <member name="F:XPBurn.SupportedRecordTypes.sfMusic">
+            <summary>
+            The currrent <see cref="P:XPBurn.XPBurnCD.BurnerDrive"/> allows burning music CDs.
+            </summary>
+        </member>
+        <member name="F:XPBurn.SupportedRecordTypes.sfBoth">
+            <summary>
+            The current <see cref="P:XPBurn.XPBurnCD.BurnerDrive"/> allow burning both data and music CDs.
+            </summary>
+        </member>
+        <member name="T:XPBurn.RecordType">
+            <summary>
+            This type is returned by the <see cref="P:XPBurn.XPBurnCD.ActiveFormat"/> property and indicates whether the component is set to 
+            write data or music to the CD.
+            </summary>
+        </member>
+        <member name="F:XPBurn.RecordType.afMusic">
+            <summary>
+            Used to indicate that the active format is to burn music CDs.
+            </summary>
+        </member>
+        <member name="F:XPBurn.RecordType.afData">
+            <summary>
+            Used to indicate that the active format is to burn data CDs.
+            </summary>
+        </member>
+        <member name="T:XPBurn.EraseKind">
+            <summary>
+            This type is passed as a parameter to the <see cref="M:XPBurn.XPBurnCD.Erase(XPBurn.EraseKind)"/> procedure.  If set to ekQuick, only the table of contents 
+            is erased, all of the data still exists on the CD though it is inaccessible by normal means (and may be 
+            overwritten with a subsequent write).  If set to ekFull all data is erased from each track of the CD.
+            </summary>
+        </member>
+        <member name="F:XPBurn.EraseKind.ekQuick">
+            <summary>
+            Indicates that burner should perform a quick erase where the table of contents is erased, making the data inaccessible but leaving the
+            majority of the data on the disc.
+            </summary>
+        </member>
+        <member name="F:XPBurn.EraseKind.ekFull">
+            <summary>
+            Indicates that the burner should perform a full erase where all of the data is removed from the disc.
+            </summary>
+        </member>
+        <member name="T:XPBurn.RecorderType">
+            <summary>
+            This type is returned by the <see cref="P:XPBurn.XPBurnCD.RecorderType"/> property and indicates whether the active 
+            recorder can both write and erase CDs (rtCDRW) or only write them (rtCDR).
+            </summary>
+        </member>
+        <member name="F:XPBurn.RecorderType.rtCDR">
+            <summary>
+            The recorder supports burning CDRs.
+            </summary>
+        </member>
+        <member name="F:XPBurn.RecorderType.rtCDRW">
+            <summary>
+            The recorder supports burning both CDRs and CDRWs.
+            </summary>
+        </member>
+        <member name="T:XPBurn.XPBurnException">
+            <summary>
+            This is the base exception type from which all burner exceptions are thrown.  No other burner 
+            specific exceptions are currently thrown.
+            </summary>
+        </member>
+        <member name="M:XPBurn.XPBurnException.#ctor">
+            <summary>
+            Creates the burner exception.
+            </summary>
+        </member>
+        <member name="M:XPBurn.XPBurnException.#ctor(System.String)">
+            <summary>
+            Creates the burner exception with a message.
+            </summary>
+            <param name="message">The message that the dialog box containing the exception will display.</param>
+        </member>
+        <member name="M:XPBurn.XPBurnException.#ctor(System.String,System.Exception)">
+            <summary>
+            Creates the burner exception with a message and an inner exception.
+            </summary>
+            <param name="message">The message that the dialog box contianing the excpetion will display.</param>
+            <param name="inner">The inner exception to be stored.</param>
+        </member>
+        <member name="M:XPBurn.XPBurnException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Creates the burner exception with serialization info.
+            </summary>
+            <param name="info">The serialization info to be passed.</param>
+            <param name="context">The streaming context to be passed.</param>
+        </member>
+        <member name="T:XPBurn.Media">
+            <summary>
+            This type is returned by the <see cref="P:XPBurn.XPBurnCD.MediaInfo"/> property and contains information about the 
+            media (CD) which is currently inserted into the recorder.  
+            </summary>
+        </member>
+        <member name="F:XPBurn.Media.isBlank">
+            <summary>
+            Indicates the CD in the active recorder is blank.
+            </summary>
+        </member>
+        <member name="F:XPBurn.Media.isReadWrite">
+            <summary>
+            Indicates that the CD in the active recorder is both readable and writable.
+            </summary>
+        </member>
+        <member name="F:XPBurn.Media.isWritable">
+            <summary>
+            Indicates that the CD in the active recorder is writable.
+            </summary>
+        </member>
+        <member name="F:XPBurn.Media.isUsable">
+            <summary>
+            Indicates that the CD in the active recorder is usable.
+            </summary>
+        </member>
+    </members>
+</doc>

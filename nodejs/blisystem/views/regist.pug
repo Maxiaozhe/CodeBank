@@ -1,0 +1,14 @@
+﻿extends layout
+block content
+  block header
+    div(class='main')
+      div(id='droparea' class='img-drop-area')=caption
+        canvas(id='canvas')
+        input(id='fileupload' type='file' class='hidden' accept="image/gif,image/jpeg,image/png")
+    div(id='result')
+  block footer
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src="/javascripts/megapix-image.js")
+    script(src="/javascripts/regist.js")
+    script.
+       const ws = client.wsClientRegist('#{host}');

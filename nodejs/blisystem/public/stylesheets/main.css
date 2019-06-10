@@ -1,0 +1,125 @@
+﻿html, body {
+    padding: 0;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.hidden {
+    display: none;
+}
+
+.header-bar {
+    background-color: white;
+    background-image: url('../images/hd_logo.png');
+    background-position-x: 1px;
+    background-position-y: 1px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid gray;
+    margin-bottom: 2px;
+    width: 100%;
+    height: 30px;
+    margin: 0;
+    color: darkgray;
+    text-align: right;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+div.main {
+    text-align: center;
+}
+
+.img-drop-area {
+    background-image: url("../images/camera.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px dotted gray;
+    width: 100%;
+    height: 300px;
+}
+
+.dragover {
+    border: 2px solid #0B85A1 !important;
+}
+
+iframe.display {
+    width: 100%;
+    height: 100%;
+    border: none;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+.container{
+    text-align:center;
+    align-items:center;
+}
+
+.full-matching-image {
+    max-width: 320px;
+    margin: 2px;
+    border: 1px solid gray;
+}
+
+.similar-images {
+    max-width: 160px;
+    margin: 2px;
+    border: 1px solid gray;
+}
+
+.label-annotation, .web-entitie {
+    margin: 2px;
+}
+
+.hight-score::after{
+    content: attr(data-score);
+    background-color: red;
+    margin: 0 0 0 0.5em;
+    border: 1px solid red;
+    color: white;
+    padding: 0;
+    border-radius: 2px;
+    font-size: xx-small;
+}
+
+.low-score::after {
+    content: attr(data-score);
+    background-color: gray;
+    margin: 0 0 0 0.5em;
+    border: 1px solid gray;
+    color: white;
+    padding: 0;
+    border-radius: 2px;
+    font-size: xx-small;
+}
+
+.connecting {
+    width: 12px;
+    height: 12px;
+    background-color: #00ff00;
+    display: inline-block;
+    border-radius: 8px;
+    animation: flash 1s infinite alternate;
+}
+
+.closed {
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+@keyframes flash {
+    from {
+        background-color: green;
+    }
+
+    to {
+        background-color: #00ff00;
+    }
+}

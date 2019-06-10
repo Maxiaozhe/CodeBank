@@ -1,0 +1,56 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPBurnComponent", "XPBurnComponent.csproj", "{F2B349EB-67F5-48E3-9BE2-EC5BA8F010C7}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DHIExporter", "..\DHIExporter\DHIExporter.vbproj", "{F32EE0CF-61D7-4128-9A32-8795D4A477C4}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DHIImporter", "..\DHIImporter\DHIImporter.vbproj", "{049398BE-7D5A-4214-8DDA-4063CD094013}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DHIEngine", "..\DHIEngine\DHIEngine.vbproj", "{21692431-2EE3-4DFB-B157-3723BDDBF9CE}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccProjectName0 = \u0022$/DHITools/XPBurnComponent\u0022,\u0020VHMAAAAA
+		SccLocalPath0 = ..
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectFilePathRelativizedFromConnection0 = XPBurnComponent\\
+		SccProjectUniqueName1 = ..\\DHIEngine\\DHIEngine.vbproj
+		SccLocalPath1 = ..
+		SccProjectFilePathRelativizedFromConnection1 = DHIEngine\\
+		SccProjectUniqueName2 = ..\\DHIExporter\\DHIExporter.vbproj
+		SccLocalPath2 = ..
+		SccProjectFilePathRelativizedFromConnection2 = DHIExporter\\
+		SccProjectUniqueName3 = ..\\DHIImporter\\DHIImporter.vbproj
+		SccLocalPath3 = ..
+		SccProjectFilePathRelativizedFromConnection3 = DHIImporter\\
+		SccProjectUniqueName4 = XPBurnComponent.csproj
+		SccLocalPath4 = ..
+		SccProjectFilePathRelativizedFromConnection4 = XPBurnComponent\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2B349EB-67F5-48E3-9BE2-EC5BA8F010C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2B349EB-67F5-48E3-9BE2-EC5BA8F010C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2B349EB-67F5-48E3-9BE2-EC5BA8F010C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2B349EB-67F5-48E3-9BE2-EC5BA8F010C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F32EE0CF-61D7-4128-9A32-8795D4A477C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F32EE0CF-61D7-4128-9A32-8795D4A477C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F32EE0CF-61D7-4128-9A32-8795D4A477C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F32EE0CF-61D7-4128-9A32-8795D4A477C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{049398BE-7D5A-4214-8DDA-4063CD094013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{049398BE-7D5A-4214-8DDA-4063CD094013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{049398BE-7D5A-4214-8DDA-4063CD094013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{049398BE-7D5A-4214-8DDA-4063CD094013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21692431-2EE3-4DFB-B157-3723BDDBF9CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21692431-2EE3-4DFB-B157-3723BDDBF9CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21692431-2EE3-4DFB-B157-3723BDDBF9CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21692431-2EE3-4DFB-B157-3723BDDBF9CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
